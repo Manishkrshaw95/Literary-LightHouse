@@ -1,21 +1,41 @@
-
-<div class="category-cards">
-	<app-category-card
-		title="Fiction Books"
-		description="Novels, stories, bestsellers & more"
-		image="category/fiction-category.jpg"
-		background="#00b8b8"
-	></app-category-card>
-	<app-category-card
-		title="Science & Tech"
-		description="Physics, coding, discoveries & more"
-		image="category/science-category.jpg"
-		background="#ffe066"
-	></app-category-card>
-	<app-category-card
-		title="Children's Books"
-		description="Stories, learning, fun & more"
-		image="category/children-category.jpg"
-		background="#e6f0fa"
-	></app-category-card>
+<div class="body-main-layout">
+	<app-sidebar class="sidebar"></app-sidebar>
+	<div class="category-cards">
+		<app-category-card
+			title="Fiction Books"
+			description="Novels, stories, bestsellers & more"
+			image="category/fiction-category.jpg"
+			background="#00b8b8"
+		></app-category-card>
+		<app-category-card
+			title="Science & Tech"
+			description="Physics, coding, discoveries & more"
+			image="category/science-category.jpg"
+			background="#ffe066"
+		></app-category-card>
+		<app-category-card
+			title="Children's Books"
+			description="Stories, learning, fun & more"
+			image="category/children-category.jpg"
+			background="#e6f0fa"
+		></app-category-card>
+		<div class="upload-transition-wrapper" style="width: 100%;">
+			@if (!showUpload) {
+				<div (click)="onUploadCardClick()" class="fade-scale-in" style="width: 100%; cursor: pointer;">
+					<app-category-card
+						title="Upload Books"
+						description="Help us grow our library"
+						image="category/upload-category.jpg"
+						background="#d0eac3"
+					></app-category-card>
+				</div>
+			}
+			@if (showUpload) {
+				<div class="upload-form-wrapper fade-scale-in" style="width: 100%;">
+					<app-book-upload (cancelUpload)="onCancelUpload()"></app-book-upload>
+					<button class="cancel-upload-btn" (click)="onCancelUpload()">Cancel</button>
+				</div>
+			}
+		</div>
+	</div>
 </div>

@@ -1,0 +1,65 @@
+.book-upload-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+  max-width: 420px;
+  margin: 2rem auto;
+}
+.book-upload-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+input[type="text"],
+input[type="number"],
+select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fafafa;
+  outline: none;
+  transition: border 0.2s;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border: 1.5px solid #7ed957;
+}
+input[type="file"] {
+  margin-top: 0.3rem;
+}
+button[type="submit"] {
+  background: #7ed957;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:disabled {
+  background: #b6e388;
+  cursor: not-allowed;
+}
+.error {
+  color: #d32f2f;
+  margin-top: 0.7rem;
+}
+.success {
+  color: #388e3c;
+  margin-top: 0.7rem;
+}

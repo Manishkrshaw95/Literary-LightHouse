@@ -1,0 +1,13 @@
+
+<nav class="sidebar">
+	<div class="sidebar-title sticky-title">Categories</div>
+	<div class="category-list-scroll">
+		<ul class="category-list">
+			<li *ngIf="loading">Loading...</li>
+			<li *ngIf="error">{{ error }}</li>
+			<li *ngFor="let cat of categories" class="category-item">
+				{{ cat.name }}
+			</li>
+		</ul>
+	</div>
+</nav>
