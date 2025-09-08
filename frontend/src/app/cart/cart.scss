@@ -1,0 +1,77 @@
+.cart-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+}
+.cart-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+th, td {
+  padding: 0.7rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #f6f6f6;
+  font-weight: 700;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+.cart-total {
+  text-align: right;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.empty-cart {
+  text-align: center;
+  color: #888;
+  margin: 2rem 0;
+}
+button {
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #a31515;
+}
+
+.qty-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #7ed957;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.qty-value {
+  min-width: 22px;
+  text-align: center;
+  display: inline-block;
+}
+.remove-all {
+  margin-left: 0.5rem;
+  background: #555;
+}

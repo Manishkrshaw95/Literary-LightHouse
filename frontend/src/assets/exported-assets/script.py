@@ -1,0 +1,87 @@
+import json
+
+# Dummy data samples per category excluding previously mentioned books
+# Each category: list of 15-18 books realistically built
+
+books_by_category = {
+    0: [  # Story Books
+        {"name":"The Jungle Book", "author":"Rudyard Kipling", "price":150, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Charlotte's Web", "author":"E.B. White", "price":180, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Matilda", "author":"Roald Dahl", "price":210, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Anne of Green Gables", "author":"L.M. Montgomery", "price":190, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"The Secret Garden", "author":"Frances Hodgson Burnett", "price":170, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Where the Wild Things Are", "author":"Maurice Sendak", "price":120, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"The Tale of Peter Rabbit", "author":"Beatrix Potter", "price":160, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"The Wind in the Willows", "author":"Kenneth Grahame", "price":200, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Goodnight Moon", "author":"Margaret Wise Brown", "price":130, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Pippi Longstocking", "author":"Astrid Lindgren", "price":175, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Little Women", "author":"Louisa May Alcott", "price":220, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Winnie-the-Pooh", "author":"A.A. Milne", "price":160, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"The Polar Express", "author":"Chris Van Allsburg", "price":150, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"Alice's Adventures in Wonderland", "author":"Lewis Carroll", "price":180, "categories":[0], "image_url":"", "pdf_url":""},
+        {"name":"The Very Hungry Caterpillar", "author":"Eric Carle", "price":110, "categories":[0], "image_url":"", "pdf_url":""}
+    ],
+    1: [  # Fiction
+        {"name":"The Catcher in the Rye", "author":"J.D. Salinger", "price":250, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"To Kill a Mockingbird", "author":"Harper Lee", "price":275, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"Pride and Prejudice", "author":"Jane Austen", "price":300, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"The Great Gatsby", "author":"F. Scott Fitzgerald", "price":280, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"Jane Eyre", "author":"Charlotte Brontë", "price":290, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"Wuthering Heights", "author":"Emily Brontë", "price":290, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"The Picture of Dorian Gray", "author":"Oscar Wilde", "price":310, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"The Hobbit", "author":"J.R.R. Tolkien", "price":350, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"The Alchemist", "author":"Paulo Coelho", "price":260, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"Crime and Punishment", "author":"Fyodor Dostoevsky", "price":320, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"The Kite Runner", "author":"Khaled Hosseini", "price":270, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"The Book Thief", "author":"Markus Zusak", "price":290, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"Moby-Dick", "author":"Herman Melville", "price":300, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"Anna Karenina", "author":"Leo Tolstoy", "price":330, "categories":[1], "image_url":"", "pdf_url":""},
+        {"name":"Great Expectations", "author":"Charles Dickens", "price":280, "categories":[1], "image_url":"", "pdf_url":""}
+    ],
+    2: [  # Science Fiction
+        {"name":"The Windup Girl", "author":"Paolo Bacigalupi", "price":399, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Altered Carbon", "author":"Richard K. Morgan", "price":420, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Anathem", "author":"Neal Stephenson", "price":450, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Contact", "author":"Carl Sagan", "price":380, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"The Forever War", "author":"Joe Haldeman", "price":360, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Old Man's War", "author":"John Scalzi", "price":340, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Snow Crash", "author":"Neal Stephenson", "price":430, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Red Mars", "author":"Kim Stanley Robinson", "price":410, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"The Diamond Age", "author":"Neal Stephenson", "price":400, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Ringworld", "author":"Larry Niven", "price":390, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Hyperion", "author":"Dan Simmons", "price":410, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"The Handmaid's Tale", "author":"Margaret Atwood", "price":375, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Oryx and Crake", "author":"Margaret Atwood", "price":365, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Blindsight", "author":"Peter Watts", "price":350, "categories":[2], "image_url":"", "pdf_url":""},
+        {"name":"Children of Time", "author":"Adrian Tchaikovsky", "price":400, "categories":[2], "image_url":"", "pdf_url":""}
+    ],
+    3: [  # Non-Fiction
+        {"name":"Sapiens: A Brief History of Humankind", "author":"Yuval Noah Harari", "price":450, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Educated", "author":"Tara Westover", "price":420, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Becoming", "author":"Michelle Obama", "price":480, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"The Immortal Life of Henrietta Lacks", "author":"Rebecca Skloot", "price":350, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Born a Crime", "author":"Trevor Noah", "price":370, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Quiet", "author":"Susan Cain", "price":400, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Outliers", "author":"Malcolm Gladwell", "price":350, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"The Wright Brothers", "author":"David McCullough", "price":300, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Into Thin Air", "author":"Jon Krakauer", "price":330, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"The Glass Castle", "author":"Jeannette Walls", "price":340, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"The Body", "author":"Bill Bryson", "price":360, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Thinking, Fast and Slow", "author":"Daniel Kahneman", "price":400, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"The Power of Habit", "author":"Charles Duhigg", "price":380, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Lean In", "author":"Sheryl Sandberg", "price":420, "categories":[3], "image_url":"", "pdf_url":""},
+        {"name":"Out of Africa", "author":"Isak Dinesen", "price":290, "categories":[3], "image_url":"", "pdf_url":""}
+    ]
+}
+
+# Combine all categories books into one list for output
+combined_books = []
+for category_books in books_by_category.values():
+    combined_books.extend(category_books)
+
+# Save JSON to file
+with open('books_by_category.json', 'w', encoding='utf-8') as f:
+    json.dump(combined_books, f, ensure_ascii=False, indent=2)
+
+# Provide file path for user
+"books_by_category.json"

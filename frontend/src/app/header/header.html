@@ -2,7 +2,7 @@
 	<div class="header-content">
 	
 		
-			<div class="header-left">
+			<div class="header-left" routerLink="/">
 				<span class="site-title">
 					<span class="site-title-literary">Literary</span>
 					<span class="site-title-lighthouse"> Lighthouse</span>
@@ -17,10 +17,11 @@
 			</div>
 		<div class="header-right">
 			<button class="login-btn">Login</button>
-			<button class="cart-btn">
-				<span class="cart-icon">🛒</span>
-				<span class="cart-label">Cart</span>
-			</button>
+							<a class="cart-btn" routerLink="/cart">
+								<span class="cart-icon">🛒</span>
+								<span class="cart-label">Cart</span>
+								<span *ngIf="cart.count > 0" class="cart-count">{{ cart.count }}</span>
+							</a>
 		</div>
 	</div>
 </header>

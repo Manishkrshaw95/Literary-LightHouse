@@ -1,0 +1,36 @@
+.main-layout {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.sidebar-area {
+  width: 260px;
+  min-width: 220px;
+  background: #fff;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.06);
+  z-index: 10;
+}
+
+.main-content-area {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  overflow-x: hidden;
+}
+
+.category-cards-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  justify-content: flex-start;
+}
+
+.booklist-section {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}

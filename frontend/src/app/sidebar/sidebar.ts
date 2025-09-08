@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,6 +13,7 @@ export class SidebarComponent implements OnInit {
   loading: boolean = true;
   error: string = '';
   selectedCategoryIds: number[] = [0];
+  @Output() selectionChange = new EventEmitter<number[]>();
 
   ngOnInit(): void {
     fetch('http://localhost:8080/categories')
@@ -21,7 +22,7 @@ export class SidebarComponent implements OnInit {
         return res.json();
       })
       .then(data => {
-        this.categories = [{ id: 0, name: 'All' }, ...data];
+        this.categories = [...data];
         this.loading = false;
       })
       .catch(err => {
@@ -43,6 +44,8 @@ export class SidebarComponent implements OnInit {
         this.selectedCategoryIds.push(catId);
       }
     }
+  // emit updated selection
+  this.selectionChange.emit([...this.selectedCategoryIds]);
   }
 
   isSelected(catId: number): boolean {

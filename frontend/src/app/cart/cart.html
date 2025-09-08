@@ -1,0 +1,38 @@
+<div class="cart-container">
+  <a class="back-btn" routerLink="/">&larr; Continue Shopping</a>
+  <h2>Your Cart</h2>
+  <table *ngIf="groupedItems.length > 0; else emptyCart">
+    <thead>
+      <tr>
+        <th>Book</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of groupedItems">
+        <td>{{ item.name }}</td>
+        <td>
+          <div class="qty-control">
+            <button class="qty-btn" (click)="decreaseQuantity(item)">-</button>
+            <span class="qty-value">{{ item.quantity }}</span>
+            <button class="qty-btn" (click)="increaseQuantity(item)">+</button>
+          </div>
+        </td>
+  <td>₹{{ item.price }}</td>
+  <td>₹{{ item.price * item.quantity }}</td>
+        <td>
+          <button class="remove-all" (click)="removeAll(item)">Remove all</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #emptyCart>
+    <div class="empty-cart">Your cart is empty.</div>
+  </ng-template>
+  <div class="cart-total" *ngIf="groupedItems.length > 0">
+    <strong>Total: ₹{{ total }}</strong>
+  </div>
+</div>

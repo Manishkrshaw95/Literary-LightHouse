@@ -1,15 +1,13 @@
 
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 
 import { Header } from './header/header';
-import { BodyComponent } from './body/body';
-import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header , BodyComponent , NgxPaginationModule],
+  imports: [RouterOutlet, RouterModule, Header],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
