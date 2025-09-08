@@ -5,9 +5,12 @@
 		<ul class="category-list">
 			<li *ngIf="loading">Loading...</li>
 			<li *ngIf="error">{{ error }}</li>
-			<li *ngFor="let cat of categories" class="category-item">
-				{{ cat.name }}
-			</li>
+					<li *ngFor="let cat of categories"
+							class="category-item"
+							[class.active]="isSelected(cat.id)"
+							(click)="toggleCategory(cat.id)">
+						{{ cat.name }}
+					</li>
 		</ul>
 	</div>
 </nav>
