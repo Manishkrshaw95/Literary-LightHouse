@@ -1,0 +1,11 @@
+<div class="booklist-container">
+	<div class="book-card" *ngFor="let book of books">
+		<img [src]="book.image_url ? book.image_url : 'placeholder.jpg'" alt="Book Image" class="book-image" />
+		<div class="book-details">
+			<div class="book-name">{{ book.name }}</div>
+			<div class="book-author">by {{ book.author }}</div>
+			<div class="book-price">₹{{ book.price }}</div>
+			<button class="add-to-cart-btn">Add to Cart</button>
+		</div>
+	</div>
+</div>

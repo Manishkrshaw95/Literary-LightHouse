@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
   selectedCategoryIds: number[] = [0];
 
   ngOnInit(): void {
-    fetch('http://localhost:8080/api/categories')
+    fetch('http://localhost:8080/categories')
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch categories');
         return res.json();
