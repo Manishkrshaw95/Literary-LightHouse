@@ -1,24 +1,72 @@
 {
-    "categories":[
-      {"name":"All Books", "id": 0},
-		{"name":"Fiction", "id": 1},
-        {"name":"Science Fiction", "id": 2},
-		{"name":"Non-Fiction", "id": 3},
-		{"name":"Academic/Professional", "id": 4},
-		{"name":"Age-Based", "id": 5},
-		{"name":"Subject-Specific", "id": 6},
-		{"name":"Religious/Spiritual", "id": 7},
-		{"name":"Culinary", "id": 8},
-		{"name":"Arts & Photography", "id": 9},
-		{"name":"Health/Medical", "id": 10},
-		{"name":"Business/Economics", "id": 11},
-		{"name":"International & Cultural", "id": 12},
-		{"name":"Format-Based", "id": 13},
-		{"name":"Special Collections", "id": 14},
-		{"name":"General", "id": 15}
-	],
-    "booksData":[
-  {"name":"Harry Potter and the Philosopher's Stone", "author":"J.K. Rowling", "price": 95, "categories": [1], "image_url": "FictionBooks/book-covers/philosopher-stone.jpg", "pdf_url": ""},
+  "categories": [
+    {
+      "name": "All Books",
+      "id": 0
+    },
+    {
+      "name": "Fiction",
+      "id": 1
+    },
+    {
+      "name": "Science Fiction",
+      "id": 2
+    },
+    {
+      "name": "Non-Fiction",
+      "id": 3
+    },
+    {
+      "name": "Academic/Professional",
+      "id": 4
+    },
+    {
+      "name": "Age-Based",
+      "id": 5
+    },
+    {
+      "name": "Subject-Specific",
+      "id": 6
+    },
+    {
+      "name": "Religious/Spiritual",
+      "id": 7
+    },
+    {
+      "name": "Culinary",
+      "id": 8
+    },
+    {
+      "name": "Arts & Photography",
+      "id": 9
+    },
+    {
+      "name": "Health/Medical",
+      "id": 10
+    },
+    {
+      "name": "Business/Economics",
+      "id": 11
+    },
+    {
+      "name": "International & Cultural",
+      "id": 12
+    },
+    {
+      "name": "Format-Based",
+      "id": 13
+    },
+    {
+      "name": "Special Collections",
+      "id": 14
+    },
+    {
+      "name": "General",
+      "id": 15
+    }
+  ],
+  "booksData": [
+    {"name":"Harry Potter and the Philosopher's Stone", "author":"J.K. Rowling", "price": 95, "categories": [1], "image_url": "FictionBooks/book-covers/philosopher-stone.jpg", "pdf_url": ""},
   {"name":"Harry Potter and the Chamber of Secrets", "author":"J.K. Rowling", "price": 95, "categories": [1], "image_url": "FictionBooks/book-covers/chamberofsecret.png", "pdf_url": ""},
   {"name":"Harry Potter and the Prisoner of Azkaban", "author":"J.K. Rowling", "price": 95, "categories": [1], "image_url": "FictionBooks/book-covers/prisonerofAzbakestan.jpg", "pdf_url": ""},
   {"name":"Harry Potter and the Goblet of Fire", "author":"J.K. Rowling", "price": 95, "categories": [1], "image_url": "FictionBooks/book-covers/Goblet_of_Fire.webp", "pdf_url": ""},
@@ -28,657 +76,1105 @@
   {"name":"Sherlock Holmes (Set of 5 Books)", "author":"Sir Arthur Conan Doyle", "price": 393, "categories": [1], "image_url": "FictionBooks/book-covers/sherlokholmes5.jpg", "pdf_url": ""},
   {"name":"The Case-Book of Sherlock Holmes", "author":"Sir Arthur Conan Doyle", "price": 398, "categories": [1], "image_url": "FictionBooks/book-covers/casebookofsherlock.jpg", "pdf_url": ""},
   {"name":"The Adventures of Sherlock Holmes", "author":"Sir Arthur Conan Doyle", "price": 279, "categories": [1], "image_url": "FictionBooks/book-covers/adventureofsherlockholmes.jpg", "pdf_url": ""},
-  {"name":"The Hound of the Baskervilles", "author":"Sir Arthur Conan Doyle", "price": 399, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"The Complete Novels of Sherlock Holmes", "author":"Sir Arthur Conan Doyle", "price": 522, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Royal Bengal Rahasyam", "author":"Satyajit Ray", "price": 250, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"The House of Death (Feluda Series)", "author":"Satyajit Ray", "price": 150, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"The Royal Bengal Mystery (Feluda Series)", "author":"Satyajit Ray", "price": 150, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"The Curse of the Goddess (Feluda Series)", "author":"Satyajit Ray", "price": 150, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Kailashe Kelenkari", "author":"Satyajit Ray", "price": 60, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Gangtoke Gondogol", "author":"Satyajit Ray", "price": 60, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Three Rays: Stories from Satyajit Ray", "author":"Satyajit Ray", "price": 749, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Puffin Classics: One Dozen Stories", "author":"Satyajit Ray", "price": 314, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"A Killer in Kailash (Feluda)", "author":"Satyajit Ray", "price": 297, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Deep Focus PB", "author":"Satyajit Ray", "price": 332, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"The Adventures of Feluda: The Emperor's Ring", "author":"Satyajit Ray", "price": 350, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Gora", "author":"Rabindranath Tagore", "price": 225, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Sei Somoy", "author":"Sunil Gangopadhyay", "price": 399, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Chokher Bali", "author":"Rabindranath Tagore", "price": 180, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Pather Panchali", "author":"Bibhutibhushan Bandyopadhyay", "price": 220, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Shesher Kobita", "author":"Rabindranath Tagore", "price": 150, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Swami", "author":"Sarat Chandra Chattopadhyay", "price": 199, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name":"Midnight's Children", "author":"Salman Rushdie", "price": 409, "categories": [1], "image_url": "", "pdf_url": ""},
-  {"name": "Professor Shanku", "author": "Satyajit Ray", "price": 220, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Satyajit Ray O Science Fiction", "author": "Prasenjit Dasgupta", "price": 210, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Nakshatraloker Debatatma", "author": "Narayan Sanyal", "price": 320, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "The Calcutta Chromosome", "author": "Amitav Ghosh", "price": 379, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "The Simoqin Prophecies", "author": "Samit Basu", "price": 399, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Chandrayaan-2", "author": "V.P. Balagangadharan", "price": 153, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Fire on the Moon", "author": "Multiple Authors (NBT anthology)", "price": 250, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "It Happened Tomorrow", "author": "Various/Edited by Bal Phondke", "price": 195, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Half of What I Say", "author": "Anil Menon", "price": 238, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "The Hungry Tide", "author": "Amitav Ghosh", "price": 350, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "The Gollancz Book of South Asian Science Fiction", "author": "Tarun K. Saint (Ed.)", "price": 599, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Selected Science Fiction Short Stories", "author": "Jayant Narlikar", "price": 225, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Children of Paradise", "author": "Omar Gilani", "price": 399, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Return to Gedrosia", "author": "S.B. Divya", "price": 289, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Frankenstein", "author": "Mary Shelley", "price": 201, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Dune", "author": "Frank Herbert", "price": 499, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "The Left Hand of Darkness", "author": "Ursula K. Le Guin", "price": 399, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Foundation", "author": "Isaac Asimov", "price": 425, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Neuromancer", "author": "William Gibson", "price": 437, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Brave New World", "author": "Aldous Huxley", "price": 315, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "1984", "author": "George Orwell", "price": 350, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Fahrenheit 451", "author": "Ray Bradbury", "price": 375, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Snow Crash", "author": "Neal Stephenson", "price": 430, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Ready Player One", "author": "Ernest Cline", "price": 369, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Hyperion", "author": "Dan Simmons", "price": 410, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "The Three-Body Problem", "author": "Liu Cixin", "price": 499, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Do Androids Dream of Electric Sheep?", "author": "Philip K. Dick", "price": 365, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Childhood's End", "author": "Arthur C. Clarke", "price": 308, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "Solaris", "author": "Stanislaw Lem", "price": 370, "categories": [2], "image_url": "", "pdf_url": ""},
-  {"name": "A Clockwork Orange", "author": "Anthony Burgess", "price": 298, "categories": [2], "image_url": "", "pdf_url": ""},
-  {
-    "name": "The Jungle Book",
-    "author": "Rudyard Kipling",
-    "price": 150,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Charlotte's Web",
-    "author": "E.B. White",
-    "price": 180,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Matilda",
-    "author": "Roald Dahl",
-    "price": 210,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Anne of Green Gables",
-    "author": "L.M. Montgomery",
-    "price": 190,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Secret Garden",
-    "author": "Frances Hodgson Burnett",
-    "price": 170,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Where the Wild Things Are",
-    "author": "Maurice Sendak",
-    "price": 120,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Tale of Peter Rabbit",
-    "author": "Beatrix Potter",
-    "price": 160,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Wind in the Willows",
-    "author": "Kenneth Grahame",
-    "price": 200,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Goodnight Moon",
-    "author": "Margaret Wise Brown",
-    "price": 130,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Pippi Longstocking",
-    "author": "Astrid Lindgren",
-    "price": 175,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Little Women",
-    "author": "Louisa May Alcott",
-    "price": 220,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Winnie-the-Pooh",
-    "author": "A.A. Milne",
-    "price": 160,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Polar Express",
-    "author": "Chris Van Allsburg",
-    "price": 150,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Alice's Adventures in Wonderland",
-    "author": "Lewis Carroll",
-    "price": 180,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Very Hungry Caterpillar",
-    "author": "Eric Carle",
-    "price": 110,
-    "categories": [
-      0
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "price": 250,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "price": 275,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "price": 300,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "price": 280,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Jane Eyre",
-    "author": "Charlotte Brontë",
-    "price": 290,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Wuthering Heights",
-    "author": "Emily Brontë",
-    "price": 290,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Picture of Dorian Gray",
-    "author": "Oscar Wilde",
-    "price": 310,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Hobbit",
-    "author": "J.R.R. Tolkien",
-    "price": 350,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Alchemist",
-    "author": "Paulo Coelho",
-    "price": 260,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Crime and Punishment",
-    "author": "Fyodor Dostoevsky",
-    "price": 320,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Kite Runner",
-    "author": "Khaled Hosseini",
-    "price": 270,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Book Thief",
-    "author": "Markus Zusak",
-    "price": 290,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Moby-Dick",
-    "author": "Herman Melville",
-    "price": 300,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Anna Karenina",
-    "author": "Leo Tolstoy",
-    "price": 330,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Great Expectations",
-    "author": "Charles Dickens",
-    "price": 280,
-    "categories": [
-      1
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Windup Girl",
-    "author": "Paolo Bacigalupi",
-    "price": 399,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Altered Carbon",
-    "author": "Richard K. Morgan",
-    "price": 420,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Anathem",
-    "author": "Neal Stephenson",
-    "price": 450,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Contact",
-    "author": "Carl Sagan",
-    "price": 380,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Forever War",
-    "author": "Joe Haldeman",
-    "price": 360,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Old Man's War",
-    "author": "John Scalzi",
-    "price": 340,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Snow Crash",
-    "author": "Neal Stephenson",
-    "price": 430,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Red Mars",
-    "author": "Kim Stanley Robinson",
-    "price": 410,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Diamond Age",
-    "author": "Neal Stephenson",
-    "price": 400,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Ringworld",
-    "author": "Larry Niven",
-    "price": 390,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Hyperion",
-    "author": "Dan Simmons",
-    "price": 410,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Handmaid's Tale",
-    "author": "Margaret Atwood",
-    "price": 375,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Oryx and Crake",
-    "author": "Margaret Atwood",
-    "price": 365,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Blindsight",
-    "author": "Peter Watts",
-    "price": 350,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Children of Time",
-    "author": "Adrian Tchaikovsky",
-    "price": 400,
-    "categories": [
-      2
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Sapiens: A Brief History of Humankind",
-    "author": "Yuval Noah Harari",
-    "price": 450,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Educated",
-    "author": "Tara Westover",
-    "price": 420,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Becoming",
-    "author": "Michelle Obama",
-    "price": 480,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Immortal Life of Henrietta Lacks",
-    "author": "Rebecca Skloot",
-    "price": 350,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Born a Crime",
-    "author": "Trevor Noah",
-    "price": 370,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Quiet",
-    "author": "Susan Cain",
-    "price": 400,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Outliers",
-    "author": "Malcolm Gladwell",
-    "price": 350,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Wright Brothers",
-    "author": "David McCullough",
-    "price": 300,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Into Thin Air",
-    "author": "Jon Krakauer",
-    "price": 330,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Glass Castle",
-    "author": "Jeannette Walls",
-    "price": 340,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Body",
-    "author": "Bill Bryson",
-    "price": 360,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Thinking, Fast and Slow",
-    "author": "Daniel Kahneman",
-    "price": 400,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "The Power of Habit",
-    "author": "Charles Duhigg",
-    "price": 380,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Lean In",
-    "author": "Sheryl Sandberg",
-    "price": 420,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  },
-  {
-    "name": "Out of Africa",
-    "author": "Isak Dinesen",
-    "price": 290,
-    "categories": [
-      3
-    ],
-    "image_url": "",
-    "pdf_url": ""
-  }
-
-]
-
+    {
+      "name": "The Hound of the Baskervilles",
+      "author": "Sir Arthur Conan Doyle",
+      "price": 399,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Hound_of_the_Baskervilles.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Complete Novels of Sherlock Holmes",
+      "author": "Sir Arthur Conan Doyle",
+      "price": 522,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Royal Bengal Rahasyam",
+      "author": "Satyajit Ray",
+      "price": 250,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The House of Death (Feluda Series)",
+      "author": "Satyajit Ray",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Royal Bengal Mystery (Feluda Series)",
+      "author": "Satyajit Ray",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Curse of the Goddess (Feluda Series)",
+      "author": "Satyajit Ray",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Kailashe Kelenkari",
+      "author": "Satyajit Ray",
+      "price": 60,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Gangtoke Gondogol",
+      "author": "Satyajit Ray",
+      "price": 60,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Three Rays: Stories from Satyajit Ray",
+      "author": "Satyajit Ray",
+      "price": 749,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Puffin Classics: One Dozen Stories",
+      "author": "Satyajit Ray",
+      "price": 314,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "A Killer in Kailash (Feluda)",
+      "author": "Satyajit Ray",
+      "price": 297,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Deep Focus PB",
+      "author": "Satyajit Ray",
+      "price": 332,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Adventures of Feluda: The Emperor's Ring",
+      "author": "Satyajit Ray",
+      "price": 350,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Gora",
+      "author": "Rabindranath Tagore",
+      "price": 225,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Gora.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Sei Somoy",
+      "author": "Sunil Gangopadhyay",
+      "price": 399,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Chokher Bali",
+      "author": "Rabindranath Tagore",
+      "price": 180,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Pather Panchali",
+      "author": "Bibhutibhushan Bandyopadhyay",
+      "price": 220,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Shesher Kobita",
+      "author": "Rabindranath Tagore",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Swami",
+      "author": "Sarat Chandra Chattopadhyay",
+      "price": 199,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Midnight's Children",
+      "author": "Salman Rushdie",
+      "price": 409,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Professor Shanku",
+      "author": "Satyajit Ray",
+      "price": 220,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Satyajit Ray O Science Fiction",
+      "author": "Prasenjit Dasgupta",
+      "price": 210,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Nakshatraloker Debatatma",
+      "author": "Narayan Sanyal",
+      "price": 320,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Calcutta Chromosome",
+      "author": "Amitav Ghosh",
+      "price": 379,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Calcutta_Chromosome.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Simoqin Prophecies",
+      "author": "Samit Basu",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Chandrayaan-2",
+      "author": "V.P. Balagangadharan",
+      "price": 153,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Fire on the Moon",
+      "author": "Multiple Authors (NBT anthology)",
+      "price": 250,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Fire_on_the_Moon.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "It Happened Tomorrow",
+      "author": "Various/Edited by Bal Phondke",
+      "price": 195,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Half of What I Say",
+      "author": "Anil Menon",
+      "price": 238,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Half_of_What_I_Say.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Hungry Tide",
+      "author": "Amitav Ghosh",
+      "price": 350,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Hungry_Tide.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Gollancz Book of South Asian Science Fiction",
+      "author": "Tarun K. Saint (Ed.)",
+      "price": 599,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Selected Science Fiction Short Stories",
+      "author": "Jayant Narlikar",
+      "price": 225,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Children of Paradise",
+      "author": "Omar Gilani",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Return to Gedrosia",
+      "author": "S.B. Divya",
+      "price": 289,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Frankenstein",
+      "author": "Mary Shelley",
+      "price": 201,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Frankenstein.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Dune",
+      "author": "Frank Herbert",
+      "price": 499,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Left Hand of Darkness",
+      "author": "Ursula K. Le Guin",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Left_Hand_of_Darkness.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Foundation",
+      "author": "Isaac Asimov",
+      "price": 425,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Neuromancer",
+      "author": "William Gibson",
+      "price": 437,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Neuromancer.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Brave New World",
+      "author": "Aldous Huxley",
+      "price": 315,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "1984",
+      "author": "George Orwell",
+      "price": 350,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "price": 375,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Fahrenheit_451.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Snow Crash",
+      "author": "Neal Stephenson",
+      "price": 430,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Snow_Crash.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Ready Player One",
+      "author": "Ernest Cline",
+      "price": 369,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Ready_Player_One.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Hyperion",
+      "author": "Dan Simmons",
+      "price": 410,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Three-Body Problem",
+      "author": "Liu Cixin",
+      "price": 499,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Do Androids Dream of Electric Sheep?",
+      "author": "Philip K. Dick",
+      "price": 365,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Do_Androids_Dream_of_Electric_Sheep.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Childhood's End",
+      "author": "Arthur C. Clarke",
+      "price": 308,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Solaris",
+      "author": "Stanislaw Lem",
+      "price": 370,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "A Clockwork Orange",
+      "author": "Anthony Burgess",
+      "price": 298,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/A_Clockwork_Orange.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Jungle Book",
+      "author": "Rudyard Kipling",
+      "price": 150,
+      "categories": [
+        0
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Charlotte's Web",
+      "author": "E.B. White",
+      "price": 180,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Charlottes_Web.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Matilda",
+      "author": "Roald Dahl",
+      "price": 210,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Matilda.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Anne of Green Gables",
+      "author": "L.M. Montgomery",
+      "price": 190,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Anne_of_Green_Gables.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "price": 170,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Secret_Garden.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Where the Wild Things Are",
+      "author": "Maurice Sendak",
+      "price": 120,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Where_the_Wild_Things_Are.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Tale of Peter Rabbit",
+      "author": "Beatrix Potter",
+      "price": 160,
+      "categories": [
+        0
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Wind in the Willows",
+      "author": "Kenneth Grahame",
+      "price": 200,
+      "categories": [
+        0
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Goodnight Moon",
+      "author": "Margaret Wise Brown",
+      "price": 130,
+      "categories": [
+        0
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Pippi Longstocking",
+      "author": "Astrid Lindgren",
+      "price": 175,
+      "categories": [
+        0
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Little Women",
+      "author": "Louisa May Alcott",
+      "price": 220,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Little_Women.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Winnie-the-Pooh",
+      "author": "A.A. Milne",
+      "price": 160,
+      "categories": [
+        0
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Polar Express",
+      "author": "Chris Van Allsburg",
+      "price": 150,
+      "categories": [
+        0
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "price": 180,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Alices_Adventures_in_Wonderland.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Very Hungry Caterpillar",
+      "author": "Eric Carle",
+      "price": 110,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Very_Hungry_Caterpillar.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "price": 250,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Catcher_in_the_Rye.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 275,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/To_Kill_a_Mockingbird.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 300,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "price": 280,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Great_Gatsby.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "price": 290,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "price": 290,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "price": 310,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Picture_of_Dorian_Gray.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "price": 350,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Hobbit.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 260,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "price": 320,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "price": 270,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Book Thief",
+      "author": "Markus Zusak",
+      "price": 290,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Book_Thief.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Moby-Dick",
+      "author": "Herman Melville",
+      "price": 300,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "price": 330,
+      "categories": [
+        1
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Great Expectations",
+      "author": "Charles Dickens",
+      "price": 280,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Great_Expectations.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Windup Girl",
+      "author": "Paolo Bacigalupi",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Altered Carbon",
+      "author": "Richard K. Morgan",
+      "price": 420,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Altered_Carbon.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Anathem",
+      "author": "Neal Stephenson",
+      "price": 450,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Contact",
+      "author": "Carl Sagan",
+      "price": 380,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Contact.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Forever War",
+      "author": "Joe Haldeman",
+      "price": 360,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Old Man's War",
+      "author": "John Scalzi",
+      "price": 340,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Snow Crash",
+      "author": "Neal Stephenson",
+      "price": 430,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Snow_Crash.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Red Mars",
+      "author": "Kim Stanley Robinson",
+      "price": 410,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Diamond Age",
+      "author": "Neal Stephenson",
+      "price": 400,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Ringworld",
+      "author": "Larry Niven",
+      "price": 390,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Ringworld.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Hyperion",
+      "author": "Dan Simmons",
+      "price": 410,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "price": 375,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Oryx and Crake",
+      "author": "Margaret Atwood",
+      "price": 365,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Oryx_and_Crake.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Blindsight",
+      "author": "Peter Watts",
+      "price": 350,
+      "categories": [
+        2
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Children of Time",
+      "author": "Adrian Tchaikovsky",
+      "price": 400,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Children_of_Time.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "price": 450,
+      "categories": [
+        3
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Educated",
+      "author": "Tara Westover",
+      "price": 420,
+      "categories": [
+        3
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Becoming",
+      "author": "Michelle Obama",
+      "price": 480,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Becoming.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Immortal Life of Henrietta Lacks",
+      "author": "Rebecca Skloot",
+      "price": 350,
+      "categories": [
+        3
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Born a Crime",
+      "author": "Trevor Noah",
+      "price": 370,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Born_a_Crime.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Quiet",
+      "author": "Susan Cain",
+      "price": 400,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Quiet.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Outliers",
+      "author": "Malcolm Gladwell",
+      "price": 350,
+      "categories": [
+        3
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Wright Brothers",
+      "author": "David McCullough",
+      "price": 300,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Wright_Brothers.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Into Thin Air",
+      "author": "Jon Krakauer",
+      "price": 330,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Into_Thin_Air.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Glass Castle",
+      "author": "Jeannette Walls",
+      "price": 340,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Glass_Castle.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Body",
+      "author": "Bill Bryson",
+      "price": 360,
+      "categories": [
+        3
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "price": 400,
+      "categories": [
+        3
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "price": 380,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Power_of_Habit.jpg",
+      "pdf_url": ""
+    },
+    {
+      "name": "Lean In",
+      "author": "Sheryl Sandberg",
+      "price": 420,
+      "categories": [
+        3
+      ],
+      "image_url": "",
+      "pdf_url": ""
+    },
+    {
+      "name": "Out of Africa",
+      "author": "Isak Dinesen",
+      "price": 290,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Out_of_Africa.jpg",
+      "pdf_url": ""
+    }
+  ]
 }

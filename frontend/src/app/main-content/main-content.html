@@ -8,6 +8,7 @@
 			<div class="booklist-section">
 				<ng-container *ngIf="!loading && !error">
 					<app-booklist [books]="filteredBooks"></app-booklist>
+					<div *ngIf="!loading && filteredBooks.length === 0" class="empty-state">No books found for the selected categories.</div>
 				</ng-container>
 				<div *ngIf="loading">Loading books...</div>
 				<div *ngIf="error" class="error">{{ error }}</div>

@@ -22,8 +22,11 @@ export class SidebarComponent implements OnInit {
         return res.json();
       })
       .then(data => {
-        this.categories = [...data];
+        // ensure category ids are numeric
+        this.categories = data.map((c: any) => ({ ...c, id: Number(c.id) }));
         this.loading = false;
+        // emit initial selection so parent can initialize filtering
+        this.selectionChange.emit([...this.selectedCategoryIds]);
       })
       .catch(err => {
         this.error = err.message;
@@ -31,24 +34,31 @@ export class SidebarComponent implements OnInit {
       });
   }
 
-  toggleCategory(catId: number): void {
-    if (catId === 0) {
+  toggleCategory(catId: number | string): void {
+    const id = Number(catId);
+    if (Number.isNaN(id)) return;
+
+    if (id === 0) {
       // If 'All' is selected, clear others and select only 'All'
       this.selectedCategoryIds = [0];
     } else {
       // Remove 'All' if another category is selected
-      this.selectedCategoryIds = this.selectedCategoryIds.filter(id => id !== 0);
-      if (this.selectedCategoryIds.includes(catId)) {
-        this.selectedCategoryIds = this.selectedCategoryIds.filter(id => id !== catId);
+      this.selectedCategoryIds = this.selectedCategoryIds.filter(i => i !== 0);
+
+      if (this.selectedCategoryIds.includes(id)) {
+        this.selectedCategoryIds = this.selectedCategoryIds.filter(i => i !== id);
       } else {
-        this.selectedCategoryIds.push(catId);
+        this.selectedCategoryIds.push(id);
       }
     }
-  // emit updated selection
-  this.selectionChange.emit([...this.selectedCategoryIds]);
+
+    // emit updated selection
+    this.selectionChange.emit([...this.selectedCategoryIds]);
   }
 
-  isSelected(catId: number): boolean {
-    return this.selectedCategoryIds.includes(catId);
+  isSelected(catId: number | string): boolean {
+    const id = Number(catId);
+    if (Number.isNaN(id)) return false;
+    return this.selectedCategoryIds.includes(id);
   }
 }

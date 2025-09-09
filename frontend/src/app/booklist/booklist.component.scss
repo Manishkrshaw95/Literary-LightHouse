@@ -1,10 +1,17 @@
 
 .pagination-container {
+  /* Float pagination as a centered fixed control at the bottom of the viewport */
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
+  z-index: 1200;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  width: 100%;
+  padding: 6px 12px;
+  background: transparent; /* keep transparent so it doesn't block view */
+  pointer-events: auto;
 }
 
 pagination-controls {
@@ -13,6 +20,11 @@ pagination-controls {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  /* make the controls visually stand out when floating */
+  background: rgba(255,255,255,0.95);
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 .booklist-container {
   display: grid;
@@ -20,6 +32,39 @@ pagination-controls {
   gap: 16px;
   margin-top: 12px;
   width: 100%;
+  /* leave space at the bottom so the fixed pagination doesn't overlap cards */
+  padding-bottom: 100px;
+}
+
+/* Responsive: fewer columns on small screens and smaller pagination footprint */
+@media (max-width: 900px) {
+  .booklist-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding-bottom: 120px; /* a bit more space for taller controls on mobile */
+  }
+
+  pagination-controls {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booklist-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-bottom: 140px;
+  }
+
+  .pagination-container {
+    bottom: 8px;
+  }
+
+  pagination-controls {
+    font-size: 0.85rem;
+    gap: 0.35rem;
+    padding: 6px 8px;
+  }
 }
 
 .book-card {

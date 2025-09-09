@@ -1,0 +1,415 @@
+{
+  "booksData": [
+    {
+      "name": "Harry Potter and the Philosopher's Stone",
+      "image_url": "book_covers/Harry_Potter_and_the_Philosophers_Stone.jpg"
+    },
+    {
+      "name": "Harry Potter and the Chamber of Secrets",
+      "image_url": "book_covers/Harry_Potter_and_the_Chamber_of_Secrets.jpg"
+    },
+    {
+      "name": "Harry Potter and the Prisoner of Azkaban",
+      "image_url": "book_covers/Harry_Potter_and_the_Prisoner_of_Azkaban.jpg"
+    },
+    {
+      "name": "Harry Potter and the Goblet of Fire",
+      "image_url": "book_covers/Harry_Potter_and_the_Goblet_of_Fire.jpg"
+    },
+    {
+      "name": "Harry Potter and the Order of the Phoenix",
+      "image_url": "book_covers/Harry_Potter_and_the_Order_of_the_Phoenix.jpg"
+    },
+    {
+      "name": "Harry Potter and the Half-Blood Prince",
+      "image_url": "book_covers/Harry_Potter_and_the_Half-Blood_Prince.jpg"
+    },
+    {
+      "name": "Harry Potter and the Deathly Hallows",
+      "image_url": "book_covers/Harry_Potter_and_the_Deathly_Hallows.jpg"
+    },
+    {
+      "name": "Sherlock Holmes (Set of 5 Books)"
+    },
+    {
+      "name": "The Case-Book of Sherlock Holmes"
+    },
+    {
+      "name": "The Adventures of Sherlock Holmes",
+      "image_url": "book_covers/The_Adventures_of_Sherlock_Holmes.jpg"
+    },
+    {
+      "name": "The Hound of the Baskervilles",
+      "image_url": "book_covers/The_Hound_of_the_Baskervilles.jpg"
+    },
+    {
+      "name": "The Complete Novels of Sherlock Holmes"
+    },
+    {
+      "name": "Royal Bengal Rahasyam"
+    },
+    {
+      "name": "The House of Death (Feluda Series)"
+    },
+    {
+      "name": "The Royal Bengal Mystery (Feluda Series)"
+    },
+    {
+      "name": "The Curse of the Goddess (Feluda Series)"
+    },
+    {
+      "name": "Kailashe Kelenkari"
+    },
+    {
+      "name": "Gangtoke Gondogol"
+    },
+    {
+      "name": "Three Rays: Stories from Satyajit Ray"
+    },
+    {
+      "name": "Puffin Classics: One Dozen Stories"
+    },
+    {
+      "name": "A Killer in Kailash (Feluda)"
+    },
+    {
+      "name": "Deep Focus PB"
+    },
+    {
+      "name": "The Adventures of Feluda: The Emperor's Ring"
+    },
+    {
+      "name": "Gora",
+      "image_url": "book_covers/Gora.jpg"
+    },
+    {
+      "name": "Sei Somoy"
+    },
+    {
+      "name": "Chokher Bali"
+    },
+    {
+      "name": "Pather Panchali"
+    },
+    {
+      "name": "Shesher Kobita"
+    },
+    {
+      "name": "Swami"
+    },
+    {
+      "name": "Midnight's Children"
+    },
+    {
+      "name": "Professor Shanku"
+    },
+    {
+      "name": "Satyajit Ray O Science Fiction"
+    },
+    {
+      "name": "Nakshatraloker Debatatma"
+    },
+    {
+      "name": "The Calcutta Chromosome",
+      "image_url": "book_covers/The_Calcutta_Chromosome.jpg"
+    },
+    {
+      "name": "The Simoqin Prophecies"
+    },
+    {
+      "name": "Chandrayaan-2"
+    },
+    {
+      "name": "Fire on the Moon",
+      "image_url": "book_covers/Fire_on_the_Moon.jpg"
+    },
+    {
+      "name": "It Happened Tomorrow"
+    },
+    {
+      "name": "Half of What I Say",
+      "image_url": "book_covers/Half_of_What_I_Say.jpg"
+    },
+    {
+      "name": "The Hungry Tide",
+      "image_url": "book_covers/The_Hungry_Tide.jpg"
+    },
+    {
+      "name": "The Gollancz Book of South Asian Science Fiction"
+    },
+    {
+      "name": "Selected Science Fiction Short Stories"
+    },
+    {
+      "name": "Children of Paradise"
+    },
+    {
+      "name": "Return to Gedrosia"
+    },
+    {
+      "name": "Frankenstein",
+      "image_url": "book_covers/Frankenstein.jpg"
+    },
+    {
+      "name": "Dune"
+    },
+    {
+      "name": "The Left Hand of Darkness",
+      "image_url": "book_covers/The_Left_Hand_of_Darkness.jpg"
+    },
+    {
+      "name": "Foundation"
+    },
+    {
+      "name": "Neuromancer",
+      "image_url": "book_covers/Neuromancer.jpg"
+    },
+    {
+      "name": "Brave New World"
+    },
+    {
+      "name": "1984"
+    },
+    {
+      "name": "Fahrenheit 451",
+      "image_url": "book_covers/Fahrenheit_451.jpg"
+    },
+    {
+      "name": "Snow Crash",
+      "image_url": "book_covers/Snow_Crash.jpg"
+    },
+    {
+      "name": "Ready Player One",
+      "image_url": "book_covers/Ready_Player_One.jpg"
+    },
+    {
+      "name": "Hyperion"
+    },
+    {
+      "name": "The Three-Body Problem"
+    },
+    {
+      "name": "Do Androids Dream of Electric Sheep?",
+      "image_url": "book_covers/Do_Androids_Dream_of_Electric_Sheep.jpg"
+    },
+    {
+      "name": "Childhood's End"
+    },
+    {
+      "name": "Solaris"
+    },
+    {
+      "name": "A Clockwork Orange",
+      "image_url": "book_covers/A_Clockwork_Orange.jpg"
+    },
+    {
+      "name": "The Jungle Book"
+    },
+    {
+      "name": "Charlotte's Web",
+      "image_url": "book_covers/Charlottes_Web.jpg"
+    },
+    {
+      "name": "Matilda",
+      "image_url": "book_covers/Matilda.jpg"
+    },
+    {
+      "name": "Anne of Green Gables",
+      "image_url": "book_covers/Anne_of_Green_Gables.jpg"
+    },
+    {
+      "name": "The Secret Garden",
+      "image_url": "book_covers/The_Secret_Garden.jpg"
+    },
+    {
+      "name": "Where the Wild Things Are",
+      "image_url": "book_covers/Where_the_Wild_Things_Are.jpg"
+    },
+    {
+      "name": "The Tale of Peter Rabbit"
+    },
+    {
+      "name": "The Wind in the Willows"
+    },
+    {
+      "name": "Goodnight Moon"
+    },
+    {
+      "name": "Pippi Longstocking"
+    },
+    {
+      "name": "Little Women",
+      "image_url": "book_covers/Little_Women.jpg"
+    },
+    {
+      "name": "Winnie-the-Pooh"
+    },
+    {
+      "name": "The Polar Express"
+    },
+    {
+      "name": "Alice's Adventures in Wonderland",
+      "image_url": "book_covers/Alices_Adventures_in_Wonderland.jpg"
+    },
+    {
+      "name": "The Very Hungry Caterpillar",
+      "image_url": "book_covers/The_Very_Hungry_Caterpillar.jpg"
+    },
+    {
+      "name": "The Catcher in the Rye",
+      "image_url": "book_covers/The_Catcher_in_the_Rye.jpg"
+    },
+    {
+      "name": "To Kill a Mockingbird",
+      "image_url": "book_covers/To_Kill_a_Mockingbird.jpg"
+    },
+    {
+      "name": "Pride and Prejudice"
+    },
+    {
+      "name": "The Great Gatsby",
+      "image_url": "book_covers/The_Great_Gatsby.jpg"
+    },
+    {
+      "name": "Jane Eyre"
+    },
+    {
+      "name": "Wuthering Heights"
+    },
+    {
+      "name": "The Picture of Dorian Gray",
+      "image_url": "book_covers/The_Picture_of_Dorian_Gray.jpg"
+    },
+    {
+      "name": "The Hobbit",
+      "image_url": "book_covers/The_Hobbit.jpg"
+    },
+    {
+      "name": "The Alchemist"
+    },
+    {
+      "name": "Crime and Punishment"
+    },
+    {
+      "name": "The Kite Runner"
+    },
+    {
+      "name": "The Book Thief",
+      "image_url": "book_covers/The_Book_Thief.jpg"
+    },
+    {
+      "name": "Moby-Dick"
+    },
+    {
+      "name": "Anna Karenina"
+    },
+    {
+      "name": "Great Expectations",
+      "image_url": "book_covers/Great_Expectations.jpg"
+    },
+    {
+      "name": "The Windup Girl"
+    },
+    {
+      "name": "Altered Carbon",
+      "image_url": "book_covers/Altered_Carbon.jpg"
+    },
+    {
+      "name": "Anathem"
+    },
+    {
+      "name": "Contact",
+      "image_url": "book_covers/Contact.jpg"
+    },
+    {
+      "name": "The Forever War"
+    },
+    {
+      "name": "Old Man's War"
+    },
+    {
+      "name": "Snow Crash",
+      "image_url": "book_covers/Snow_Crash.jpg"
+    },
+    {
+      "name": "Red Mars"
+    },
+    {
+      "name": "The Diamond Age"
+    },
+    {
+      "name": "Ringworld",
+      "image_url": "book_covers/Ringworld.jpg"
+    },
+    {
+      "name": "Hyperion"
+    },
+    {
+      "name": "The Handmaid's Tale"
+    },
+    {
+      "name": "Oryx and Crake",
+      "image_url": "book_covers/Oryx_and_Crake.jpg"
+    },
+    {
+      "name": "Blindsight"
+    },
+    {
+      "name": "Children of Time",
+      "image_url": "book_covers/Children_of_Time.jpg"
+    },
+    {
+      "name": "Sapiens: A Brief History of Humankind"
+    },
+    {
+      "name": "Educated"
+    },
+    {
+      "name": "Becoming",
+      "image_url": "book_covers/Becoming.jpg"
+    },
+    {
+      "name": "The Immortal Life of Henrietta Lacks"
+    },
+    {
+      "name": "Born a Crime",
+      "image_url": "book_covers/Born_a_Crime.jpg"
+    },
+    {
+      "name": "Quiet",
+      "image_url": "book_covers/Quiet.jpg"
+    },
+    {
+      "name": "Outliers"
+    },
+    {
+      "name": "The Wright Brothers",
+      "image_url": "book_covers/The_Wright_Brothers.jpg"
+    },
+    {
+      "name": "Into Thin Air",
+      "image_url": "book_covers/Into_Thin_Air.jpg"
+    },
+    {
+      "name": "The Glass Castle",
+      "image_url": "book_covers/The_Glass_Castle.jpg"
+    },
+    {
+      "name": "The Body"
+    },
+    {
+      "name": "Thinking, Fast and Slow"
+    },
+    {
+      "name": "The Power of Habit",
+      "image_url": "book_covers/The_Power_of_Habit.jpg"
+    },
+    {
+      "name": "Lean In"
+    },
+    {
+      "name": "Out of Africa",
+      "image_url": "book_covers/Out_of_Africa.jpg"
+    }
+  ]
+}
