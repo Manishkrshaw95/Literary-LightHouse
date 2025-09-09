@@ -1,13 +1,13 @@
 <div class="booklist-container">
-	<div class="book-card" *ngFor="let book of books | paginate: { itemsPerPage: 10, currentPage: p }">
-		<img [src]="book.image_url ? book.image_url : 'placeholder.jpg'" alt="Book Image" class="book-image" />
-		<div class="book-details">
-			<div class="book-name">{{ book.name }}</div>
-			<div class="book-author">by {{ book.author }}</div>
-			<div class="book-price">₹{{ book.price }}</div>
-				 <button class="add-to-cart-btn" (click)="addToCart(book)">Add to Cart</button>
-		</div>
-	</div>
+    <div class="book-card" *ngFor="let book of books | paginate: { itemsPerPage: 10, currentPage: p }">
+    <img [src]="book.image_url || 'placeholder.jpg'" imgFallback="placeholder.jpg" alt="Book Image" class="book-image" />
+        <div class="book-details">
+            <div class="book-name">{{ book.name }}</div>
+            <div class="book-author">by {{ book.author }}</div>
+            <div class="book-price">₹{{ book.price }}</div>
+            <button class="add-to-cart-btn" (click)="addToCart(book)">Add to Cart</button>
+        </div>
+    </div>
 		
 </div>
 <div class="pagination-container">

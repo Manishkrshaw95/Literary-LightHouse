@@ -2,11 +2,12 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CartService } from '../cart.service';
+import { ImgFallbackDirective } from '../shared/img-fallback.directive';
 
 @Component({
   selector: 'app-booklist',
   standalone: true,
-  imports: [CommonModule, NgxPaginationModule],
+  imports: [CommonModule, NgxPaginationModule, ImgFallbackDirective],
   templateUrl: './booklist.html',
   styleUrls: ['./booklist.component.scss']
 })
