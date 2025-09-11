@@ -83,11 +83,12 @@ pagination-controls {
 
 .book-card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  background: #eff3f4;
 }
 
 .book-image {
-  width: 92px;
-  height: 138px;
+  width: 140px;
+  height: 180px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 12px;
@@ -143,4 +144,25 @@ pagination-controls {
 
 .add-to-cart-btn:hover {
   background: #27ae60;
+}
+
+.booklist-empty {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: #444;
+}
+
+.booklist-empty .empty-message {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.booklist-empty .empty-sub {
+  color: #666;
 }
