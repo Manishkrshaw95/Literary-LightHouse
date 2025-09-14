@@ -34,5 +34,8 @@
   </ng-template>
   <div class="cart-total" *ngIf="groupedItems.length > 0">
     <strong>Total: ₹{{ total }}</strong>
+    <div style="margin-top:12px;">
+      <a class="place-checkout" routerLink="/checkout">Proceed to Checkout</a>
+    </div>
   </div>
 </div>

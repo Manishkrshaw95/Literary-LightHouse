@@ -1,0 +1,7 @@
+.login-shell{max-width:420px;padding:18px;border-radius:10px;border:1px solid rgba(0,0,0,0.04);background:var(--card-bg)}
+.login-shell h3{margin:0 0 8px}
+.login-shell label{display:block;margin-bottom:8px}
+.login-shell input{width:100%;padding:8px;border-radius:6px;border:1px solid rgba(0,0,0,0.06)}
+.row{display:flex;gap:8px}
+.btn-primary{background:var(--btn-primary);color:var(--btn-primary-text);border:none;padding:8px 10px;border-radius:6px}
+.btn-ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px 10px;border-radius:6px}

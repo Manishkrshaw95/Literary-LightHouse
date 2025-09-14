@@ -12,7 +12,9 @@
   padding: 6px 12px;
   background: transparent; /* keep transparent so it doesn't block view */
   pointer-events: auto;
+  
 }
+
 
 pagination-controls {
   display: flex !important;
@@ -21,10 +23,25 @@ pagination-controls {
   align-items: center;
   gap: 0.5rem;
   /* make the controls visually stand out when floating */
-  background: rgba(255,255,255,0.95);
+  background:  rgba(255,255,255,0.95);
   padding: 6px 10px;
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Minimal: make pagination text white in dark mode */
+[data-theme="dark"] pagination-controls,
+[data-theme="dark"] .ngx-pagination,
+[data-theme="dark"] ul.pagination {
+  color: #fff !important;
+}
+[data-theme="dark"] pagination-controls a,
+[data-theme="dark"] pagination-controls li,
+[data-theme="dark"] .ngx-pagination a,
+[data-theme="dark"] .ngx-pagination li,
+[data-theme="dark"] ul.pagination a,
+[data-theme="dark"] ul.pagination li {
+  color: #fff !important;
 }
 .booklist-container {
   display: grid;
@@ -71,7 +88,7 @@ pagination-controls {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
+  background: var(--card-bg, #fff);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   padding: 14px 10px 16px 10px;
@@ -83,7 +100,8 @@ pagination-controls {
 
 .book-card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  background: #eff3f4;
+  background: var(--card-hover-bg, #eff3f4);
+  color: #000;
 }
 
 .book-image {
@@ -92,7 +110,7 @@ pagination-controls {
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 12px;
-  background: #f5f5f5;
+  background: var(--image-bg, #f5f5f5);
 }
 
 .book-details {
@@ -118,21 +136,25 @@ pagination-controls {
   max-height: 2.6rem; /* roughly 2 lines */
 }
 
+
+
+
+
 .book-author {
-  color: #666;
+  color: var(--muted, #666);
   font-size: 1rem;
 }
 
 .book-price {
-  color: #2e7d32;
+  color: var(--price-color, #2e7d32);
   font-weight: 500;
   margin-bottom: 8px;
 }
 
 .add-to-cart-btn {
   align-self: center;
-  background: #2ecc40;
-  color: #fff;
+  background: var(--btn-primary, #2ecc40);
+  color: var(--btn-primary-text, #fff);
   border: none;
   border-radius: 6px;
   padding: 7px 16px;
@@ -154,7 +176,7 @@ pagination-controls {
   align-items: center;
   text-align: center;
   padding: 40px 20px;
-  color: #444;
+  color: var(--text, #444);
 }
 
 .booklist-empty .empty-message {
@@ -164,5 +186,5 @@ pagination-controls {
 }
 
 .booklist-empty .empty-sub {
-  color: #666;
+  color: var(--muted, #666);
 }

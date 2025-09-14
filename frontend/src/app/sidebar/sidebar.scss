@@ -1,7 +1,7 @@
 .sidebar {
   width: 240px;
   height: 100vh;
-  background: #fff;
+  background: var(--sidebar-bg, var(--bg));
   box-shadow: 2px 0 12px rgba(0,0,0,0.06);
   padding: 0 0.5rem 0 1.5rem;
   position: sticky;
@@ -21,8 +21,8 @@
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
-  color: #333;
-  background: #ffe066;
+  color: var(--text);
+  background: var(--accent, #ffe066);
   border-radius: 8px 8px 0 0;
   padding: 0.8rem 1rem;
   position: sticky;
@@ -41,15 +41,15 @@
   padding: 0.7rem 1rem 0.7rem 0.5rem;
   border-radius: 8px;
   font-size: 1.05rem;
-  color: #222;
+  color: var(--text);
   cursor: pointer;
   margin-bottom: 0.2rem;
   transition: background 0.18s, color 0.18s;
   user-select: none;
 }
 .category-item:hover, .category-item.active {
-  background: #ffe066;
-  color: #222;
+  background: var(--accent, #ffe066);
+  color: var(--text);
   font-weight: 700;
   box-shadow: 0 2px 8px rgba(255,224,102,0.12);
 }

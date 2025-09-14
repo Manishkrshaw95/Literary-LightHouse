@@ -5,6 +5,7 @@ import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { SidebarComponent } from '../sidebar/sidebar';
 import { SearchService } from '../search.service';
 import { CategoryCardComponent } from '../category-card/category-card';
+import { API_BASE } from '../api.config';
 import { BooklistComponent } from '../booklist/booklist';
 
 @Component({
@@ -26,7 +27,7 @@ export class MainContentComponent implements OnInit, OnDestroy {
 
   constructor(private search: SearchService, @Inject(PLATFORM_ID) private platformId: any) {
     if (isPlatformBrowser(this.platformId) && typeof fetch === 'function') {
-      fetch('http://localhost:8080/booksData')
+      fetch(`${API_BASE}/booksData`)
         .then(res => {
           if (!res.ok) throw new Error('Failed to fetch books');
           return res.json();

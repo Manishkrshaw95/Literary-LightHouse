@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CategoryCardComponent } from '../category-card/category-card';
+import { API_BASE } from '../api.config';
 import { SidebarComponent } from '../sidebar/sidebar';
 import { BookUploadComponent } from '../book-upload/book-upload';
 import { BooklistComponent } from '../booklist/booklist';
@@ -28,7 +29,7 @@ export class BodyComponent {
   }
 
   constructor() {
-    fetch('http://localhost:8080/booksData')
+  fetch(`${API_BASE}/booksData`)
       .then(res => res.json())
       .then(data => {
         this.books = data;

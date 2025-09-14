@@ -1,7 +1,7 @@
 .cart-container {
   max-width: 600px;
   margin: 2rem auto;
-  background: #fff;
+  background: var(--card-bg, #fff);
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   padding: 2rem 2.5rem;
@@ -9,7 +9,7 @@
 .cart-container h2 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--text);
 }
 table {
   width: 100%;
@@ -19,10 +19,10 @@ table {
 th, td {
   padding: 0.7rem 1rem;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 th {
-  background: #f6f6f6;
+  background: color-mix(in srgb, var(--card-bg, #fff) 90%, transparent);
   font-weight: 700;
 }
 tr:last-child td {
@@ -33,14 +33,23 @@ tr:last-child td {
   font-size: 1.2rem;
   margin-top: 1rem;
 }
+.place-checkout{
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--btn-primary);
+  color: var(--btn-primary-text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
 .empty-cart {
   text-align: center;
-  color: #888;
+  color: var(--muted);
   margin: 2rem 0;
 }
 button {
-  background: #d32f2f;
-  color: #fff;
+  background: var(--btn-danger, #d32f2f);
+  color: var(--btn-danger-text, #fff);
   border: none;
   border-radius: 6px;
   padding: 0.4rem 1rem;
@@ -49,7 +58,7 @@ button {
   transition: background 0.2s;
 }
 button:hover {
-  background: #a31515;
+  background: color-mix(in srgb, var(--btn-danger, #a31515) 90%, transparent);
 }
 
 .qty-control {
@@ -61,8 +70,8 @@ button:hover {
   width: 28px;
   height: 28px;
   border-radius: 6px;
-  background: #7ed957;
-  color: #fff;
+  background: var(--btn-success, #7ed957);
+  color: var(--btn-success-text, #fff);
   border: none;
   cursor: pointer;
 }
@@ -73,5 +82,5 @@ button:hover {
 }
 .remove-all {
   margin-left: 0.5rem;
-  background: #555;
+  background: var(--btn-ghost-bg, #555);
 }

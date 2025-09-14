@@ -1,0 +1,86 @@
+<div class="checkout-container">
+  <a class="back-btn" routerLink="/cart">&larr; Back to cart</a>
+  <h2>Checkout</h2>
+
+  <form [formGroup]="form" class="stepper">
+    <!-- Step 1: Login/Register -->
+  <div class="step" [class.open]="currentStep===1" *ngIf="!auth.currentUser">
+      <div class="step-header" (click)="toggleStep(1)">
+        <div class="step-num">1</div>
+        <div class="step-title">LOGIN OR SIGNUP</div>
+      </div>
+      <div class="step-body" *ngIf="currentStep===1">
+        
+          <div class="auth-inline">
+          <div class="auth-placeholder">
+            <p>Sign in to save your delivery address and speed up checkout.</p>
+            <button class="btn-primary" (click)="modal.open()">Sign in / Send OTP</button>
+          </div>
+      </div>
+    </div>
+    <div *ngIf="user as u">
+      <div class="logged-user">Signed in as <strong>{{ u.name || u.email || u.phone }}</strong></div>
+    </div>
+    </div>
+
+    <!-- Step 2: Delivery -->
+    <div class="step" [class.open]="currentStep===2">
+      <div class="step-header" (click)="toggleStep(2)">
+        <div class="step-num">2</div>
+        <div class="step-title">DELIVERY ADDRESS</div>
+      </div>
+      <div class="step-body" *ngIf="currentStep===2">
+        <form class="checkout-form" [formGroup]="form">
+          <label>Full name<input type="text" formControlName="name" /></label>
+          <label>Email<input type="email" formControlName="email" /></label>
+          <label>Address<textarea formControlName="address" rows="4"></textarea></label>
+        </form>
+      </div>
+    </div>
+
+    <!-- Step 3: Summary -->
+    <div class="step" [class.open]="currentStep===3">
+      <div class="step-header" (click)="toggleStep(3)">
+        <div class="step-num">3</div>
+        <div class="step-title">ORDER SUMMARY</div>
+      </div>
+      <div class="step-body" *ngIf="currentStep===3">
+        <aside class="order-summary">
+          <h3>Order summary</h3>
+          <div class="summary-list">
+            <div *ngIf="cart.items.length === 0" class="summary-empty">Your cart is empty.</div>
+            <div *ngFor="let it of cart.items" class="summary-item">
+              <div class="s-left"><div class="s-name">{{ it.name }}</div><div class="s-meta">x{{ it.quantity }} • {{ it.author }}</div></div>
+              <div class="s-right">₹{{ it.price * it.quantity }}</div>
+            </div>
+          </div>
+          <div class="summary-total"><strong>Total: ₹{{ total }}</strong></div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Step 4: Payment -->
+  <div class="step" [class.open]="currentStep===4">
+      <div class="step-header" (click)="toggleStep(4)">
+        <div class="step-num">4</div>
+        <div class="step-title">PAYMENT OPTIONS</div>
+      </div>
+      <div class="step-body" *ngIf="currentStep===4">
+        <div class="payment-methods">
+          <label><input type="radio" formControlName="paymentMethod" [value]="'card'" /> Card</label>
+          <label><input type="radio" formControlName="paymentMethod" [value]="'upi'" /> UPI</label>
+          <label><input type="radio" formControlName="paymentMethod" [value]="'netbanking'" /> Netbanking</label>
+        </div>
+        <div *ngIf="form.get('paymentMethod')?.value === 'card'" class="card-fields">
+          <label>Card number<input type="text" formControlName="cardNumber" placeholder="1234 5678 9012 3456" /></label>
+          <label>Expiry (MM/YY)<input type="text" formControlName="cardExpiry" placeholder="MM/YY" /></label>
+          <label>CVV<input type="password" formControlName="cardCvv" placeholder="123" /></label>
+        </div>
+        <div class="step-actions">
+          <button type="button" (click)="prevStep()">Back</button>
+          <button type="button" (click)="placeOrder()" class="place-order">{{ processing ? 'Processing...' : 'Place order' }}</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

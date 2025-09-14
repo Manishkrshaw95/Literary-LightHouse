@@ -4,3 +4,80 @@
     padding: 0;
     
 }
+
+:root{
+    /* softer neutral defaults to reduce contrast when switching themes */
+    --bg: #f3f4f6; /* light gray instead of pure white */
+    --text: #0f1720; /* near-black but softer */
+    --muted: #6b7280;
+    --accent: #3b82f6;
+    --header-bg: #f9fafb; /* slightly off white */
+    --sidebar-bg: #fbfcfd;
+    --card-bg: #ffffff; /* keep cards slightly brighter than page */
+    --card-hover-bg: #f1f5f9;
+    --image-bg: #f5f5f5;
+    --btn-primary: #2ecc40;
+    --btn-primary-text: #ffffff;
+    --price-color: #2e7d32;
+    --literary-yellow: #ffe066;
+}
+
+[data-theme="dark"]{
+    /* stronger off-black and brighter text for night mode */
+    --bg: #070809; /* very dark off-black */
+    --header-bg: #050506;
+    --sidebar-bg: #050506;
+    --card-bg: #0b0d10;
+    --image-bg: #0f1113;
+    --text: #f5f7fb; /* near white */
+    --muted: #9aa6b2;
+    --accent: #ffd24d; /* warm accent for highlights */
+    --accent-2: #7ed957;
+    --btn-primary: #1f9a58;
+    --btn-primary-text: #f6f9fb;
+    --price-color: #7ed957;
+    --muted-2: #93a0ad;
+    --literary-yellow: #ffd24d;
+}
+
+body{
+        background: var(--bg);
+        color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Smooth transitions for theme changes */
+:root, [data-theme="dark"] {
+    transition: color 220ms ease, background-color 220ms ease;
+}
+
+body, .site-header, .sidebar, .book-card, .booklist-container, .search-bar {
+    transition: background-color 260ms ease, color 260ms ease, border-color 220ms ease, box-shadow 260ms ease;
+}
+
+.theme-toggle{
+        background: transparent;
+        border: 1px solid rgba(0,0,0,0.08);
+        padding: 6px 8px;
+        margin-right: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: var(--text);
+}
+
+[data-theme="dark"] .theme-toggle{
+        border-color: rgba(255,255,255,0.08);
+}
+
+.theme-toggle:focus-visible{
+    outline: 3px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    outline-offset: 2px;
+}
+
+.theme-toggle[aria-pressed="true"]{
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+}

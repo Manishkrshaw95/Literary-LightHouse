@@ -1,4 +1,5 @@
 import { Injectable, signal } from '@angular/core';
+import { API_BASE } from './api.config';
 
 export interface CartEntry {
   id: string | number;
@@ -12,6 +13,36 @@ export interface CartEntry {
 export class CartService {
   // maintain grouped entries (one entry per product) with quantity
   private cartItems = signal<CartEntry[]>([]);
+
+  constructor() {
+    // hydrate cart from localStorage: stored as [{ id, quantity }]
+    try {
+      if (typeof localStorage !== 'undefined') {
+        const raw = localStorage.getItem('ll_cart');
+        if (raw) {
+          const parsed: Array<{ id: string | number; quantity: number }> = JSON.parse(raw);
+          // fetch product details from API and populate cartItems
+          (async () => {
+            try {
+              // try to fetch all books data and match ids
+              const res = await fetch(`${API_BASE}/booksData`);
+              if (res.ok) {
+                const all = await res.json();
+                const entries: CartEntry[] = [];
+                for (const p of parsed) {
+                  const found = all.find((b: any) => String(b.id ?? b.name) === String(p.id));
+                  if (found) {
+                    entries.push({ id: p.id, name: found.name || found.title || String(p.id), author: found.author, price: found.price ?? 0, quantity: p.quantity });
+                  }
+                }
+                if (entries.length) this.cartItems.set(entries);
+              }
+            } catch (e) { /* ignore */ }
+          })();
+        }
+      }
+    } catch (e) { /* ignore */ }
+  }
 
   get items(): CartEntry[] {
     return this.cartItems();
@@ -36,6 +67,7 @@ export class CartService {
       copy[idx] = { ...copy[idx], quantity: copy[idx].quantity + 1 };
       return copy;
     });
+  this.persistCart();
   }
 
   // remove one unit from the given book entry; remove the entry if quantity hits 0
@@ -53,15 +85,26 @@ export class CartService {
       }
       return copy;
     });
+  this.persistCart();
   }
 
   removeAll(book: any) {
     const key = book.id ?? book.name;
     const author = book.author ?? null;
     this.cartItems.update(items => items.filter(i => !(i.id === key && ((i.author ?? null) === author))));
+  this.persistCart();
   }
 
   clearCart() {
     this.cartItems.set([]);
+    try { localStorage.removeItem('ll_cart'); } catch (e) {}
+  }
+
+  private persistCart() {
+    try {
+      if (typeof localStorage === 'undefined') return;
+      const minimal = this.cartItems().map(i => ({ id: i.id, quantity: i.quantity }));
+      localStorage.setItem('ll_cart', JSON.stringify(minimal));
+    } catch (e) { }
   }
 }

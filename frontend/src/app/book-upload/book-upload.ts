@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { API_BASE } from '../api.config';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -28,7 +29,7 @@ export class BookUploadComponent implements OnInit {
   }
 
   ngOnInit() {
-    fetch('http://localhost:8080/api/categories')
+  fetch(`${API_BASE}/api/categories`)
       .then(res => res.json())
       .then(data => this.categories = data)
       .catch(() => this.categories = []);
@@ -57,7 +58,7 @@ export class BookUploadComponent implements OnInit {
     }
     formData.append('image', this.selectedFile);
 
-    fetch('http://localhost:8080/api/books', {
+  fetch(`${API_BASE}/api/books`, {
       method: 'POST',
       body: formData
     })

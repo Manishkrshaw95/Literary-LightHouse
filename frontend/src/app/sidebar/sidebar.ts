@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { API_BASE } from '../api.config';
 
 @Component({
   selector: 'app-sidebar',
@@ -16,7 +17,7 @@ export class SidebarComponent implements OnInit {
   @Output() selectionChange = new EventEmitter<number[]>();
 
   ngOnInit(): void {
-    fetch('http://localhost:8080/categories')
+  fetch(`${API_BASE}/categories`)
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch categories');
         return res.json();
