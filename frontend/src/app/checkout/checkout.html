@@ -2,7 +2,29 @@
   <a class="back-btn" routerLink="/cart">&larr; Back to cart</a>
   <h2>Checkout</h2>
 
-  <form [formGroup]="form" class="stepper">
+  <!-- Full-screen confirmation overlay shown after placing order -->
+  <div *ngIf="orderPlaced" class="order-confirm-overlay">
+    <div class="order-confirm stacked">
+      <h3>Order placed successfully</h3>
+      <p class="small">Order ID: <strong>{{ order?.orderId }}</strong> — Ack: <strong>{{ order?.ack }}</strong></p>
+      <p class="small">Phone: <strong>{{ order?.phone }}</strong></p>
+      <p class="small">Delivery address: <br/><em>{{ order?.address }}</em></p>
+      <div class="confirm-items">
+        <h4>Items</h4>
+        <ul>
+          <li *ngFor="let it of order?.items">{{ it.name }} — x{{ it.qty }} — ₹{{ it.price * it.qty }}</li>
+        </ul>
+      </div>
+      <div class="confirm-total">Total paid: <strong>₹{{ order?.total }}</strong></div>
+      <div class="confirm-actions">
+        <button class="btn-primary" (click)="continueShopping()">Continue shopping</button>
+        <button class="btn-secondary" (click)="printReceipt()">Print receipt</button>
+        <button class="btn-secondary" (click)="orderPlaced=false">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <form *ngIf="!orderPlaced" [formGroup]="form" class="stepper">
     <!-- Step 1: Login/Register -->
   <div class="step" [class.open]="currentStep===1" *ngIf="!auth.currentUser">
       <div class="step-header" (click)="toggleStep(1)">

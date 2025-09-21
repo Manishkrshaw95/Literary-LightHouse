@@ -1,28 +1,48 @@
-<div class="login-shell">
-  <h3>Sign in to your account</h3>
-  <label>Phone
-  <input [(ngModel)]="identifier" (ngModelChange)="onIdentifierChange($event)" placeholder="9876543210" aria-label="phone or mobile number" required minlength="10" maxlength="13" pattern="[0-9]*" inputmode="numeric" />
-  </label>
+<div class="login-container">
+  <div class="login-card">
+    <h2 class="login-title">Sign in to your account</h2>
 
-  <div class="validation" *ngIf="identifier && !phoneValid">
-  <small class="error">Enter only digits, length between 10 and 13. No special characters allowed.</small>
-  </div>
+    <form (submit)="$event.preventDefault()" class="login-form">
+      <div class="form-group">
+        <label class="label">Phone</label>
+        <input
+          [(ngModel)]="identifier"
+          (ngModelChange)="onIdentifierChange($event)"
+          name="identifier"
+          required
+          minlength="10"
+          maxlength="13"
+          pattern="[0-9]*"
+          inputmode="numeric"
+          placeholder="9876543210"
+          aria-label="phone or mobile number"
+          class="input"
+        />
+        <div class="validation" *ngIf="identifier && !phoneValid">
+          <small class="error">Enter only digits, length between 10 and 13. No special characters allowed.</small>
+        </div>
+      </div>
 
-  <div class="messages" *ngIf="message">
-    <div [class]="'msg ' + messageType">{{message}}</div>
-  </div>
+      <div *ngIf="message" class="messages">
+        <div [class]="'msg ' + messageType">{{ message }}</div>
+      </div>
 
-  <div class="row">
-  <button (click)="sendOtp()" [disabled]="resendSeconds>0 || !phoneValid" class="btn-primary">
-      <span *ngIf="resendSeconds<=0">Send OTP</span>
-      <span *ngIf="resendSeconds>0">Resend in {{resendSeconds}}s</span>
-    </button>
-  </div>
+      <div class="form-group">
+        <button type="button" (click)="sendOtp()" [disabled]="resendSeconds>0 || !phoneValid" class="btn btn-primary">
+          <span *ngIf="resendSeconds<=0">Send OTP</span>
+          <span *ngIf="resendSeconds>0">Resend in {{resendSeconds}}s</span>
+        </button>
+      </div>
 
-  <div *ngIf="otpSent" class="otp-area">
-    <label>Enter OTP (sent to {{otpMasked}})
-      <input [(ngModel)]="otp" placeholder="6-digit code" aria-label="one-time passcode" />
-    </label>
-    <div class="row"><button (click)="verifyOtp()" class="btn-primary">Verify OTP</button></div>
+      <div *ngIf="otpSent" class="otp-area">
+        <label class="label">Enter OTP (sent to {{ otpMasked || identifier }})</label>
+        <div class="otp-row">
+          <input [(ngModel)]="otp" name="otp" placeholder="6-digit code" aria-label="one-time passcode" class="input input-otp" />
+          <button type="button" (click)="verifyOtp()" class="btn btn-verify">Verify</button>
+        </div>
+      </div>
+    </form>
+
+    <p class="register">Not a member? <a class="link" href="#">Register</a></p>
   </div>
 </div>

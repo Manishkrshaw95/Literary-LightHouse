@@ -22,7 +22,7 @@
   font-weight: 700;
   margin-bottom: 1.2rem;
   color: var(--text);
-  background: var(--accent, #ffe066);
+  // background: var(--accent, #ffe066);
   border-radius: 8px 8px 0 0;
   padding: 0.8rem 1rem;
   position: sticky;
@@ -48,8 +48,9 @@
   user-select: none;
 }
 .category-item:hover, .category-item.active {
-  background: var(--accent, #ffe066);
+  
+  background: #74dc80; /* same as add to cart button*/
   color: var(--text);
   font-weight: 700;
-  box-shadow: 0 2px 8px rgba(255,224,102,0.12);
+  box-shadow: 0 2px 6px rgba(33,24,6,0.04);
 }
