@@ -6,7 +6,17 @@
                 <div class="book-name">{{ book.name }}</div>
                 <div class="book-author">by {{ book.author }}</div>
                 <div class="book-price">₹{{ book.price }}</div>
-                <button class="add-to-cart-btn" (click)="addToCart(book)">Add to Cart</button>
+                <div class="book-actions">
+                    <button *ngIf="!book.out_of_stock" class="add-to-cart-btn" (click)="addToCart(book)">Add to Cart</button>
+                    <button *ngIf="book.out_of_stock" class="btn-outofstock" title="Not clickable">Out of stock</button>
+                </div>
+                <!-- admin toggle -->
+                <div *ngIf="auth.isAdmin" class="admin-controls">
+                    <label>
+                        <input type="checkbox" [checked]="book.out_of_stock" (change)="toggleOutOfStock(book, $event.target.checked)" />
+                        Mark out of stock
+                    </label>
+                </div>
             </div>
         </div>
     </div>

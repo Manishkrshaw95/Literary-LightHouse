@@ -81,3 +81,59 @@ body, .site-header, .sidebar, .book-card, .booklist-container, .search-bar {
 .theme-toggle[aria-pressed="true"]{
     background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
+
+/* Toasts */
+.ll-toast-container{
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 9999;
+}
+.ll-toast{
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 240ms ease, opacity 240ms ease;
+}
+.ll-toast-hide{ opacity: 0; transform: translateY(8px); }
+.ll-toast-success{ background: linear-gradient(90deg,#2ecc40,#21a129); }
+.ll-toast-error{ background: linear-gradient(90deg,#ff5a5f,#d64545); }
+.ll-toast-info{ background: linear-gradient(90deg,#3b82f6,#2563eb); }
+
+/* Out of stock button */
+.btn-outofstock{
+    background: #e6e6e6;
+    color: #9aa6b2;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: default;
+}
+.btn-outofstock:hover::after{
+    content: 'Not clickable';
+    position: absolute;
+    transform: translateY(-140%);
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Admin badge */
+.admin-badge{
+    background: var(--literary-yellow);
+    color: #111;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 8px;
+}

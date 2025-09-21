@@ -1,5 +1,7 @@
 import { Injectable, signal } from '@angular/core';
 import { API_BASE } from './api.config';
+import { AuthService } from './auth.service';
+import { ToastService } from './toast.service';
 
 export interface CartEntry {
   id: string | number;
@@ -14,7 +16,7 @@ export class CartService {
   // maintain grouped entries (one entry per product) with quantity
   private cartItems = signal<CartEntry[]>([]);
 
-  constructor() {
+  constructor(private auth: AuthService, private toast: ToastService) {
     // hydrate cart from localStorage: stored as [{ id, quantity }]
     try {
       if (typeof localStorage !== 'undefined') {
@@ -54,6 +56,15 @@ export class CartService {
   }
 
   addToCart(book: any) {
+    // prevent adding out-of-stock books for non-admin users
+    if (book && book.out_of_stock) {
+      const isAdmin = !!(this.auth && (this.auth.isAdmin));
+      if (!isAdmin) {
+        console.warn('[CartService] Cannot add to cart: book is out of stock', book);
+        try { this.toast.show('This item is out of stock.', 'error', 3000); } catch (e) {}
+        return;
+      }
+    }
     const key = book.id ?? book.name;
     const author = book.author ?? null;
     const price = book.price ?? book.price_inr ?? 0;

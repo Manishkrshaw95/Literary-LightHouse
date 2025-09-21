@@ -2,6 +2,9 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CartService } from '../cart.service';
+import { AuthService } from '../auth.service';
+import { API_BASE } from '../api.config';
+import { ToastService } from '../toast.service';
 import { ImgFallbackDirective } from '../shared/img-fallback.directive';
 
 @Component({
@@ -33,10 +36,29 @@ export class BooklistComponent {
 
   p: number = 1;
 
-  constructor(public cart: CartService) {}
+  constructor(public cart: CartService, public auth: AuthService, private toast: ToastService) {}
 
   addToCart(book: any) {
     this.cart.addToCart(book);
+  }
+
+  async toggleOutOfStock(book: any, out: boolean) {
+    if (!book || !book.id) return;
+    // optimistic update
+    book.out_of_stock = !!out;
+    try {
+      // persist to backend
+      const res = await fetch(`${API_BASE}/booksData/${book.id}`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ out_of_stock: !!out }) });
+      if (res.ok) {
+        this.toast.show(`Book "${book.name}" marked ${out ? 'out of stock' : 'available'}`, 'success', 3000);
+      } else {
+        throw new Error('Patch failed');
+      }
+    } catch (e) {
+      // revert on failure
+      book.out_of_stock = !out;
+      this.toast.show('Failed to update book status. Try again.', 'error', 3000);
+    }
   }
 
   private clampPage() {

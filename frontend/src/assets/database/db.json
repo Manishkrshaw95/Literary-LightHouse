@@ -2,67 +2,67 @@
   "categories": [
     {
       "name": "All Books",
-      "id": 0
+      "id": "0"
     },
     {
       "name": "Fiction",
-      "id": 1
+      "id": "1"
     },
     {
       "name": "Science Fiction",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "Non-Fiction",
-      "id": 3
+      "id": "3"
     },
     {
       "name": "Academic/Professional",
-      "id": 4
+      "id": "4"
     },
     {
       "name": "Age-Based",
-      "id": 5
+      "id": "5"
     },
     {
       "name": "Subject-Specific",
-      "id": 6
+      "id": "6"
     },
     {
       "name": "Religious/Spiritual",
-      "id": 7
+      "id": "7"
     },
     {
       "name": "Culinary",
-      "id": 8
+      "id": "8"
     },
     {
       "name": "Arts & Photography",
-      "id": 9
+      "id": "9"
     },
     {
       "name": "Health/Medical",
-      "id": 10
+      "id": "10"
     },
     {
       "name": "Business/Economics",
-      "id": 11
+      "id": "11"
     },
     {
       "name": "International & Cultural",
-      "id": 12
+      "id": "12"
     },
     {
       "name": "Format-Based",
-      "id": 13
+      "id": "13"
     },
     {
       "name": "Special Collections",
-      "id": 14
+      "id": "14"
     },
     {
       "name": "General",
-      "id": 15
+      "id": "15"
     }
   ],
   "booksData": [
@@ -74,7 +74,9 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/philosopher-stone.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8b7a",
+      "out_of_stock": true
     },
     {
       "name": "Harry Potter and the Chamber of Secrets",
@@ -84,7 +86,9 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/chamberofsecret.png",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "077a",
+      "out_of_stock": true
     },
     {
       "name": "Harry Potter and the Prisoner of Azkaban",
@@ -94,7 +98,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/prisonerofAzbakestan.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d226"
     },
     {
       "name": "Harry Potter and the Goblet of Fire",
@@ -104,7 +109,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/Goblet_of_Fire.webp",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9503"
     },
     {
       "name": "Harry Potter and the Order of the Phoenix",
@@ -114,7 +120,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/orderofphenix.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "464d"
     },
     {
       "name": "Harry Potter and the Half-Blood Prince",
@@ -124,7 +131,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/halfbloodprince.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d7c2"
     },
     {
       "name": "Harry Potter and the Deathly Hallows",
@@ -134,7 +142,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/deathlyHallows.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ec98"
     },
     {
       "name": "Sherlock Holmes (Set of 5 Books)",
@@ -144,7 +153,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/sherlokholmes5.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9a6d"
     },
     {
       "name": "The Case-Book of Sherlock Holmes",
@@ -154,7 +164,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/casebookofsherlock.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c0d5"
     },
     {
       "name": "The Adventures of Sherlock Holmes",
@@ -164,7 +175,8 @@
         1
       ],
       "image_url": "FictionBooks/book-covers/adventureofsherlockholmes.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "b03b"
     },
     {
       "name": "The Hound of the Baskervilles",
@@ -174,7 +186,8 @@
         1
       ],
       "image_url": "book_covers/The_Hound_of_the_Baskervilles.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "409e"
     },
     {
       "name": "The Complete Novels of Sherlock Holmes",
@@ -184,7 +197,8 @@
         1
       ],
       "image_url": "book_covers/The_Complete_Novels_of_Sherlock_Holmes.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "020a"
     },
     {
       "name": "Royal Bengal Rahasyam",
@@ -194,7 +208,8 @@
         1
       ],
       "image_url": "book_covers/Royal_Bengal_Rahasyam.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a62f"
     },
     {
       "name": "The House of Death (Feluda Series)",
@@ -204,7 +219,8 @@
         1
       ],
       "image_url": "book_covers/The_House_of_Death_Feluda_Series.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "e555"
     },
     {
       "name": "The Royal Bengal Mystery (Feluda Series)",
@@ -214,7 +230,8 @@
         1
       ],
       "image_url": "book_covers/The_Royal_Bengal_Mystery_Feluda_Series.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "456a"
     },
     {
       "name": "The Curse of the Goddess (Feluda Series)",
@@ -224,7 +241,8 @@
         1
       ],
       "image_url": "book_covers/The_Curse_of_the_Goddess_Feluda_Series.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "e46b"
     },
     {
       "name": "Kailashe Kelenkari",
@@ -234,7 +252,8 @@
         1
       ],
       "image_url": "book_covers/Kailashe_Kelenkari.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a421"
     },
     {
       "name": "Gangtoke Gondogol",
@@ -244,7 +263,8 @@
         1
       ],
       "image_url": "book_covers/Gangtoke_Gondogol.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "1989"
     },
     {
       "name": "Three Rays: Stories from Satyajit Ray",
@@ -254,7 +274,8 @@
         1
       ],
       "image_url": "book_covers/Three_Rays_Stories_from_Satyajit_Ray.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "75fb"
     },
     {
       "name": "Puffin Classics: One Dozen Stories",
@@ -264,7 +285,8 @@
         1
       ],
       "image_url": "book_covers/Puffin_Classics_One_Dozen_Stories.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "5d7d"
     },
     {
       "name": "A Killer in Kailash (Feluda)",
@@ -274,7 +296,8 @@
         1
       ],
       "image_url": "book_covers/A_Killer_in_Kailash_Feluda.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cae7"
     },
     {
       "name": "Deep Focus PB",
@@ -284,7 +307,8 @@
         1
       ],
       "image_url": "book_covers/Deep_Focus_PB.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "df69"
     },
     {
       "name": "The Adventures of Feluda: The Emperor's Ring",
@@ -294,7 +318,8 @@
         1
       ],
       "image_url": "book_covers/The_Adventures_of_Feluda_The_Emperors_Ring.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "b142"
     },
     {
       "name": "Gora",
@@ -304,7 +329,8 @@
         1
       ],
       "image_url": "book_covers/Gora.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "4343"
     },
     {
       "name": "Sei Somoy",
@@ -314,7 +340,8 @@
         1
       ],
       "image_url": "book_covers/Sei_Somoy.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "b9ae"
     },
     {
       "name": "Chokher Bali",
@@ -324,7 +351,8 @@
         1
       ],
       "image_url": "book_covers/Chokher_Bali.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c8fa"
     },
     {
       "name": "Pather Panchali",
@@ -334,7 +362,8 @@
         1
       ],
       "image_url": "book_covers/Pather_Panchali.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2cb4"
     },
     {
       "name": "Shesher Kobita",
@@ -344,7 +373,8 @@
         1
       ],
       "image_url": "book_covers/Shesher_Kobita.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "38f9"
     },
     {
       "name": "Swami",
@@ -354,7 +384,8 @@
         1
       ],
       "image_url": "assets/book_covers/Swami.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "845f"
     },
     {
       "name": "Midnight's Children",
@@ -364,7 +395,8 @@
         1
       ],
       "image_url": "book_covers/Midnights_Children.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "3337"
     },
     {
       "name": "Professor Shanku",
@@ -374,7 +406,8 @@
         2
       ],
       "image_url": "book_covers/Professor_Shanku.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9e1d"
     },
     {
       "name": "Satyajit Ray O Science Fiction",
@@ -384,7 +417,8 @@
         2
       ],
       "image_url": "assets",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "26fd"
     },
     {
       "name": "Nakshatraloker Debatatma",
@@ -394,7 +428,8 @@
         2
       ],
       "image_url": "assets",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d9a3"
     },
     {
       "name": "The Calcutta Chromosome",
@@ -404,7 +439,8 @@
         2
       ],
       "image_url": "book_covers/The_Calcutta_Chromosome.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d6a4"
     },
     {
       "name": "The Simoqin Prophecies",
@@ -414,7 +450,8 @@
         2
       ],
       "image_url": "book_covers/The_Simoqin_Prophecies.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "4f13"
     },
     {
       "name": "Chandrayaan-2",
@@ -424,7 +461,8 @@
         2
       ],
       "image_url": "assets",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2ba9"
     },
     {
       "name": "Fire on the Moon",
@@ -434,7 +472,8 @@
         2
       ],
       "image_url": "book_covers/Fire_on_the_Moon.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "f1b9"
     },
     {
       "name": "It Happened Tomorrow",
@@ -444,7 +483,8 @@
         2
       ],
       "image_url": "assets",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "776b"
     },
     {
       "name": "Half of What I Say",
@@ -454,7 +494,8 @@
         2
       ],
       "image_url": "book_covers/Half_of_What_I_Say.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "4392"
     },
     {
       "name": "The Hungry Tide",
@@ -464,7 +505,8 @@
         2
       ],
       "image_url": "book_covers/The_Hungry_Tide.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cc50"
     },
     {
       "name": "The Gollancz Book of South Asian Science Fiction",
@@ -474,7 +516,8 @@
         2
       ],
       "image_url": "assets",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "486b"
     },
     {
       "name": "Selected Science Fiction Short Stories",
@@ -484,7 +527,8 @@
         2
       ],
       "image_url": "assets",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "e721"
     },
     {
       "name": "Children of Paradise",
@@ -494,7 +538,8 @@
         2
       ],
       "image_url": "book_covers/Children_of_Paradise.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a90d"
     },
     {
       "name": "Return to Gedrosia",
@@ -504,7 +549,8 @@
         2
       ],
       "image_url": "assets",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cf55"
     },
     {
       "name": "Frankenstein",
@@ -514,7 +560,8 @@
         2
       ],
       "image_url": "book_covers/Frankenstein.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "fe90"
     },
     {
       "name": "Dune",
@@ -524,7 +571,8 @@
         2
       ],
       "image_url": "assets/book_covers/Dune.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "838f"
     },
     {
       "name": "The Left Hand of Darkness",
@@ -534,7 +582,8 @@
         2
       ],
       "image_url": "book_covers/The_Left_Hand_of_Darkness.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "54fc"
     },
     {
       "name": "Foundation",
@@ -544,7 +593,8 @@
         2
       ],
       "image_url": "assets/book_covers/Foundation.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0e29"
     },
     {
       "name": "Neuromancer",
@@ -554,7 +604,8 @@
         2
       ],
       "image_url": "book_covers/Neuromancer.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "dad3"
     },
     {
       "name": "Brave New World",
@@ -564,7 +615,8 @@
         2
       ],
       "image_url": "book_covers/Brave_New_World.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "aa38"
     },
     {
       "name": "1984",
@@ -574,7 +626,8 @@
         2
       ],
       "image_url": "assets/book_covers/1984.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "7401"
     },
     {
       "name": "Fahrenheit 451",
@@ -584,7 +637,8 @@
         2
       ],
       "image_url": "book_covers/Fahrenheit_451.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d12a"
     },
     {
       "name": "Snow Crash",
@@ -594,7 +648,8 @@
         2
       ],
       "image_url": "book_covers/Snow_Crash.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "294d"
     },
     {
       "name": "Ready Player One",
@@ -604,7 +659,8 @@
         2
       ],
       "image_url": "book_covers/Ready_Player_One.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c2f3"
     },
     {
       "name": "Hyperion",
@@ -614,7 +670,8 @@
         2
       ],
       "image_url": "assets/book_covers/Hyperion.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "038f"
     },
     {
       "name": "The Three-Body Problem",
@@ -624,7 +681,8 @@
         2
       ],
       "image_url": "book_covers/The_Three-Body_Problem.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cb42"
     },
     {
       "name": "Do Androids Dream of Electric Sheep?",
@@ -634,7 +692,8 @@
         2
       ],
       "image_url": "book_covers/Do_Androids_Dream_of_Electric_Sheep.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "43c2"
     },
     {
       "name": "Childhood's End",
@@ -644,7 +703,8 @@
         2
       ],
       "image_url": "book_covers/Childhoods_End.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "5718"
     },
     {
       "name": "Solaris",
@@ -654,7 +714,8 @@
         2
       ],
       "image_url": "assets/book_covers/Solaris.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2624"
     },
     {
       "name": "A Clockwork Orange",
@@ -664,7 +725,8 @@
         2
       ],
       "image_url": "book_covers/A_Clockwork_Orange.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8c7b"
     },
     {
       "name": "The Jungle Book",
@@ -674,7 +736,8 @@
         0
       ],
       "image_url": "book_covers/The_Jungle_Book.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "21da"
     },
     {
       "name": "Charlotte's Web",
@@ -684,7 +747,8 @@
         0
       ],
       "image_url": "book_covers/Charlottes_Web.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cd27"
     },
     {
       "name": "Matilda",
@@ -694,7 +758,8 @@
         0
       ],
       "image_url": "book_covers/Matilda.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "7c63"
     },
     {
       "name": "Anne of Green Gables",
@@ -704,7 +769,8 @@
         0
       ],
       "image_url": "book_covers/Anne_of_Green_Gables.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c2af"
     },
     {
       "name": "The Secret Garden",
@@ -714,7 +780,8 @@
         0
       ],
       "image_url": "book_covers/The_Secret_Garden.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "67e2"
     },
     {
       "name": "Where the Wild Things Are",
@@ -724,7 +791,8 @@
         0
       ],
       "image_url": "book_covers/Where_the_Wild_Things_Are.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "6492"
     },
     {
       "name": "The Tale of Peter Rabbit",
@@ -734,7 +802,8 @@
         0
       ],
       "image_url": "book_covers/The_Tale_of_Peter_Rabbit.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0ec5"
     },
     {
       "name": "The Wind in the Willows",
@@ -744,7 +813,8 @@
         0
       ],
       "image_url": "book_covers/The_Wind_in_the_Willows.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "6bc6"
     },
     {
       "name": "Goodnight Moon",
@@ -754,7 +824,8 @@
         0
       ],
       "image_url": "book_covers/Goodnight_Moon.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2fdc"
     },
     {
       "name": "Pippi Longstocking",
@@ -764,7 +835,8 @@
         0
       ],
       "image_url": "book_covers/Pippi_Longstocking.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c68b"
     },
     {
       "name": "Little Women",
@@ -774,7 +846,8 @@
         0
       ],
       "image_url": "book_covers/Little_Women.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9c8f"
     },
     {
       "name": "Winnie-the-Pooh",
@@ -784,7 +857,8 @@
         0
       ],
       "image_url": "assets/book_covers/Winnie-the-Pooh.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0533"
     },
     {
       "name": "The Polar Express",
@@ -794,7 +868,8 @@
         0
       ],
       "image_url": "book_covers/The_Polar_Express.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c8c2"
     },
     {
       "name": "Alice's Adventures in Wonderland",
@@ -804,7 +879,8 @@
         0
       ],
       "image_url": "book_covers/Alices_Adventures_in_Wonderland.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "88aa"
     },
     {
       "name": "The Very Hungry Caterpillar",
@@ -814,7 +890,8 @@
         0
       ],
       "image_url": "book_covers/The_Very_Hungry_Caterpillar.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c6af"
     },
     {
       "name": "The Catcher in the Rye",
@@ -824,7 +901,8 @@
         1
       ],
       "image_url": "book_covers/The_Catcher_in_the_Rye.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "97ae"
     },
     {
       "name": "To Kill a Mockingbird",
@@ -834,7 +912,8 @@
         1
       ],
       "image_url": "book_covers/To_Kill_a_Mockingbird.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "375e"
     },
     {
       "name": "Pride and Prejudice",
@@ -844,7 +923,8 @@
         1
       ],
       "image_url": "book_covers/Pride_and_Prejudice.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2cb3"
     },
     {
       "name": "The Great Gatsby",
@@ -854,7 +934,8 @@
         1
       ],
       "image_url": "book_covers/The_Great_Gatsby.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "7756"
     },
     {
       "name": "Jane Eyre",
@@ -864,7 +945,8 @@
         1
       ],
       "image_url": "book_covers/Jane_Eyre.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ef3b"
     },
     {
       "name": "Wuthering Heights",
@@ -874,7 +956,8 @@
         1
       ],
       "image_url": "book_covers/Wuthering_Heights.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "90ed"
     },
     {
       "name": "The Picture of Dorian Gray",
@@ -884,7 +967,8 @@
         1
       ],
       "image_url": "book_covers/The_Picture_of_Dorian_Gray.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c70e"
     },
     {
       "name": "The Hobbit",
@@ -894,7 +978,8 @@
         1
       ],
       "image_url": "book_covers/The_Hobbit.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2a0e"
     },
     {
       "name": "The Alchemist",
@@ -904,7 +989,8 @@
         1
       ],
       "image_url": "book_covers/The_Alchemist.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a205"
     },
     {
       "name": "Crime and Punishment",
@@ -914,7 +1000,8 @@
         1
       ],
       "image_url": "book_covers/Crime_and_Punishment.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "f62f"
     },
     {
       "name": "The Kite Runner",
@@ -924,7 +1011,8 @@
         1
       ],
       "image_url": "book_covers/The_Kite_Runner.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a9e8"
     },
     {
       "name": "The Book Thief",
@@ -934,7 +1022,8 @@
         1
       ],
       "image_url": "book_covers/The_Book_Thief.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d1d9"
     },
     {
       "name": "Moby-Dick",
@@ -944,7 +1033,8 @@
         1
       ],
       "image_url": "assets/book_covers/Moby-Dick.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a882"
     },
     {
       "name": "Anna Karenina",
@@ -954,7 +1044,8 @@
         1
       ],
       "image_url": "book_covers/Anna_Karenina.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8e53"
     },
     {
       "name": "Great Expectations",
@@ -964,7 +1055,8 @@
         1
       ],
       "image_url": "book_covers/Great_Expectations.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0ee0"
     },
     {
       "name": "The Windup Girl",
@@ -974,7 +1066,8 @@
         2
       ],
       "image_url": "book_covers/The_Windup_Girl.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "1e6b"
     },
     {
       "name": "Altered Carbon",
@@ -984,7 +1077,8 @@
         2
       ],
       "image_url": "book_covers/Altered_Carbon.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0265"
     },
     {
       "name": "Anathem",
@@ -994,7 +1088,8 @@
         2
       ],
       "image_url": "assets/book_covers/Anathem.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "65ee"
     },
     {
       "name": "Contact",
@@ -1004,7 +1099,8 @@
         2
       ],
       "image_url": "book_covers/Contact.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "dcac"
     },
     {
       "name": "The Forever War",
@@ -1014,7 +1110,8 @@
         2
       ],
       "image_url": "book_covers/The_Forever_War.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "f890"
     },
     {
       "name": "Old Man's War",
@@ -1024,7 +1121,8 @@
         2
       ],
       "image_url": "book_covers/Old_Mans_War.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "3742"
     },
     {
       "name": "Snow Crash",
@@ -1034,7 +1132,8 @@
         2
       ],
       "image_url": "book_covers/Snow_Crash.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "bc61"
     },
     {
       "name": "Red Mars",
@@ -1044,7 +1143,8 @@
         2
       ],
       "image_url": "book_covers/Red_Mars.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2bc3"
     },
     {
       "name": "The Diamond Age",
@@ -1054,7 +1154,8 @@
         2
       ],
       "image_url": "book_covers/The_Diamond_Age.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "4452"
     },
     {
       "name": "Ringworld",
@@ -1064,7 +1165,8 @@
         2
       ],
       "image_url": "book_covers/Ringworld.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ebce"
     },
     {
       "name": "Hyperion",
@@ -1074,7 +1176,8 @@
         2
       ],
       "image_url": "assets/book_covers/Hyperion.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "983c"
     },
     {
       "name": "The Handmaid's Tale",
@@ -1084,7 +1187,8 @@
         2
       ],
       "image_url": "book_covers/The_Handmaids_Tale.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "5070"
     },
     {
       "name": "Oryx and Crake",
@@ -1094,7 +1198,8 @@
         2
       ],
       "image_url": "book_covers/Oryx_and_Crake.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9db1"
     },
     {
       "name": "Blindsight",
@@ -1104,7 +1209,8 @@
         2
       ],
       "image_url": "assets/book_covers/Blindsight.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "7902"
     },
     {
       "name": "Children of Time",
@@ -1114,7 +1220,8 @@
         2
       ],
       "image_url": "book_covers/Children_of_Time.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "55f3"
     },
     {
       "name": "Sapiens: A Brief History of Humankind",
@@ -1124,7 +1231,8 @@
         3
       ],
       "image_url": "book_covers/Sapiens_A_Brief_History_of_Humankind.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "44d3"
     },
     {
       "name": "Educated",
@@ -1134,7 +1242,8 @@
         3
       ],
       "image_url": "assets/book_covers/Educated.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cb10"
     },
     {
       "name": "Becoming",
@@ -1144,7 +1253,8 @@
         3
       ],
       "image_url": "book_covers/Becoming.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "379c"
     },
     {
       "name": "The Immortal Life of Henrietta Lacks",
@@ -1154,7 +1264,8 @@
         3
       ],
       "image_url": "book_covers/The_Immortal_Life_of_Henrietta_Lacks.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c443"
     },
     {
       "name": "Born a Crime",
@@ -1164,7 +1275,8 @@
         3
       ],
       "image_url": "book_covers/Born_a_Crime.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c6af"
     },
     {
       "name": "Quiet",
@@ -1174,7 +1286,8 @@
         3
       ],
       "image_url": "book_covers/Quiet.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ca17"
     },
     {
       "name": "Outliers",
@@ -1184,7 +1297,8 @@
         3
       ],
       "image_url": "assets/book_covers/Outliers.jpg.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a918"
     },
     {
       "name": "The Wright Brothers",
@@ -1194,7 +1308,8 @@
         3
       ],
       "image_url": "book_covers/The_Wright_Brothers.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "52c8"
     },
     {
       "name": "Into Thin Air",
@@ -1204,7 +1319,8 @@
         3
       ],
       "image_url": "book_covers/Into_Thin_Air.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2d7c"
     },
     {
       "name": "The Glass Castle",
@@ -1214,7 +1330,8 @@
         3
       ],
       "image_url": "book_covers/The_Glass_Castle.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9c36"
     },
     {
       "name": "The Body",
@@ -1224,7 +1341,8 @@
         3
       ],
       "image_url": "book_covers/The_Body.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "1f94"
     },
     {
       "name": "Thinking, Fast and Slow",
@@ -1234,7 +1352,8 @@
         3
       ],
       "image_url": "book_covers/Thinking_Fast_and_Slow.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "99d2"
     },
     {
       "name": "The Power of Habit",
@@ -1244,7 +1363,8 @@
         3
       ],
       "image_url": "book_covers/The_Power_of_Habit.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cc77"
     },
     {
       "name": "Lean In",
@@ -1254,7 +1374,8 @@
         3
       ],
       "image_url": "book_covers/Lean_In.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "7674"
     },
     {
       "name": "Out of Africa",
@@ -1264,7 +1385,8 @@
         3
       ],
       "image_url": "book_covers/Out_of_Africa.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0f12"
     },
     {
       "name": "Bhavishya Purana",
@@ -1275,7 +1397,8 @@
       ],
       "image_url": "religious_books_cover/Bhavishya_Purana.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "3626"
     },
     {
       "name": "Brahmand Mahapuran",
@@ -1286,7 +1409,8 @@
       ],
       "image_url": "religious_books_cover/Brahmand_Mahapuran.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "3aaa"
     },
     {
       "name": "Bhavishya Malika Purana",
@@ -1297,7 +1421,8 @@
       ],
       "image_url": "religious_books_cover/Bhavishya_Malika_Purana.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "5dfc"
     },
     {
       "name": "Shri Goga Ji Puran",
@@ -1308,7 +1433,8 @@
       ],
       "image_url": "religious_books_cover/Shri_Goga_Ji_Puran.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "e8ca"
     },
     {
       "name": "Surya Puran",
@@ -1319,7 +1445,8 @@
       ],
       "image_url": "religious_books_cover/Surya_Puran.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "bde9"
     },
     {
       "name": "Shri Narmada Puran",
@@ -1330,7 +1457,8 @@
       ],
       "image_url": "religious_books_cover/Shri_Narmada_Puran.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "e17f"
     },
     {
       "name": "Navagraha Purana",
@@ -1341,7 +1469,8 @@
       ],
       "image_url": "religious_books_cover/Navagraha_Purana.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "a49a"
     },
     {
       "name": "Vedas (Rigved, Samved, Yajurved, Atharvaved)",
@@ -1352,7 +1481,8 @@
       ],
       "image_url": "religious_books_cover/Vedas_Rigved_Samved_Yajurved_Atharvaved.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "aafc"
     },
     {
       "name": "Shri Shiv Mahapuran",
@@ -1363,7 +1493,8 @@
       ],
       "image_url": "religious_books_cover/Shri_Shiv_Mahapuran.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "326a"
     },
     {
       "name": "Garuda Purana",
@@ -1374,7 +1505,8 @@
       ],
       "image_url": "religious_books_cover/Garuda_Purana.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "e9f7"
     },
     {
       "name": "Sri Kalki Puranam",
@@ -1385,7 +1517,8 @@
       ],
       "image_url": "religious_books_cover/Sri_Kalki_Puranam.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "d3a3"
     },
     {
       "name": "Samba Purana",
@@ -1396,7 +1529,8 @@
       ],
       "image_url": "religious_books_cover/Samba_Purana.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "afd9"
     },
     {
       "name": "Shri Ganesha Mahapuranam",
@@ -1407,7 +1541,8 @@
       ],
       "image_url": "religious_books_cover/Shri_Ganesha_Mahapuranam.jpg",
       "pdf_url": "",
-      "skipped": true
+      "skipped": true,
+      "id": "b648"
     },
     {
       "name": "Hanuman Chalisa",
@@ -1417,7 +1552,8 @@
         7
       ],
       "image_url": "religious_books_cover/Hanuman_Chalisa.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "acbb"
     },
     {
       "name": "Hanumat Hunkar",
@@ -1427,7 +1563,8 @@
         7
       ],
       "image_url": "religious_books_cover/Hanumat_Hunkar.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d9bc"
     },
     {
       "name": "Shri Ramcharitmanas",
@@ -1437,7 +1574,8 @@
         7
       ],
       "image_url": "religious_books_cover/Shri_Ramcharitmanas.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "55f0"
     },
     {
       "name": "Bhagavad Gita",
@@ -1447,7 +1585,8 @@
         7
       ],
       "image_url": "religious_books_cover/Bhagavad_Gita.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "3642"
     },
     {
       "name": "Shiv Mahapuran",
@@ -1457,7 +1596,8 @@
         7
       ],
       "image_url": "religious_books_cover/Shiv_Mahapuran.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9d8c"
     },
     {
       "name": "Sikh Rahit Maryada",
@@ -1467,7 +1607,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sikh_Rahit_Maryada.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cb8c"
     },
     {
       "name": "Japji Sahib",
@@ -1477,7 +1618,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Japji_Sahib.jpg"
+      "image_url": "religious_books_cover/Japji_Sahib.jpg",
+      "id": "c941"
     },
     {
       "name": "Guru Granth Sahib (Hindi Translation)",
@@ -1487,7 +1629,8 @@
         7
       ],
       "image_url": "religious_books_cover/Guru_Granth_Sahib_Hindi_Translation.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0e81"
     },
     {
       "name": "Sri Chaitanya Charitamrita (Set)",
@@ -1497,7 +1640,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sri_Chaitanya_Charitamrita_Set.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8551"
     },
     {
       "name": "Sripadasaptati",
@@ -1507,7 +1651,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sripadasaptati.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "289a"
     },
     {
       "name": "Soundaryalahari",
@@ -1517,7 +1662,8 @@
         7
       ],
       "image_url": "religious_books_cover/Soundaryalahari.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "4749"
     },
     {
       "name": "Sri Hanumath Stotra",
@@ -1527,7 +1673,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sri_Hanumath_Stotra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "f624"
     },
     {
       "name": "Sri Krishna Ashtottaram",
@@ -1537,7 +1684,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sri_Krishna_Ashtottaram.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "f1b2"
     },
     {
       "name": "Sri Lakshmi Ashtottara Shatanamavali",
@@ -1547,7 +1695,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sri_Lakshmi_Ashtottara_Shatanamavali.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a672"
     },
     {
       "name": "Karunai Malai",
@@ -1557,7 +1706,8 @@
         7
       ],
       "image_url": "religious_books_cover/Karunai_Malai.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8598"
     },
     {
       "name": "Stothramala",
@@ -1567,7 +1717,8 @@
         7
       ],
       "image_url": "religious_books_cover/Stothramala.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "28c7"
     },
     {
       "name": "Gayatri Mantra",
@@ -1577,7 +1728,8 @@
         7
       ],
       "image_url": "religious_books_cover/Gayatri_Mantra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cc19"
     },
     {
       "name": "Vishnu Sahasranama",
@@ -1587,7 +1739,8 @@
         7
       ],
       "image_url": "religious_books_cover/Vishnu_Sahasranama.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d4ac"
     },
     {
       "name": "Lalitha Sahasranama",
@@ -1597,7 +1750,8 @@
         7
       ],
       "image_url": "religious_books_cover/Lalitha_Sahasranama.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "b0bb"
     },
     {
       "name": "Shani Chalisa",
@@ -1607,7 +1761,8 @@
         7
       ],
       "image_url": "religious_books_cover/Shani_Chalisa.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "82f9"
     },
     {
       "name": "Sri Sharada Lahari",
@@ -1617,7 +1772,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Sri_Sharada_Lahari.jpg"
+      "image_url": "religious_books_cover/Sri_Sharada_Lahari.jpg",
+      "id": "23cd"
     },
     {
       "name": "Mantra Pushpam",
@@ -1627,7 +1783,8 @@
         7
       ],
       "image_url": "religious_books_cover/Mantra_Pushpam.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "f96b"
     },
     {
       "name": "Kalika Purana",
@@ -1637,7 +1794,8 @@
         7
       ],
       "image_url": "religious_books_cover/Kalika_Purana.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cd9f"
     },
     {
       "name": "Padma Purana",
@@ -1647,7 +1805,8 @@
         7
       ],
       "image_url": "religious_books_cover/Padma_Purana.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "209e"
     },
     {
       "name": "Narada Pancharatra",
@@ -1657,7 +1816,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Narada_Pancharatra.jpg"
+      "image_url": "religious_books_cover/Narada_Pancharatra.jpg",
+      "id": "56b6"
     },
     {
       "name": "Shri Bhagwat Mahapuran",
@@ -1667,7 +1827,8 @@
         7
       ],
       "image_url": "religious_books_cover/Shri_Bhagwat_Mahapuran.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "32e1"
     },
     {
       "name": "Devi Bhagwat Purana",
@@ -1677,7 +1838,8 @@
         7
       ],
       "image_url": "religious_books_cover/Devi_Bhagwat_Purana.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "68f0"
     },
     {
       "name": "Rudra Samhita",
@@ -1687,7 +1849,8 @@
         7
       ],
       "image_url": "religious_books_cover/Rudra_Samhita.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "85d4"
     },
     {
       "name": "Triveni Sangam Hindi Kathayein",
@@ -1697,7 +1860,8 @@
         7
       ],
       "image_url": "religious_books_cover/Triveni_Sangam_Hindi_Kathayein.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "6377"
     },
     {
       "name": "Ramakrishna Kathamrita",
@@ -1707,7 +1871,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Ramakrishna_Kathamrita.jpg"
+      "image_url": "religious_books_cover/Ramakrishna_Kathamrita.jpg",
+      "id": "7943"
     },
     {
       "name": "Shankaracharya Smriti Granthavali",
@@ -1717,7 +1882,8 @@
         7
       ],
       "image_url": "religious_books_cover/Shankaracharya_Smriti_Granthavali.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8467"
     },
     {
       "name": "Vivekachudamani",
@@ -1727,7 +1893,8 @@
         7
       ],
       "image_url": "religious_books_cover/Vivekachudamani.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9ceb"
     },
     {
       "name": "Yoga Vasistha",
@@ -1737,7 +1904,8 @@
         7
       ],
       "image_url": "religious_books_cover/Yoga_Vasistha.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8413"
     },
     {
       "name": "Mahabharat (Hindi Translation)",
@@ -1747,7 +1915,8 @@
         7
       ],
       "image_url": "religious_books_cover/Mahabharat_Hindi_Translation.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0da0"
     },
     {
       "name": "Ramayan (Gita Press)",
@@ -1757,7 +1926,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Ramayan_Gita_Press.jpg"
+      "image_url": "religious_books_cover/Ramayan_Gita_Press.jpg",
+      "id": "fab6"
     },
     {
       "name": "Mahabharata (Tamil)",
@@ -1767,7 +1937,8 @@
         7
       ],
       "image_url": "religious_books_cover/Mahabharata_Tamil.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8fa0"
     },
     {
       "name": "Jain Agamas (Hindi Edition)",
@@ -1777,7 +1948,8 @@
         7
       ],
       "image_url": "religious_books_cover/Jain_Agamas_Hindi_Edition.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "1f53"
     },
     {
       "name": "Bhaktamar Stotra (with Hindi translation)",
@@ -1787,7 +1959,8 @@
         7
       ],
       "image_url": "religious_books_cover/Bhaktamar_Stotra_with_Hindi_translation.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "e34b"
     },
     {
       "name": "Kural (Tirukkural)",
@@ -1797,7 +1970,8 @@
         7
       ],
       "image_url": "religious_books_cover/Kural_Tirukkural.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "122c"
     },
     {
       "name": "Thiruppavai",
@@ -1807,7 +1981,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Thiruppavai.jpg"
+      "image_url": "religious_books_cover/Thiruppavai.jpg",
+      "id": "b76e"
     },
     {
       "name": "Abhangwani (Marathi devotionals)",
@@ -1817,7 +1992,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Abhangwani_Marathi_devotionals.jpg"
+      "image_url": "religious_books_cover/Abhangwani_Marathi_devotionals.jpg",
+      "id": "6eb0"
     },
     {
       "name": "Kabir Granthavali",
@@ -1827,7 +2003,8 @@
         7
       ],
       "image_url": "religious_books_cover/Kabir_Granthavali.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "128d"
     },
     {
       "name": "Dnyaneshwari (Hindi/Marathi)",
@@ -1837,7 +2014,8 @@
         7
       ],
       "image_url": "religious_books_cover/Dnyaneshwari_HindiMarathi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c5cc"
     },
     {
       "name": "Gyaneshwari Gita",
@@ -1847,7 +2025,8 @@
         7
       ],
       "image_url": "religious_books_cover/Gyaneshwari_Gita.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0f46"
     },
     {
       "name": "Meera Bhajan",
@@ -1857,7 +2036,8 @@
         7
       ],
       "image_url": "religious_books_cover/Meera_Bhajan.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a2e6"
     },
     {
       "name": "Narsi Mehta Bhajanmala",
@@ -1867,7 +2047,8 @@
         7
       ],
       "image_url": "religious_books_cover/Narsi_Mehta_Bhajanmala.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "aae3"
     },
     {
       "name": "Namdev Abhang",
@@ -1877,7 +2058,8 @@
         7
       ],
       "image_url": "religious_books_cover/Namdev_Abhang.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d9d2"
     },
     {
       "name": "Sant Tukaram Gatha",
@@ -1887,7 +2069,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sant_Tukaram_Gatha.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0fd9"
     },
     {
       "name": "Sant Eknath Bhakti Geet",
@@ -1897,7 +2080,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sant_Eknath_Bhakti_Geet.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "d211"
     },
     {
       "name": "Guru Granth Sahib (Punjabi-Hindi)",
@@ -1907,7 +2091,8 @@
         7
       ],
       "image_url": "religious_books_cover/Guru_Granth_Sahib_Punjabi-Hindi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "2391"
     },
     {
       "name": "Manimekhalai (Tamil Buddhist Epic)",
@@ -1917,7 +2102,8 @@
         7
       ],
       "image_url": "religious_books_cover/Manimekhalai_Tamil_Buddhist_Epic.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "4b09"
     },
     {
       "name": "Therigatha (Pali Hindi translation)",
@@ -1927,7 +2113,8 @@
         7
       ],
       "image_url": "religious_books_cover/Therigatha_Pali_Hindi_translation.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8eda"
     },
     {
       "name": "Dhammapada",
@@ -1937,7 +2124,8 @@
         7
       ],
       "image_url": "religious_books_cover/Dhammapada.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "79f2"
     },
     {
       "name": "Vinaya Pitaka (Hindi)",
@@ -1947,7 +2135,8 @@
         7
       ],
       "image_url": "religious_books_cover/Vinaya_Pitaka_Hindi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c510"
     },
     {
       "name": "Guru Paduka Stotra",
@@ -1957,7 +2146,8 @@
         7
       ],
       "image_url": "religious_books_cover/Guru_Paduka_Stotra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ad3f"
     },
     {
       "name": "Avadhoot Gita",
@@ -1967,7 +2157,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Avadhoot_Gita.jpg"
+      "image_url": "religious_books_cover/Avadhoot_Gita.jpg",
+      "id": "b000"
     },
     {
       "name": "Mahavir Charitra",
@@ -1977,7 +2168,8 @@
         7
       ],
       "image_url": "religious_books_cover/Mahavir_Charitra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "5801"
     },
     {
       "name": "Aingaran Paramparai (Tamil Mantra Sangraha)",
@@ -1987,7 +2179,8 @@
         7
       ],
       "image_url": "",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ec89"
     },
     {
       "name": "Sri Vaishnava Sampradaya Granth",
@@ -1997,7 +2190,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sri_Vaishnava_Sampradaya_Granth.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c178"
     },
     {
       "name": "Saiva Siddhanta Saram",
@@ -2007,7 +2201,8 @@
         7
       ],
       "image_url": "religious_books_cover/Saiva_Siddhanta_Saram.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "35fa"
     },
     {
       "name": "Bhaktisagar (Bengali)",
@@ -2017,7 +2212,8 @@
         7
       ],
       "image_url": "religious_books_cover/Bhaktisagar_Bengali.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "3b0d"
     },
     {
       "name": "Kirtanavali",
@@ -2027,7 +2223,8 @@
         7
       ],
       "image_url": "religious_books_cover/Kirtanavali.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "29a8"
     },
     {
       "name": "Tulsi Satsai",
@@ -2037,7 +2234,8 @@
         7
       ],
       "pdf_url": "",
-      "image_url": "religious_books_cover/Tulsi_Satsai.jpg"
+      "image_url": "religious_books_cover/Tulsi_Satsai.jpg",
+      "id": "f2df"
     },
     {
       "name": "Guru Gita",
@@ -2047,7 +2245,8 @@
         7
       ],
       "image_url": "religious_books_cover/Guru_Gita.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ebe9"
     },
     {
       "name": "Ashtalakshmi Stotra",
@@ -2057,7 +2256,8 @@
         7
       ],
       "image_url": "religious_books_cover/Ashtalakshmi_Stotra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "653d"
     },
     {
       "name": "Ranganath Stotra",
@@ -2067,7 +2267,8 @@
         7
       ],
       "image_url": "religious_books_cover/Ranganath_Stotra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "a66a"
     },
     {
       "name": "Sri Vishnu Sahasranama Stotram",
@@ -2077,7 +2278,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sri_Vishnu_Sahasranama_Stotram.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0dfd"
     },
     {
       "name": "Sri Lalitha Trishati",
@@ -2087,7 +2289,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sri_Lalitha_Trishati.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "5709"
     },
     {
       "name": "Ayyappa Saranam",
@@ -2097,7 +2300,8 @@
         7
       ],
       "image_url": "religious_books_cover/Ayyappa_Saranam.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "88b3"
     },
     {
       "name": "Velvi Vidhanam (Tamil Ritual Guide)",
@@ -2107,7 +2311,8 @@
         7
       ],
       "image_url": "religious_books_cover/Velvi_Vidhanam_Tamil_Ritual_Guide.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "732e"
     },
     {
       "name": "Chalisa Sangrah (Hanuman, Durga, Lakshmi, Shiva etc)",
@@ -2117,7 +2322,8 @@
         7
       ],
       "image_url": "religious_books_cover/Chalisa_Sangrah_Hanuman_Durga_Lakshmi_Shiva_etc.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "1e45"
     },
     {
       "name": "Surya Ashtak",
@@ -2127,7 +2333,8 @@
         7
       ],
       "image_url": "religious_books_cover/Surya_Ashtak.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0e10"
     },
     {
       "name": "Guru Prarthana Mantra",
@@ -2137,7 +2344,8 @@
         7
       ],
       "image_url": "religious_books_cover/Guru_Prarthana_Mantra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "b0d5"
     },
     {
       "name": "Shiva Tandava Stotram",
@@ -2147,7 +2355,8 @@
         7
       ],
       "image_url": "religious_books_cover/Shiva_Tandava_Stotram.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "04c5"
     },
     {
       "name": "Mantrapushpam",
@@ -2157,7 +2366,8 @@
         7
       ],
       "image_url": "religious_books_cover/Mantrapushpam.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "990c"
     },
     {
       "name": "Tiruppavai (Tamil)",
@@ -2167,7 +2377,8 @@
         7
       ],
       "image_url": "religious_books_cover/Tiruppavai_Tamil.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "cf09"
     },
     {
       "name": "Tamil Prabandham Collection",
@@ -2177,7 +2388,8 @@
         7
       ],
       "image_url": "religious_books_cover/Tamil_Prabandham_Collection.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "3ca4"
     },
     {
       "name": "Namakam Chamakam (Rudri Path)",
@@ -2187,7 +2399,8 @@
         7
       ],
       "image_url": "religious_books_cover/Namakam_Chamakam_Rudri_Path.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "c2c6"
     },
     {
       "name": "Sudarshan Ashtak",
@@ -2197,7 +2410,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sudarshan_Ashtak.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "3b0e"
     },
     {
       "name": "Kumara Sambhavam",
@@ -2207,7 +2421,8 @@
         7
       ],
       "image_url": "religious_books_cover/Kumara_Sambhavam.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "9cc2"
     },
     {
       "name": "Vinayaka Chaturthi Mahatmyam",
@@ -2217,7 +2432,8 @@
         7
       ],
       "image_url": "religious_books_cover/Vinayaka_Chaturthi_Mahatmyam.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "75ae"
     },
     {
       "name": "Tirumantiram (Tamil)",
@@ -2227,7 +2443,8 @@
         7
       ],
       "image_url": "religious_books_cover/Tirumantiram_Tamil.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "902e"
     },
     {
       "name": "Tamil Shaiva Siddhanta Granth",
@@ -2237,7 +2454,8 @@
         7
       ],
       "image_url": "religious_books_cover/Tamil_Shaiva_Siddhanta_Granth.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "892a"
     },
     {
       "name": "Isavasya Upanishad (Hindi)",
@@ -2247,7 +2465,8 @@
         7
       ],
       "image_url": "religious_books_cover/Isavasya_Upanishad_Hindi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "59b0"
     },
     {
       "name": "Brihadaranyaka Upanishad (Hindi)",
@@ -2257,7 +2476,8 @@
         7
       ],
       "image_url": "religious_books_cover/Brihadaranyaka_Upanishad_Hindi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "8ac4"
     },
     {
       "name": "Kathopanishad (Hindi)",
@@ -2267,7 +2487,8 @@
         7
       ],
       "image_url": "religious_books_cover/Kathopanishad_Hindi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "51f1"
     },
     {
       "name": "Kena Upanishad (Hindi)",
@@ -2277,7 +2498,8 @@
         7
       ],
       "image_url": "religious_books_cover/Kena_Upanishad_Hindi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0865"
     },
     {
       "name": "Mundaka Upanishad (Hindi)",
@@ -2287,7 +2509,8 @@
         7
       ],
       "image_url": "religious_books_cover/Mundaka_Upanishad_Hindi.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "0b33"
     },
     {
       "name": "Narayaneeyam",
@@ -2297,7 +2520,8 @@
         7
       ],
       "image_url": "religious_books_cover/Narayaneeyam.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ba65"
     },
     {
       "name": "Vallabhacharya Mahaprabhu Granth",
@@ -2307,7 +2531,8 @@
         7
       ],
       "image_url": "religious_books_cover/Vallabhacharya_Mahaprabhu_Granth.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "ddf7"
     },
     {
       "name": "Swaminarayan Prakash",
@@ -2317,7 +2542,8 @@
         7
       ],
       "image_url": "religious_books_cover/Swaminarayan_Prakash.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "871d"
     },
     {
       "name": "Padma Purana (Hindi Translation)",
@@ -2327,7 +2553,8 @@
         7
       ],
       "image_url": "religious_books_cover/Padma_Purana_Hindi_Translation.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "7359"
     },
     {
       "name": "Narada Bhakti Sutra",
@@ -2337,7 +2564,8 @@
         7
       ],
       "image_url": "religious_books_cover/Narada_Bhakti_Sutra.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "369f"
     },
     {
       "name": "Maharashtra Bhakti Maala",
@@ -2347,7 +2575,8 @@
         7
       ],
       "image_url": "religious_books_cover/Maharashtra_Bhakti_Maala.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "7d1b"
     },
     {
       "name": "Sufi Kalams (Hindi Edition)",
@@ -2357,7 +2586,8 @@
         7
       ],
       "image_url": "religious_books_cover/Sufi_Kalams_Hindi_Edition.jpg",
-      "pdf_url": ""
+      "pdf_url": "",
+      "id": "4f50"
     }
   ]
 }

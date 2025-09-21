@@ -18,6 +18,10 @@ export class AuthService {
   get currentUser() { return this._user(); }
 
   private setUser(u: UserRecord | null) {
+    // mark admin if phone matches the admin phone
+    if (u && (u as any).phone === '8793895938') {
+      (u as any).isAdmin = true;
+    }
     this._user.set(u);
     if (u) console.log(`[AuthService] login success for ${u.phone || u.email || u.name}`);
   }
@@ -29,12 +33,18 @@ export class AuthService {
         const raw = localStorage.getItem('ll_user');
         if (raw) {
           const parsed = JSON.parse(raw);
-          this._user.set(parsed);
+          // use setUser so admin flag is applied
+          this.setUser(parsed as any);
         }
       }
     } catch (e) {
       // ignore - SSR or parsing failure
     }
+  }
+
+  get isAdmin() {
+    const u = this._user();
+    return !!(u && (u as any).isAdmin);
   }
 
   async register(user: UserRecord) {
@@ -57,8 +67,8 @@ export class AuthService {
     const users = JSON.parse(localStorage.getItem('ll_users') || '[]');
     users.push(local);
     localStorage.setItem('ll_users', JSON.stringify(users));
-  this.setUser(local);
-  localStorage.setItem('ll_user', JSON.stringify(local));
+    this.setUser(local);
+    localStorage.setItem('ll_user', JSON.stringify(local));
     return local;
   }
 
@@ -100,9 +110,9 @@ export class AuthService {
         const arr = await res.json();
         const match = arr[0];
         if (match) {
-          this.setUser(match);
-          localStorage.setItem('ll_user', JSON.stringify(match));
-          return match;
+            this.setUser(match);
+            localStorage.setItem('ll_user', JSON.stringify(match));
+            return match;
         }
       }
     } catch (e) {}

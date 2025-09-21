@@ -38,6 +38,7 @@
 			</button>
 									<ng-container *ngIf="currentUser as user; else anon">
 										<span class="user-greet">Hi, {{ user.name || user.phone || 'User' }}</span>
+										<span *ngIf="auth.isAdmin" class="admin-badge">Admin</span>
 										<button class="logout-btn" (click)="auth.logout()">Logout</button>
 									</ng-container>
 						<ng-template #anon>
