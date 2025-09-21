@@ -6,6 +6,7 @@ import { SidebarComponent } from '../sidebar/sidebar';
 import { SearchService } from '../search.service';
 import { CategoryCardComponent } from '../category-card/category-card';
 import { API_BASE } from '../api.config';
+import { BookService } from '../book.service';
 import { BooklistComponent } from '../booklist/booklist';
 
 @Component({
@@ -25,30 +26,20 @@ export class MainContentComponent implements OnInit, OnDestroy {
   private _lastSearch = '';
   private _searchSub: Subscription | null = null;
 
-  constructor(private search: SearchService, @Inject(PLATFORM_ID) private platformId: any) {
+  constructor(private search: SearchService, @Inject(PLATFORM_ID) private platformId: any, private bookSvc: BookService) {
     if (isPlatformBrowser(this.platformId) && typeof fetch === 'function') {
-      fetch(`${API_BASE}/booksData`)
-        .then(res => {
-          if (!res.ok) throw new Error('Failed to fetch books');
-          return res.json();
-        })
-        .then(data => {
-          // normalize categories to numbers and ensure array exists
-          this.books = data.map((b: any) => ({
-            ...b,
-            categories: Array.isArray(b.categories) ? b.categories.map((c: any) => Number(c)) : []
-          }));
+      (async () => {
+        try {
+          this.books = await this.bookSvc.loadBooks();
           this.filteredBooks = [...this.books];
-          // apply initial search if any
           if (this.search.term) this.applyFilters();
+        } catch (e) {
+          this.error = String(e);
+        } finally {
           this.loading = false;
-        })
-        .catch(err => {
-          this.error = err.message;
-          this.loading = false;
-        });
+        }
+      })();
     } else {
-      // SSR/prerender: avoid fetch and initialize minimal state
       this.books = [];
       this.filteredBooks = [];
       this.loading = false;

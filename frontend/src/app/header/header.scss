@@ -169,3 +169,22 @@
 .cart-icon {
 	font-size: 1.2rem;
 }
+
+/* Flying image clone used by add-to-cart animation */
+.flying-image {
+	pointer-events: none;
+	border-radius: 6px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+	will-change: transform, opacity;
+}
+
+/* brief bump on cart icon when an item arrives */
+.cart-bump {
+	animation: cart-bump 350ms cubic-bezier(.2,.8,.2,1);
+}
+@keyframes cart-bump {
+	0% { transform: translateY(0) scale(1); }
+	30% { transform: translateY(-6px) scale(1.08); }
+	60% { transform: translateY(0) scale(0.98); }
+	100% { transform: translateY(0) scale(1); }
+}

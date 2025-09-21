@@ -1,13 +1,13 @@
 <ng-container *ngIf="hasBooks; else emptyState">
     <div class="booklist-container">
         <div class="book-card" *ngFor="let book of books | paginate: { itemsPerPage: itemsPerPage, currentPage: p }">
-            <img [src]="book.image_url || 'placeholder.jpg'" imgFallback="placeholder.jpg" alt="Book Image" class="book-image" />
+            <img [src]="book.image_url || 'placeholder.jpg'" imgFallback="placeholder.jpg" alt="Book Image" class="book-image" [attr.data-book-id]="book.id" />
             <div class="book-details">
                 <div class="book-name">{{ book.name }}</div>
                 <div class="book-author">by {{ book.author }}</div>
                 <div class="book-price">₹{{ book.price }}</div>
                 <div class="book-actions">
-                    <button *ngIf="!book.out_of_stock" class="add-to-cart-btn" (click)="addToCart(book)">Add to Cart</button>
+                    <button type="button" *ngIf="!book.out_of_stock" class="add-to-cart-btn" (click)="addToCartAndAnimate($event, book)">Add to Cart</button>
                     <button *ngIf="book.out_of_stock" class="btn-outofstock" title="Not clickable">Out of stock</button>
                 </div>
                 <!-- admin toggle -->
@@ -22,7 +22,7 @@
     </div>
 
     <div class="pagination-container">
-        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        <pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
     </div>
 </ng-container>
 

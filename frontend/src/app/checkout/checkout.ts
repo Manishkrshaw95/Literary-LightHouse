@@ -5,6 +5,8 @@ import { CartService } from '../cart.service';
 import { AuthService, UserRecord } from '../auth.service';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { LoginModalService } from '../login-modal/login-modal.service';
+import { ToastService } from '../toast.service';
+import { API_BASE } from '../api.config';
 
 @Component({
   selector: 'app-checkout',
@@ -28,7 +30,7 @@ export class CheckoutComponent implements OnInit {
   orderPlaced = false;
   order: any = null;
 
-  constructor(public cart: CartService, private fb: FormBuilder, private router: Router, public auth: AuthService, public modal: LoginModalService) {}
+  constructor(public cart: CartService, private fb: FormBuilder, private router: Router, public auth: AuthService, public modal: LoginModalService, private toast: ToastService) {}
 
   // expose a typed user getter so the template type-checker can narrow properties
   get user(): UserRecord | null { return this.auth.currentUser as UserRecord | null; }
@@ -38,12 +40,37 @@ export class CheckoutComponent implements OnInit {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       address: ['', Validators.required],
-  paymentMethod: ['card', Validators.required],
-  // card fields (optional depending on paymentMethod)
-  cardNumber: ['', []],
-  cardExpiry: ['', []],
-  cardCvv: ['', []]
+      // default to UPI to avoid blocking on card validation unless selected
+      paymentMethod: ['upi', Validators.required],
+      // card fields (optional depending on paymentMethod)
+      cardNumber: ['', []],
+      cardExpiry: ['', []],
+      cardCvv: ['', []]
     });
+
+    // Prefill from current user if available
+    const u = this.auth.currentUser;
+    if (u) {
+      this.form.patchValue({
+        name: u.name || '',
+        email: u.email || '',
+        address: u.address || ''
+      });
+      this.currentStep = 2;
+    }
+    // React to login after opening the modal
+    try {
+      (this.auth.userSignal as any).subscribe?.((usr: any) => {
+        if (usr) {
+          this.form.patchValue({
+            name: usr.name || '',
+            email: usr.email || '',
+            address: usr.address || ''
+          });
+          this.currentStep = 2;
+        }
+      });
+    } catch {}
   }
 
   async doRegister(payload: { name: string; email?: string; phone?: string; password?: string }) {
@@ -123,9 +150,17 @@ export class CheckoutComponent implements OnInit {
     return this.cart.items.reduce((s, i) => s + i.price * i.quantity, 0);
   }
 
-  placeOrder() {
+  async placeOrder() {
+    // guard: must have items in cart
+    if (!this.cart.items || this.cart.items.length === 0) {
+      this.currentStep = 3;
+      try { this.toast.show('Your cart is empty.', 'info', 2200); } catch {}
+      return;
+    }
     if (this.form.invalid) {
       this.form.markAllAsTouched();
+      this.currentStep = 2;
+      try { this.toast.show('Please complete your delivery details.', 'error', 2500); } catch {}
       return;
     }
     // validate card fields when card payment is selected
@@ -139,33 +174,46 @@ export class CheckoutComponent implements OnInit {
         this.form.get('cardNumber')?.markAsTouched();
         this.form.get('cardCvv')?.markAsTouched();
         this.form.get('cardExpiry')?.markAsTouched();
+        this.currentStep = 4;
+        try { this.toast.show('Enter valid card details or choose a different method.', 'error', 2500); } catch {}
         return;
       }
     }
     // require login/register if user not present
     if (!this.auth.currentUser) {
-      this.showAuth = true;
+      this.showAuth = true; // kept for backwards compatibility, though modal is used
       this.authMode = 'login';
+      try { this.modal.open(); } catch {}
+      this.currentStep = 1;
+      try { this.toast.show('Please sign in to place your order.', 'info', 2500); } catch {}
       return;
     }
 
-    // simulate payment processing
+    // simulate payment processing delay visually
     this.processing = true;
-    setTimeout(() => {
-      // mock order id and ack
-      const orderId = 'ORD' + Date.now();
-      const ack = 'ACK' + Math.floor(Math.random() * 900000 + 100000);
+    try {
       const phone = this.auth.currentUser?.phone || this.form.get('email')?.value || '';
       const address = this.form.get('address')?.value || '';
       const items = this.cart.items.map(i => ({ id: i.id, name: i.name, qty: i.quantity, price: i.price }));
       const total = this.total;
+      const userId = String(this.auth.currentUser?.id || '');
+      const res = await fetch(`${API_BASE}/orders`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId, phone, address, items, total })
+      });
+      if (!res.ok) throw new Error(`Order failed (${res.status})`);
+      const data = await res.json();
       // set local order object so template can render confirmation stacked
-      this.order = { orderId, ack, phone, address, items, total };
-      // clear cart
+      this.order = { orderId: data.orderId, ack: data.ack, phone: data.phone, address: data.address, items: data.items, total: data.total };
+      // clear cart UI; server already cleared persisted cart in POST /orders
       this.cart.clearCart();
-      this.processing = false;
       this.orderPlaced = true;
-    }, 900);
+    } catch (e: any) {
+      try { this.toast.show('Failed to place order. Please try again.', 'error', 3000); } catch {}
+    } finally {
+      this.processing = false;
+    }
   }
 
   continueShopping() {

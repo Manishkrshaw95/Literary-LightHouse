@@ -7,6 +7,7 @@ import { SidebarComponent } from '../sidebar/sidebar';
 import { BookUploadComponent } from '../book-upload/book-upload';
 import { BooklistComponent } from '../booklist/booklist';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { BookService } from '../book.service';
 
 @Component({
   selector: 'app-body',
@@ -28,12 +29,13 @@ export class BodyComponent {
     return this.books.slice(start, start + this.pageSize);
   }
 
-  constructor() {
-  fetch(`${API_BASE}/booksData`)
-      .then(res => res.json())
-      .then(data => {
-        this.books = data;
-      });
+  constructor(private bookSvc: BookService) {
+    (async () => {
+      try {
+        // load cached books if available, else fetch and cache
+        this.books = await this.bookSvc.loadBooks();
+      } catch (e) { this.books = []; }
+    })();
   }
 
   setPage(page: number) {

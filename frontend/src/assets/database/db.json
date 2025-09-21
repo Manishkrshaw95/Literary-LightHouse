@@ -76,7 +76,7 @@
       "image_url": "FictionBooks/book-covers/philosopher-stone.jpg",
       "pdf_url": "",
       "id": "8b7a",
-      "out_of_stock": true
+      "out_of_stock": false
     },
     {
       "name": "Harry Potter and the Chamber of Secrets",
@@ -88,7 +88,7 @@
       "image_url": "FictionBooks/book-covers/chamberofsecret.png",
       "pdf_url": "",
       "id": "077a",
-      "out_of_stock": true
+      "out_of_stock": false
     },
     {
       "name": "Harry Potter and the Prisoner of Azkaban",
@@ -2588,6 +2588,114 @@
       "image_url": "religious_books_cover/Sufi_Kalams_Hindi_Edition.jpg",
       "pdf_url": "",
       "id": "4f50"
+    }
+  ],
+  "users": [
+    {
+      "name": "User",
+      "phone": "96834758687",
+      "id": "u-1758465782763"
+    },
+    {
+      "name": "User",
+      "phone": "8793895939",
+      "id": "u-1758466615494"
+    },
+    {
+      "name": "User",
+      "phone": "8793895937",
+      "id": "u-1758466668822"
+    },
+    {
+      "name": "User",
+      "phone": "8793895938",
+      "id": "u-1758472131038"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "u-test",
+      "items": []
+    },
+    {
+      "userId": "u-1758466668822",
+      "items": [
+        {
+          "id": "ci-1758467838597",
+          "bookId": "9503",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:17:18.597Z"
+        }
+      ]
+    },
+    {
+      "userId": "u-1758466615494",
+      "items": [
+        {
+          "id": "ci-1758472563715",
+          "bookId": "3626",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:36:03.714Z"
+        },
+        {
+          "id": "ci-1758472566104",
+          "bookId": "5dfc",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:36:06.102Z"
+        },
+        {
+          "id": "ci-1758472570185",
+          "bookId": "ec98",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:36:10.184Z"
+        }
+      ]
+    },
+    {
+      "userId": "local-1758400484503",
+      "items": [
+        {
+          "id": "ci-1758470215306",
+          "bookId": "d226",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:56:55.303Z"
+        },
+        {
+          "id": "ci-1758470216456",
+          "bookId": "9503",
+          "quantity": 2,
+          "added_at": "2025-09-21T15:56:56.455Z"
+        },
+        {
+          "id": "ci-1758470220082",
+          "bookId": "8b7a",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:57:00.082Z"
+        },
+        {
+          "id": "ci-1758470223010",
+          "bookId": "d7c2",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:57:03.010Z"
+        },
+        {
+          "id": "ci-1758470227940",
+          "bookId": "ec98",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:57:07.939Z"
+        }
+      ]
+    },
+    {
+      "userId": "u-1758472131038",
+      "items": [
+        {
+          "id": "ci-1758472170663",
+          "bookId": "c0d5",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:29:30.663Z"
+        }
+      ]
     }
   ]
 }

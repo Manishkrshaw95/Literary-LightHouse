@@ -52,11 +52,11 @@
         <div class="step-title">DELIVERY ADDRESS</div>
       </div>
       <div class="step-body" *ngIf="currentStep===2">
-        <form class="checkout-form" [formGroup]="form">
+        <div class="checkout-form">
           <label>Full name<input type="text" formControlName="name" /></label>
           <label>Email<input type="email" formControlName="email" /></label>
           <label>Address<textarea formControlName="address" rows="4"></textarea></label>
-        </form>
+        </div>
       </div>
     </div>
 

@@ -93,8 +93,8 @@ export class AuthService {
     const users = JSON.parse(localStorage.getItem('ll_users') || '[]');
     const found = users.find((u: any) => (email && u.email === email) || (phone && u.phone === phone));
     if (found && (!password || found.password === password)) {
-      this.setUser(found);
-      localStorage.setItem('ll_user', JSON.stringify(found));
+  this.setUser(found);
+  localStorage.setItem('ll_user', JSON.stringify(found));
       return found;
     }
     return null;
@@ -109,18 +109,18 @@ export class AuthService {
       if (res.ok) {
         const arr = await res.json();
         const match = arr[0];
-        if (match) {
-            this.setUser(match);
-            localStorage.setItem('ll_user', JSON.stringify(match));
-            return match;
-        }
+    if (match) {
+  this.setUser(match);
+  localStorage.setItem('ll_user', JSON.stringify(match));
+      return match;
+    }
       }
     } catch (e) {}
     const users = JSON.parse(localStorage.getItem('ll_users') || '[]');
     const found = users.find((u: any) => u.phone === phone);
     if (found) {
-      this.setUser(found);
-      localStorage.setItem('ll_user', JSON.stringify(found));
+  this.setUser(found);
+  localStorage.setItem('ll_user', JSON.stringify(found));
       return found;
     }
     return null;

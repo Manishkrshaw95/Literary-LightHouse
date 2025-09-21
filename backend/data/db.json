@@ -1,0 +1,2701 @@
+{
+  "booksData": [
+    {
+      "name": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "price": 95,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/philosopher-stone.jpg",
+      "pdf_url": "",
+      "id": "8b7a",
+      "out_of_stock": false
+    },
+    {
+      "name": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "price": 95,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/chamberofsecret.png",
+      "pdf_url": "",
+      "id": "077a",
+      "out_of_stock": false
+    },
+    {
+      "name": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J.K. Rowling",
+      "price": 95,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/prisonerofAzbakestan.jpg",
+      "pdf_url": "",
+      "id": "d226"
+    },
+    {
+      "name": "Harry Potter and the Goblet of Fire",
+      "author": "J.K. Rowling",
+      "price": 95,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/Goblet_of_Fire.webp",
+      "pdf_url": "",
+      "id": "9503"
+    },
+    {
+      "name": "Harry Potter and the Order of the Phoenix",
+      "author": "J.K. Rowling",
+      "price": 95,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/orderofphenix.jpg",
+      "pdf_url": "",
+      "id": "464d"
+    },
+    {
+      "name": "Harry Potter and the Half-Blood Prince",
+      "author": "J.K. Rowling",
+      "price": 95,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/halfbloodprince.jpg",
+      "pdf_url": "",
+      "id": "d7c2"
+    },
+    {
+      "name": "Harry Potter and the Deathly Hallows",
+      "author": "J.K. Rowling",
+      "price": 95,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/deathlyHallows.jpg",
+      "pdf_url": "",
+      "id": "ec98"
+    },
+    {
+      "name": "Sherlock Holmes (Set of 5 Books)",
+      "author": "Sir Arthur Conan Doyle",
+      "price": 393,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/sherlokholmes5.jpg",
+      "pdf_url": "",
+      "id": "9a6d"
+    },
+    {
+      "name": "The Case-Book of Sherlock Holmes",
+      "author": "Sir Arthur Conan Doyle",
+      "price": 398,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/casebookofsherlock.jpg",
+      "pdf_url": "",
+      "id": "c0d5"
+    },
+    {
+      "name": "The Adventures of Sherlock Holmes",
+      "author": "Sir Arthur Conan Doyle",
+      "price": 279,
+      "categories": [
+        1
+      ],
+      "image_url": "FictionBooks/book-covers/adventureofsherlockholmes.jpg",
+      "pdf_url": "",
+      "id": "b03b"
+    },
+    {
+      "name": "The Hound of the Baskervilles",
+      "author": "Sir Arthur Conan Doyle",
+      "price": 399,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Hound_of_the_Baskervilles.jpg",
+      "pdf_url": "",
+      "id": "409e"
+    },
+    {
+      "name": "The Complete Novels of Sherlock Holmes",
+      "author": "Sir Arthur Conan Doyle",
+      "price": 522,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Complete_Novels_of_Sherlock_Holmes.jpg",
+      "pdf_url": "",
+      "id": "020a"
+    },
+    {
+      "name": "Royal Bengal Rahasyam",
+      "author": "Satyajit Ray",
+      "price": 250,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Royal_Bengal_Rahasyam.jpg",
+      "pdf_url": "",
+      "id": "a62f"
+    },
+    {
+      "name": "The House of Death (Feluda Series)",
+      "author": "Satyajit Ray",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_House_of_Death_Feluda_Series.jpg",
+      "pdf_url": "",
+      "id": "e555"
+    },
+    {
+      "name": "The Royal Bengal Mystery (Feluda Series)",
+      "author": "Satyajit Ray",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Royal_Bengal_Mystery_Feluda_Series.jpg",
+      "pdf_url": "",
+      "id": "456a"
+    },
+    {
+      "name": "The Curse of the Goddess (Feluda Series)",
+      "author": "Satyajit Ray",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Curse_of_the_Goddess_Feluda_Series.jpg",
+      "pdf_url": "",
+      "id": "e46b"
+    },
+    {
+      "name": "Kailashe Kelenkari",
+      "author": "Satyajit Ray",
+      "price": 60,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Kailashe_Kelenkari.jpg",
+      "pdf_url": "",
+      "id": "a421"
+    },
+    {
+      "name": "Gangtoke Gondogol",
+      "author": "Satyajit Ray",
+      "price": 60,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Gangtoke_Gondogol.jpg",
+      "pdf_url": "",
+      "id": "1989"
+    },
+    {
+      "name": "Three Rays: Stories from Satyajit Ray",
+      "author": "Satyajit Ray",
+      "price": 749,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Three_Rays_Stories_from_Satyajit_Ray.jpg",
+      "pdf_url": "",
+      "id": "75fb"
+    },
+    {
+      "name": "Puffin Classics: One Dozen Stories",
+      "author": "Satyajit Ray",
+      "price": 314,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Puffin_Classics_One_Dozen_Stories.jpg",
+      "pdf_url": "",
+      "id": "5d7d"
+    },
+    {
+      "name": "A Killer in Kailash (Feluda)",
+      "author": "Satyajit Ray",
+      "price": 297,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/A_Killer_in_Kailash_Feluda.jpg",
+      "pdf_url": "",
+      "id": "cae7"
+    },
+    {
+      "name": "Deep Focus PB",
+      "author": "Satyajit Ray",
+      "price": 332,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Deep_Focus_PB.jpg",
+      "pdf_url": "",
+      "id": "df69"
+    },
+    {
+      "name": "The Adventures of Feluda: The Emperor's Ring",
+      "author": "Satyajit Ray",
+      "price": 350,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Adventures_of_Feluda_The_Emperors_Ring.jpg",
+      "pdf_url": "",
+      "id": "b142"
+    },
+    {
+      "name": "Gora",
+      "author": "Rabindranath Tagore",
+      "price": 225,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Gora.jpg",
+      "pdf_url": "",
+      "id": "4343"
+    },
+    {
+      "name": "Sei Somoy",
+      "author": "Sunil Gangopadhyay",
+      "price": 399,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Sei_Somoy.jpg",
+      "pdf_url": "",
+      "id": "b9ae"
+    },
+    {
+      "name": "Chokher Bali",
+      "author": "Rabindranath Tagore",
+      "price": 180,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Chokher_Bali.jpg",
+      "pdf_url": "",
+      "id": "c8fa"
+    },
+    {
+      "name": "Pather Panchali",
+      "author": "Bibhutibhushan Bandyopadhyay",
+      "price": 220,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Pather_Panchali.jpg",
+      "pdf_url": "",
+      "id": "2cb4"
+    },
+    {
+      "name": "Shesher Kobita",
+      "author": "Rabindranath Tagore",
+      "price": 150,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Shesher_Kobita.jpg",
+      "pdf_url": "",
+      "id": "38f9"
+    },
+    {
+      "name": "Swami",
+      "author": "Sarat Chandra Chattopadhyay",
+      "price": 199,
+      "categories": [
+        1
+      ],
+      "image_url": "assets/book_covers/Swami.jpg.jpg",
+      "pdf_url": "",
+      "id": "845f"
+    },
+    {
+      "name": "Midnight's Children",
+      "author": "Salman Rushdie",
+      "price": 409,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Midnights_Children.jpg",
+      "pdf_url": "",
+      "id": "3337"
+    },
+    {
+      "name": "Professor Shanku",
+      "author": "Satyajit Ray",
+      "price": 220,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Professor_Shanku.jpg",
+      "pdf_url": "",
+      "id": "9e1d"
+    },
+    {
+      "name": "Satyajit Ray O Science Fiction",
+      "author": "Prasenjit Dasgupta",
+      "price": 210,
+      "categories": [
+        2
+      ],
+      "image_url": "assets",
+      "pdf_url": "",
+      "id": "26fd"
+    },
+    {
+      "name": "Nakshatraloker Debatatma",
+      "author": "Narayan Sanyal",
+      "price": 320,
+      "categories": [
+        2
+      ],
+      "image_url": "assets",
+      "pdf_url": "",
+      "id": "d9a3"
+    },
+    {
+      "name": "The Calcutta Chromosome",
+      "author": "Amitav Ghosh",
+      "price": 379,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Calcutta_Chromosome.jpg",
+      "pdf_url": "",
+      "id": "d6a4"
+    },
+    {
+      "name": "The Simoqin Prophecies",
+      "author": "Samit Basu",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Simoqin_Prophecies.jpg",
+      "pdf_url": "",
+      "id": "4f13"
+    },
+    {
+      "name": "Chandrayaan-2",
+      "author": "V.P. Balagangadharan",
+      "price": 153,
+      "categories": [
+        2
+      ],
+      "image_url": "assets",
+      "pdf_url": "",
+      "id": "2ba9"
+    },
+    {
+      "name": "Fire on the Moon",
+      "author": "Multiple Authors (NBT anthology)",
+      "price": 250,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Fire_on_the_Moon.jpg",
+      "pdf_url": "",
+      "id": "f1b9"
+    },
+    {
+      "name": "It Happened Tomorrow",
+      "author": "Various/Edited by Bal Phondke",
+      "price": 195,
+      "categories": [
+        2
+      ],
+      "image_url": "assets",
+      "pdf_url": "",
+      "id": "776b"
+    },
+    {
+      "name": "Half of What I Say",
+      "author": "Anil Menon",
+      "price": 238,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Half_of_What_I_Say.jpg",
+      "pdf_url": "",
+      "id": "4392"
+    },
+    {
+      "name": "The Hungry Tide",
+      "author": "Amitav Ghosh",
+      "price": 350,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Hungry_Tide.jpg",
+      "pdf_url": "",
+      "id": "cc50"
+    },
+    {
+      "name": "The Gollancz Book of South Asian Science Fiction",
+      "author": "Tarun K. Saint (Ed.)",
+      "price": 599,
+      "categories": [
+        2
+      ],
+      "image_url": "assets",
+      "pdf_url": "",
+      "id": "486b"
+    },
+    {
+      "name": "Selected Science Fiction Short Stories",
+      "author": "Jayant Narlikar",
+      "price": 225,
+      "categories": [
+        2
+      ],
+      "image_url": "assets",
+      "pdf_url": "",
+      "id": "e721"
+    },
+    {
+      "name": "Children of Paradise",
+      "author": "Omar Gilani",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Children_of_Paradise.jpg",
+      "pdf_url": "",
+      "id": "a90d"
+    },
+    {
+      "name": "Return to Gedrosia",
+      "author": "S.B. Divya",
+      "price": 289,
+      "categories": [
+        2
+      ],
+      "image_url": "assets",
+      "pdf_url": "",
+      "id": "cf55"
+    },
+    {
+      "name": "Frankenstein",
+      "author": "Mary Shelley",
+      "price": 201,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Frankenstein.jpg",
+      "pdf_url": "",
+      "id": "fe90"
+    },
+    {
+      "name": "Dune",
+      "author": "Frank Herbert",
+      "price": 499,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/Dune.jpg.jpg",
+      "pdf_url": "",
+      "id": "838f"
+    },
+    {
+      "name": "The Left Hand of Darkness",
+      "author": "Ursula K. Le Guin",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Left_Hand_of_Darkness.jpg",
+      "pdf_url": "",
+      "id": "54fc"
+    },
+    {
+      "name": "Foundation",
+      "author": "Isaac Asimov",
+      "price": 425,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/Foundation.jpg.jpg",
+      "pdf_url": "",
+      "id": "0e29"
+    },
+    {
+      "name": "Neuromancer",
+      "author": "William Gibson",
+      "price": 437,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Neuromancer.jpg",
+      "pdf_url": "",
+      "id": "dad3"
+    },
+    {
+      "name": "Brave New World",
+      "author": "Aldous Huxley",
+      "price": 315,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Brave_New_World.jpg",
+      "pdf_url": "",
+      "id": "aa38"
+    },
+    {
+      "name": "1984",
+      "author": "George Orwell",
+      "price": 350,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/1984.jpg.jpg",
+      "pdf_url": "",
+      "id": "7401"
+    },
+    {
+      "name": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "price": 375,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Fahrenheit_451.jpg",
+      "pdf_url": "",
+      "id": "d12a"
+    },
+    {
+      "name": "Snow Crash",
+      "author": "Neal Stephenson",
+      "price": 430,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Snow_Crash.jpg",
+      "pdf_url": "",
+      "id": "294d"
+    },
+    {
+      "name": "Ready Player One",
+      "author": "Ernest Cline",
+      "price": 369,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Ready_Player_One.jpg",
+      "pdf_url": "",
+      "id": "c2f3"
+    },
+    {
+      "name": "Hyperion",
+      "author": "Dan Simmons",
+      "price": 410,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/Hyperion.jpg.jpg",
+      "pdf_url": "",
+      "id": "038f"
+    },
+    {
+      "name": "The Three-Body Problem",
+      "author": "Liu Cixin",
+      "price": 499,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Three-Body_Problem.jpg",
+      "pdf_url": "",
+      "id": "cb42"
+    },
+    {
+      "name": "Do Androids Dream of Electric Sheep?",
+      "author": "Philip K. Dick",
+      "price": 365,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Do_Androids_Dream_of_Electric_Sheep.jpg",
+      "pdf_url": "",
+      "id": "43c2"
+    },
+    {
+      "name": "Childhood's End",
+      "author": "Arthur C. Clarke",
+      "price": 308,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Childhoods_End.jpg",
+      "pdf_url": "",
+      "id": "5718"
+    },
+    {
+      "name": "Solaris",
+      "author": "Stanislaw Lem",
+      "price": 370,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/Solaris.jpg.jpg",
+      "pdf_url": "",
+      "id": "2624"
+    },
+    {
+      "name": "A Clockwork Orange",
+      "author": "Anthony Burgess",
+      "price": 298,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/A_Clockwork_Orange.jpg",
+      "pdf_url": "",
+      "id": "8c7b"
+    },
+    {
+      "name": "The Jungle Book",
+      "author": "Rudyard Kipling",
+      "price": 150,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Jungle_Book.jpg",
+      "pdf_url": "",
+      "id": "21da"
+    },
+    {
+      "name": "Charlotte's Web",
+      "author": "E.B. White",
+      "price": 180,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Charlottes_Web.jpg",
+      "pdf_url": "",
+      "id": "cd27"
+    },
+    {
+      "name": "Matilda",
+      "author": "Roald Dahl",
+      "price": 210,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Matilda.jpg",
+      "pdf_url": "",
+      "id": "7c63"
+    },
+    {
+      "name": "Anne of Green Gables",
+      "author": "L.M. Montgomery",
+      "price": 190,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Anne_of_Green_Gables.jpg",
+      "pdf_url": "",
+      "id": "c2af"
+    },
+    {
+      "name": "The Secret Garden",
+      "author": "Frances Hodgson Burnett",
+      "price": 170,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Secret_Garden.jpg",
+      "pdf_url": "",
+      "id": "67e2"
+    },
+    {
+      "name": "Where the Wild Things Are",
+      "author": "Maurice Sendak",
+      "price": 120,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Where_the_Wild_Things_Are.jpg",
+      "pdf_url": "",
+      "id": "6492"
+    },
+    {
+      "name": "The Tale of Peter Rabbit",
+      "author": "Beatrix Potter",
+      "price": 160,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Tale_of_Peter_Rabbit.jpg",
+      "pdf_url": "",
+      "id": "0ec5"
+    },
+    {
+      "name": "The Wind in the Willows",
+      "author": "Kenneth Grahame",
+      "price": 200,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Wind_in_the_Willows.jpg",
+      "pdf_url": "",
+      "id": "6bc6"
+    },
+    {
+      "name": "Goodnight Moon",
+      "author": "Margaret Wise Brown",
+      "price": 130,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Goodnight_Moon.jpg",
+      "pdf_url": "",
+      "id": "2fdc"
+    },
+    {
+      "name": "Pippi Longstocking",
+      "author": "Astrid Lindgren",
+      "price": 175,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Pippi_Longstocking.jpg",
+      "pdf_url": "",
+      "id": "c68b"
+    },
+    {
+      "name": "Little Women",
+      "author": "Louisa May Alcott",
+      "price": 220,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Little_Women.jpg",
+      "pdf_url": "",
+      "id": "9c8f"
+    },
+    {
+      "name": "Winnie-the-Pooh",
+      "author": "A.A. Milne",
+      "price": 160,
+      "categories": [
+        0
+      ],
+      "image_url": "assets/book_covers/Winnie-the-Pooh.jpg.jpg",
+      "pdf_url": "",
+      "id": "0533"
+    },
+    {
+      "name": "The Polar Express",
+      "author": "Chris Van Allsburg",
+      "price": 150,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Polar_Express.jpg",
+      "pdf_url": "",
+      "id": "c8c2"
+    },
+    {
+      "name": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "price": 180,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/Alices_Adventures_in_Wonderland.jpg",
+      "pdf_url": "",
+      "id": "88aa"
+    },
+    {
+      "name": "The Very Hungry Caterpillar",
+      "author": "Eric Carle",
+      "price": 110,
+      "categories": [
+        0
+      ],
+      "image_url": "book_covers/The_Very_Hungry_Caterpillar.jpg",
+      "pdf_url": "",
+      "id": "c6af"
+    },
+    {
+      "name": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "price": 250,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Catcher_in_the_Rye.jpg",
+      "pdf_url": "",
+      "id": "97ae"
+    },
+    {
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "price": 275,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/To_Kill_a_Mockingbird.jpg",
+      "pdf_url": "",
+      "id": "375e"
+    },
+    {
+      "name": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "price": 300,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Pride_and_Prejudice.jpg",
+      "pdf_url": "",
+      "id": "2cb3"
+    },
+    {
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "price": 280,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Great_Gatsby.jpg",
+      "pdf_url": "",
+      "id": "7756"
+    },
+    {
+      "name": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "price": 290,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Jane_Eyre.jpg",
+      "pdf_url": "",
+      "id": "ef3b"
+    },
+    {
+      "name": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "price": 290,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Wuthering_Heights.jpg",
+      "pdf_url": "",
+      "id": "90ed"
+    },
+    {
+      "name": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "price": 310,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Picture_of_Dorian_Gray.jpg",
+      "pdf_url": "",
+      "id": "c70e"
+    },
+    {
+      "name": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "price": 350,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Hobbit.jpg",
+      "pdf_url": "",
+      "id": "2a0e"
+    },
+    {
+      "name": "The Alchemist",
+      "author": "Paulo Coelho",
+      "price": 260,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Alchemist.jpg",
+      "pdf_url": "",
+      "id": "a205"
+    },
+    {
+      "name": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "price": 320,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Crime_and_Punishment.jpg",
+      "pdf_url": "",
+      "id": "f62f"
+    },
+    {
+      "name": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "price": 270,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Kite_Runner.jpg",
+      "pdf_url": "",
+      "id": "a9e8"
+    },
+    {
+      "name": "The Book Thief",
+      "author": "Markus Zusak",
+      "price": 290,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/The_Book_Thief.jpg",
+      "pdf_url": "",
+      "id": "d1d9"
+    },
+    {
+      "name": "Moby-Dick",
+      "author": "Herman Melville",
+      "price": 300,
+      "categories": [
+        1
+      ],
+      "image_url": "assets/book_covers/Moby-Dick.jpg.jpg",
+      "pdf_url": "",
+      "id": "a882"
+    },
+    {
+      "name": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "price": 330,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Anna_Karenina.jpg",
+      "pdf_url": "",
+      "id": "8e53"
+    },
+    {
+      "name": "Great Expectations",
+      "author": "Charles Dickens",
+      "price": 280,
+      "categories": [
+        1
+      ],
+      "image_url": "book_covers/Great_Expectations.jpg",
+      "pdf_url": "",
+      "id": "0ee0"
+    },
+    {
+      "name": "The Windup Girl",
+      "author": "Paolo Bacigalupi",
+      "price": 399,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Windup_Girl.jpg",
+      "pdf_url": "",
+      "id": "1e6b"
+    },
+    {
+      "name": "Altered Carbon",
+      "author": "Richard K. Morgan",
+      "price": 420,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Altered_Carbon.jpg",
+      "pdf_url": "",
+      "id": "0265"
+    },
+    {
+      "name": "Anathem",
+      "author": "Neal Stephenson",
+      "price": 450,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/Anathem.jpg.jpg",
+      "pdf_url": "",
+      "id": "65ee"
+    },
+    {
+      "name": "Contact",
+      "author": "Carl Sagan",
+      "price": 380,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Contact.jpg",
+      "pdf_url": "",
+      "id": "dcac"
+    },
+    {
+      "name": "The Forever War",
+      "author": "Joe Haldeman",
+      "price": 360,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Forever_War.jpg",
+      "pdf_url": "",
+      "id": "f890"
+    },
+    {
+      "name": "Old Man's War",
+      "author": "John Scalzi",
+      "price": 340,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Old_Mans_War.jpg",
+      "pdf_url": "",
+      "id": "3742"
+    },
+    {
+      "name": "Snow Crash",
+      "author": "Neal Stephenson",
+      "price": 430,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Snow_Crash.jpg",
+      "pdf_url": "",
+      "id": "bc61"
+    },
+    {
+      "name": "Red Mars",
+      "author": "Kim Stanley Robinson",
+      "price": 410,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Red_Mars.jpg",
+      "pdf_url": "",
+      "id": "2bc3"
+    },
+    {
+      "name": "The Diamond Age",
+      "author": "Neal Stephenson",
+      "price": 400,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Diamond_Age.jpg",
+      "pdf_url": "",
+      "id": "4452"
+    },
+    {
+      "name": "Ringworld",
+      "author": "Larry Niven",
+      "price": 390,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Ringworld.jpg",
+      "pdf_url": "",
+      "id": "ebce"
+    },
+    {
+      "name": "Hyperion",
+      "author": "Dan Simmons",
+      "price": 410,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/Hyperion.jpg.jpg",
+      "pdf_url": "",
+      "id": "983c"
+    },
+    {
+      "name": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "price": 375,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/The_Handmaids_Tale.jpg",
+      "pdf_url": "",
+      "id": "5070"
+    },
+    {
+      "name": "Oryx and Crake",
+      "author": "Margaret Atwood",
+      "price": 365,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Oryx_and_Crake.jpg",
+      "pdf_url": "",
+      "id": "9db1"
+    },
+    {
+      "name": "Blindsight",
+      "author": "Peter Watts",
+      "price": 350,
+      "categories": [
+        2
+      ],
+      "image_url": "assets/book_covers/Blindsight.jpg.jpg",
+      "pdf_url": "",
+      "id": "7902"
+    },
+    {
+      "name": "Children of Time",
+      "author": "Adrian Tchaikovsky",
+      "price": 400,
+      "categories": [
+        2
+      ],
+      "image_url": "book_covers/Children_of_Time.jpg",
+      "pdf_url": "",
+      "id": "55f3"
+    },
+    {
+      "name": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "price": 450,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Sapiens_A_Brief_History_of_Humankind.jpg",
+      "pdf_url": "",
+      "id": "44d3"
+    },
+    {
+      "name": "Educated",
+      "author": "Tara Westover",
+      "price": 420,
+      "categories": [
+        3
+      ],
+      "image_url": "assets/book_covers/Educated.jpg.jpg",
+      "pdf_url": "",
+      "id": "cb10"
+    },
+    {
+      "name": "Becoming",
+      "author": "Michelle Obama",
+      "price": 480,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Becoming.jpg",
+      "pdf_url": "",
+      "id": "379c"
+    },
+    {
+      "name": "The Immortal Life of Henrietta Lacks",
+      "author": "Rebecca Skloot",
+      "price": 350,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Immortal_Life_of_Henrietta_Lacks.jpg",
+      "pdf_url": "",
+      "id": "c443"
+    },
+    {
+      "name": "Born a Crime",
+      "author": "Trevor Noah",
+      "price": 370,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Born_a_Crime.jpg",
+      "pdf_url": "",
+      "id": "c6af"
+    },
+    {
+      "name": "Quiet",
+      "author": "Susan Cain",
+      "price": 400,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Quiet.jpg",
+      "pdf_url": "",
+      "id": "ca17"
+    },
+    {
+      "name": "Outliers",
+      "author": "Malcolm Gladwell",
+      "price": 350,
+      "categories": [
+        3
+      ],
+      "image_url": "assets/book_covers/Outliers.jpg.jpg",
+      "pdf_url": "",
+      "id": "a918"
+    },
+    {
+      "name": "The Wright Brothers",
+      "author": "David McCullough",
+      "price": 300,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Wright_Brothers.jpg",
+      "pdf_url": "",
+      "id": "52c8"
+    },
+    {
+      "name": "Into Thin Air",
+      "author": "Jon Krakauer",
+      "price": 330,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Into_Thin_Air.jpg",
+      "pdf_url": "",
+      "id": "2d7c"
+    },
+    {
+      "name": "The Glass Castle",
+      "author": "Jeannette Walls",
+      "price": 340,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Glass_Castle.jpg",
+      "pdf_url": "",
+      "id": "9c36"
+    },
+    {
+      "name": "The Body",
+      "author": "Bill Bryson",
+      "price": 360,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Body.jpg",
+      "pdf_url": "",
+      "id": "1f94"
+    },
+    {
+      "name": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "price": 400,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Thinking_Fast_and_Slow.jpg",
+      "pdf_url": "",
+      "id": "99d2"
+    },
+    {
+      "name": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "price": 380,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/The_Power_of_Habit.jpg",
+      "pdf_url": "",
+      "id": "cc77"
+    },
+    {
+      "name": "Lean In",
+      "author": "Sheryl Sandberg",
+      "price": 420,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Lean_In.jpg",
+      "pdf_url": "",
+      "id": "7674"
+    },
+    {
+      "name": "Out of Africa",
+      "author": "Isak Dinesen",
+      "price": 290,
+      "categories": [
+        3
+      ],
+      "image_url": "book_covers/Out_of_Africa.jpg",
+      "pdf_url": "",
+      "id": "0f12"
+    },
+    {
+      "name": "Bhavishya Purana",
+      "author": "Traditional",
+      "price": 1065,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Bhavishya_Purana.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "3626"
+    },
+    {
+      "name": "Brahmand Mahapuran",
+      "author": "Traditional",
+      "price": 186,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Brahmand_Mahapuran.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "3aaa"
+    },
+    {
+      "name": "Bhavishya Malika Purana",
+      "author": "Traditional",
+      "price": 240,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Bhavishya_Malika_Purana.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "5dfc"
+    },
+    {
+      "name": "Shri Goga Ji Puran",
+      "author": "Shri Prathviraj Ji",
+      "price": 334,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shri_Goga_Ji_Puran.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "e8ca"
+    },
+    {
+      "name": "Surya Puran",
+      "author": "Traditional",
+      "price": 300,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Surya_Puran.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "bde9"
+    },
+    {
+      "name": "Shri Narmada Puran",
+      "author": "Traditional",
+      "price": 400,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shri_Narmada_Puran.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "e17f"
+    },
+    {
+      "name": "Navagraha Purana",
+      "author": "Traditional",
+      "price": 400,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Navagraha_Purana.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "a49a"
+    },
+    {
+      "name": "Vedas (Rigved, Samved, Yajurved, Atharvaved)",
+      "author": "Raj Bahadur Pandey",
+      "price": 630,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Vedas_Rigved_Samved_Yajurved_Atharvaved.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "aafc"
+    },
+    {
+      "name": "Shri Shiv Mahapuran",
+      "author": "Geeta Press",
+      "price": 800,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shri_Shiv_Mahapuran.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "326a"
+    },
+    {
+      "name": "Garuda Purana",
+      "author": "Devdutt Pattanaik",
+      "price": 299,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Garuda_Purana.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "e9f7"
+    },
+    {
+      "name": "Sri Kalki Puranam",
+      "author": "Pushpa Gupta",
+      "price": 765,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Kalki_Puranam.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "d3a3"
+    },
+    {
+      "name": "Samba Purana",
+      "author": "V.C Srivastava",
+      "price": 425,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Samba_Purana.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "afd9"
+    },
+    {
+      "name": "Shri Ganesha Mahapuranam",
+      "author": "Subhash Jain",
+      "price": 3200,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shri_Ganesha_Mahapuranam.jpg",
+      "pdf_url": "",
+      "skipped": true,
+      "id": "b648"
+    },
+    {
+      "name": "Hanuman Chalisa",
+      "author": "Tulsidas",
+      "price": 60,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Hanuman_Chalisa.jpg",
+      "pdf_url": "",
+      "id": "acbb"
+    },
+    {
+      "name": "Hanumat Hunkar",
+      "author": "Traditional",
+      "price": 60,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Hanumat_Hunkar.jpg",
+      "pdf_url": "",
+      "id": "d9bc"
+    },
+    {
+      "name": "Shri Ramcharitmanas",
+      "author": "Goswami Tulsidas",
+      "price": 190,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shri_Ramcharitmanas.jpg",
+      "pdf_url": "",
+      "id": "55f0"
+    },
+    {
+      "name": "Bhagavad Gita",
+      "author": "Ved Vyas",
+      "price": 345,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Bhagavad_Gita.jpg",
+      "pdf_url": "",
+      "id": "3642"
+    },
+    {
+      "name": "Shiv Mahapuran",
+      "author": "Traditional",
+      "price": 199,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shiv_Mahapuran.jpg",
+      "pdf_url": "",
+      "id": "9d8c"
+    },
+    {
+      "name": "Sikh Rahit Maryada",
+      "author": "Shiromani Gurdwara Parbandhak Committee",
+      "price": 180,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sikh_Rahit_Maryada.jpg",
+      "pdf_url": "",
+      "id": "cb8c"
+    },
+    {
+      "name": "Japji Sahib",
+      "author": "Guru Nanak",
+      "price": 75,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Japji_Sahib.jpg",
+      "id": "c941"
+    },
+    {
+      "name": "Guru Granth Sahib (Hindi Translation)",
+      "author": "Various Gurus",
+      "price": 1450,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Guru_Granth_Sahib_Hindi_Translation.jpg",
+      "pdf_url": "",
+      "id": "0e81"
+    },
+    {
+      "name": "Sri Chaitanya Charitamrita (Set)",
+      "author": "Krishnadas Kaviraj",
+      "price": 1300,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Chaitanya_Charitamrita_Set.jpg",
+      "pdf_url": "",
+      "id": "8551"
+    },
+    {
+      "name": "Sripadasaptati",
+      "author": "Giri's Editorial Board",
+      "price": 45,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sripadasaptati.jpg",
+      "pdf_url": "",
+      "id": "289a"
+    },
+    {
+      "name": "Soundaryalahari",
+      "author": "Adi Shankaracharya",
+      "price": 114,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Soundaryalahari.jpg",
+      "pdf_url": "",
+      "id": "4749"
+    },
+    {
+      "name": "Sri Hanumath Stotra",
+      "author": "Various",
+      "price": 23,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Hanumath_Stotra.jpg",
+      "pdf_url": "",
+      "id": "f624"
+    },
+    {
+      "name": "Sri Krishna Ashtottaram",
+      "author": "Aruna's Editorial Board",
+      "price": 28,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Krishna_Ashtottaram.jpg",
+      "pdf_url": "",
+      "id": "f1b2"
+    },
+    {
+      "name": "Sri Lakshmi Ashtottara Shatanamavali",
+      "author": "Various",
+      "price": 38,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Lakshmi_Ashtottara_Shatanamavali.jpg",
+      "pdf_url": "",
+      "id": "a672"
+    },
+    {
+      "name": "Karunai Malai",
+      "author": "Najan",
+      "price": 114,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Karunai_Malai.jpg",
+      "pdf_url": "",
+      "id": "8598"
+    },
+    {
+      "name": "Stothramala",
+      "author": "A. M. Rajagopalan",
+      "price": 76,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Stothramala.jpg",
+      "pdf_url": "",
+      "id": "28c7"
+    },
+    {
+      "name": "Gayatri Mantra",
+      "author": "Traditional",
+      "price": 35,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Gayatri_Mantra.jpg",
+      "pdf_url": "",
+      "id": "cc19"
+    },
+    {
+      "name": "Vishnu Sahasranama",
+      "author": "Ved Vyas",
+      "price": 90,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Vishnu_Sahasranama.jpg",
+      "pdf_url": "",
+      "id": "d4ac"
+    },
+    {
+      "name": "Lalitha Sahasranama",
+      "author": "Traditional",
+      "price": 80,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Lalitha_Sahasranama.jpg",
+      "pdf_url": "",
+      "id": "b0bb"
+    },
+    {
+      "name": "Shani Chalisa",
+      "author": "Traditional",
+      "price": 45,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shani_Chalisa.jpg",
+      "pdf_url": "",
+      "id": "82f9"
+    },
+    {
+      "name": "Sri Sharada Lahari",
+      "author": "Sri Sharada",
+      "price": 180,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Sri_Sharada_Lahari.jpg",
+      "id": "23cd"
+    },
+    {
+      "name": "Mantra Pushpam",
+      "author": "Traditional",
+      "price": 70,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Mantra_Pushpam.jpg",
+      "pdf_url": "",
+      "id": "f96b"
+    },
+    {
+      "name": "Kalika Purana",
+      "author": "Traditional",
+      "price": 280,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Kalika_Purana.jpg",
+      "pdf_url": "",
+      "id": "cd9f"
+    },
+    {
+      "name": "Padma Purana",
+      "author": "Traditional",
+      "price": 340,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Padma_Purana.jpg",
+      "pdf_url": "",
+      "id": "209e"
+    },
+    {
+      "name": "Narada Pancharatra",
+      "author": "Ram Kumar Ray",
+      "price": 699,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Narada_Pancharatra.jpg",
+      "id": "56b6"
+    },
+    {
+      "name": "Shri Bhagwat Mahapuran",
+      "author": "Traditional",
+      "price": 650,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shri_Bhagwat_Mahapuran.jpg",
+      "pdf_url": "",
+      "id": "32e1"
+    },
+    {
+      "name": "Devi Bhagwat Purana",
+      "author": "Traditional",
+      "price": 540,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Devi_Bhagwat_Purana.jpg",
+      "pdf_url": "",
+      "id": "68f0"
+    },
+    {
+      "name": "Rudra Samhita",
+      "author": "Vishwanath Sharma",
+      "price": 315,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Rudra_Samhita.jpg",
+      "pdf_url": "",
+      "id": "85d4"
+    },
+    {
+      "name": "Triveni Sangam Hindi Kathayein",
+      "author": "Rajiv Dagar",
+      "price": 210,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Triveni_Sangam_Hindi_Kathayein.jpg",
+      "pdf_url": "",
+      "id": "6377"
+    },
+    {
+      "name": "Ramakrishna Kathamrita",
+      "author": "Mahendranath Gupta",
+      "price": 450,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Ramakrishna_Kathamrita.jpg",
+      "id": "7943"
+    },
+    {
+      "name": "Shankaracharya Smriti Granthavali",
+      "author": "Shankara Charya",
+      "price": 399,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shankaracharya_Smriti_Granthavali.jpg",
+      "pdf_url": "",
+      "id": "8467"
+    },
+    {
+      "name": "Vivekachudamani",
+      "author": "Adi Shankaracharya",
+      "price": 249,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Vivekachudamani.jpg",
+      "pdf_url": "",
+      "id": "9ceb"
+    },
+    {
+      "name": "Yoga Vasistha",
+      "author": "Valmiki",
+      "price": 999,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Yoga_Vasistha.jpg",
+      "pdf_url": "",
+      "id": "8413"
+    },
+    {
+      "name": "Mahabharat (Hindi Translation)",
+      "author": "Ved Vyas",
+      "price": 899,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Mahabharat_Hindi_Translation.jpg",
+      "pdf_url": "",
+      "id": "0da0"
+    },
+    {
+      "name": "Ramayan (Gita Press)",
+      "author": "Valmiki",
+      "price": 215,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Ramayan_Gita_Press.jpg",
+      "id": "fab6"
+    },
+    {
+      "name": "Mahabharata (Tamil)",
+      "author": "C. Rajagopalachari",
+      "price": 260,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Mahabharata_Tamil.jpg",
+      "pdf_url": "",
+      "id": "8fa0"
+    },
+    {
+      "name": "Jain Agamas (Hindi Edition)",
+      "author": "Acharya Tulsi",
+      "price": 740,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Jain_Agamas_Hindi_Edition.jpg",
+      "pdf_url": "",
+      "id": "1f53"
+    },
+    {
+      "name": "Bhaktamar Stotra (with Hindi translation)",
+      "author": "Acharya Manatunga",
+      "price": 110,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Bhaktamar_Stotra_with_Hindi_translation.jpg",
+      "pdf_url": "",
+      "id": "e34b"
+    },
+    {
+      "name": "Kural (Tirukkural)",
+      "author": "Thiruvalluvar",
+      "price": 180,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Kural_Tirukkural.jpg",
+      "pdf_url": "",
+      "id": "122c"
+    },
+    {
+      "name": "Thiruppavai",
+      "author": "Andal",
+      "price": 114,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Thiruppavai.jpg",
+      "id": "b76e"
+    },
+    {
+      "name": "Abhangwani (Marathi devotionals)",
+      "author": "Tukaram",
+      "price": 95,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Abhangwani_Marathi_devotionals.jpg",
+      "id": "6eb0"
+    },
+    {
+      "name": "Kabir Granthavali",
+      "author": "Kabir",
+      "price": 150,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Kabir_Granthavali.jpg",
+      "pdf_url": "",
+      "id": "128d"
+    },
+    {
+      "name": "Dnyaneshwari (Hindi/Marathi)",
+      "author": "Sant Dnyaneshwar",
+      "price": 499,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Dnyaneshwari_HindiMarathi.jpg",
+      "pdf_url": "",
+      "id": "c5cc"
+    },
+    {
+      "name": "Gyaneshwari Gita",
+      "author": "Sant Dnyaneshwar",
+      "price": 210,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Gyaneshwari_Gita.jpg",
+      "pdf_url": "",
+      "id": "0f46"
+    },
+    {
+      "name": "Meera Bhajan",
+      "author": "Meerabai",
+      "price": 85,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Meera_Bhajan.jpg",
+      "pdf_url": "",
+      "id": "a2e6"
+    },
+    {
+      "name": "Narsi Mehta Bhajanmala",
+      "author": "Narsi Mehta",
+      "price": 125,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Narsi_Mehta_Bhajanmala.jpg",
+      "pdf_url": "",
+      "id": "aae3"
+    },
+    {
+      "name": "Namdev Abhang",
+      "author": "Sant Namdev",
+      "price": 120,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Namdev_Abhang.jpg",
+      "pdf_url": "",
+      "id": "d9d2"
+    },
+    {
+      "name": "Sant Tukaram Gatha",
+      "author": "Tukaram",
+      "price": 225,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sant_Tukaram_Gatha.jpg",
+      "pdf_url": "",
+      "id": "0fd9"
+    },
+    {
+      "name": "Sant Eknath Bhakti Geet",
+      "author": "Eknath",
+      "price": 150,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sant_Eknath_Bhakti_Geet.jpg",
+      "pdf_url": "",
+      "id": "d211"
+    },
+    {
+      "name": "Guru Granth Sahib (Punjabi-Hindi)",
+      "author": "Guru Arjan Dev",
+      "price": 1800,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Guru_Granth_Sahib_Punjabi-Hindi.jpg",
+      "pdf_url": "",
+      "id": "2391"
+    },
+    {
+      "name": "Manimekhalai (Tamil Buddhist Epic)",
+      "author": "Cattanar",
+      "price": 265,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Manimekhalai_Tamil_Buddhist_Epic.jpg",
+      "pdf_url": "",
+      "id": "4b09"
+    },
+    {
+      "name": "Therigatha (Pali Hindi translation)",
+      "author": "Various Buddhist Nuns",
+      "price": 235,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Therigatha_Pali_Hindi_translation.jpg",
+      "pdf_url": "",
+      "id": "8eda"
+    },
+    {
+      "name": "Dhammapada",
+      "author": "Buddha",
+      "price": 120,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Dhammapada.jpg",
+      "pdf_url": "",
+      "id": "79f2"
+    },
+    {
+      "name": "Vinaya Pitaka (Hindi)",
+      "author": "Traditional",
+      "price": 499,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Vinaya_Pitaka_Hindi.jpg",
+      "pdf_url": "",
+      "id": "c510"
+    },
+    {
+      "name": "Guru Paduka Stotra",
+      "author": "Traditional",
+      "price": 38,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Guru_Paduka_Stotra.jpg",
+      "pdf_url": "",
+      "id": "ad3f"
+    },
+    {
+      "name": "Avadhoot Gita",
+      "author": "Dattatreya",
+      "price": 120,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Avadhoot_Gita.jpg",
+      "id": "b000"
+    },
+    {
+      "name": "Mahavir Charitra",
+      "author": "Acharya Virasagar",
+      "price": 175,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Mahavir_Charitra.jpg",
+      "pdf_url": "",
+      "id": "5801"
+    },
+    {
+      "name": "Aingaran Paramparai (Tamil Mantra Sangraha)",
+      "author": "Traditional",
+      "price": 95,
+      "categories": [
+        7
+      ],
+      "image_url": "",
+      "pdf_url": "",
+      "id": "ec89"
+    },
+    {
+      "name": "Sri Vaishnava Sampradaya Granth",
+      "author": "Ramanuja",
+      "price": 285,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Vaishnava_Sampradaya_Granth.jpg",
+      "pdf_url": "",
+      "id": "c178"
+    },
+    {
+      "name": "Saiva Siddhanta Saram",
+      "author": "Meykandar",
+      "price": 125,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Saiva_Siddhanta_Saram.jpg",
+      "pdf_url": "",
+      "id": "35fa"
+    },
+    {
+      "name": "Bhaktisagar (Bengali)",
+      "author": "Traditional",
+      "price": 215,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Bhaktisagar_Bengali.jpg",
+      "pdf_url": "",
+      "id": "3b0d"
+    },
+    {
+      "name": "Kirtanavali",
+      "author": "Various",
+      "price": 135,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Kirtanavali.jpg",
+      "pdf_url": "",
+      "id": "29a8"
+    },
+    {
+      "name": "Tulsi Satsai",
+      "author": "Tulsidas",
+      "price": 200,
+      "categories": [
+        7
+      ],
+      "pdf_url": "",
+      "image_url": "religious_books_cover/Tulsi_Satsai.jpg",
+      "id": "f2df"
+    },
+    {
+      "name": "Guru Gita",
+      "author": "Traditional",
+      "price": 60,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Guru_Gita.jpg",
+      "pdf_url": "",
+      "id": "ebe9"
+    },
+    {
+      "name": "Ashtalakshmi Stotra",
+      "author": "Traditional",
+      "price": 42,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Ashtalakshmi_Stotra.jpg",
+      "pdf_url": "",
+      "id": "653d"
+    },
+    {
+      "name": "Ranganath Stotra",
+      "author": "Traditional",
+      "price": 35,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Ranganath_Stotra.jpg",
+      "pdf_url": "",
+      "id": "a66a"
+    },
+    {
+      "name": "Sri Vishnu Sahasranama Stotram",
+      "author": "Traditional",
+      "price": 72,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Vishnu_Sahasranama_Stotram.jpg",
+      "pdf_url": "",
+      "id": "0dfd"
+    },
+    {
+      "name": "Sri Lalitha Trishati",
+      "author": "Traditional",
+      "price": 45,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sri_Lalitha_Trishati.jpg",
+      "pdf_url": "",
+      "id": "5709"
+    },
+    {
+      "name": "Ayyappa Saranam",
+      "author": "Traditional",
+      "price": 65,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Ayyappa_Saranam.jpg",
+      "pdf_url": "",
+      "id": "88b3"
+    },
+    {
+      "name": "Velvi Vidhanam (Tamil Ritual Guide)",
+      "author": "Traditional",
+      "price": 95,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Velvi_Vidhanam_Tamil_Ritual_Guide.jpg",
+      "pdf_url": "",
+      "id": "732e"
+    },
+    {
+      "name": "Chalisa Sangrah (Hanuman, Durga, Lakshmi, Shiva etc)",
+      "author": "Various",
+      "price": 115,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Chalisa_Sangrah_Hanuman_Durga_Lakshmi_Shiva_etc.jpg",
+      "pdf_url": "",
+      "id": "1e45"
+    },
+    {
+      "name": "Surya Ashtak",
+      "author": "Traditional",
+      "price": 32,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Surya_Ashtak.jpg",
+      "pdf_url": "",
+      "id": "0e10"
+    },
+    {
+      "name": "Guru Prarthana Mantra",
+      "author": "Traditional",
+      "price": 38,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Guru_Prarthana_Mantra.jpg",
+      "pdf_url": "",
+      "id": "b0d5"
+    },
+    {
+      "name": "Shiva Tandava Stotram",
+      "author": "Ravana",
+      "price": 55,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Shiva_Tandava_Stotram.jpg",
+      "pdf_url": "",
+      "id": "04c5"
+    },
+    {
+      "name": "Mantrapushpam",
+      "author": "Traditional",
+      "price": 91,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Mantrapushpam.jpg",
+      "pdf_url": "",
+      "id": "990c"
+    },
+    {
+      "name": "Tiruppavai (Tamil)",
+      "author": "Andal",
+      "price": 105,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Tiruppavai_Tamil.jpg",
+      "pdf_url": "",
+      "id": "cf09"
+    },
+    {
+      "name": "Tamil Prabandham Collection",
+      "author": "Traditional",
+      "price": 300,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Tamil_Prabandham_Collection.jpg",
+      "pdf_url": "",
+      "id": "3ca4"
+    },
+    {
+      "name": "Namakam Chamakam (Rudri Path)",
+      "author": "Traditional",
+      "price": 98,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Namakam_Chamakam_Rudri_Path.jpg",
+      "pdf_url": "",
+      "id": "c2c6"
+    },
+    {
+      "name": "Sudarshan Ashtak",
+      "author": "Traditional",
+      "price": 84,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sudarshan_Ashtak.jpg",
+      "pdf_url": "",
+      "id": "3b0e"
+    },
+    {
+      "name": "Kumara Sambhavam",
+      "author": "Kalidasa",
+      "price": 140,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Kumara_Sambhavam.jpg",
+      "pdf_url": "",
+      "id": "9cc2"
+    },
+    {
+      "name": "Vinayaka Chaturthi Mahatmyam",
+      "author": "Traditional",
+      "price": 65,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Vinayaka_Chaturthi_Mahatmyam.jpg",
+      "pdf_url": "",
+      "id": "75ae"
+    },
+    {
+      "name": "Tirumantiram (Tamil)",
+      "author": "Tirumular",
+      "price": 170,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Tirumantiram_Tamil.jpg",
+      "pdf_url": "",
+      "id": "902e"
+    },
+    {
+      "name": "Tamil Shaiva Siddhanta Granth",
+      "author": "Traditional",
+      "price": 215,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Tamil_Shaiva_Siddhanta_Granth.jpg",
+      "pdf_url": "",
+      "id": "892a"
+    },
+    {
+      "name": "Isavasya Upanishad (Hindi)",
+      "author": "Traditional",
+      "price": 78,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Isavasya_Upanishad_Hindi.jpg",
+      "pdf_url": "",
+      "id": "59b0"
+    },
+    {
+      "name": "Brihadaranyaka Upanishad (Hindi)",
+      "author": "Traditional",
+      "price": 88,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Brihadaranyaka_Upanishad_Hindi.jpg",
+      "pdf_url": "",
+      "id": "8ac4"
+    },
+    {
+      "name": "Kathopanishad (Hindi)",
+      "author": "Traditional",
+      "price": 54,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Kathopanishad_Hindi.jpg",
+      "pdf_url": "",
+      "id": "51f1"
+    },
+    {
+      "name": "Kena Upanishad (Hindi)",
+      "author": "Traditional",
+      "price": 83,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Kena_Upanishad_Hindi.jpg",
+      "pdf_url": "",
+      "id": "0865"
+    },
+    {
+      "name": "Mundaka Upanishad (Hindi)",
+      "author": "Traditional",
+      "price": 49,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Mundaka_Upanishad_Hindi.jpg",
+      "pdf_url": "",
+      "id": "0b33"
+    },
+    {
+      "name": "Narayaneeyam",
+      "author": "Melpathur Narayana Bhattathiri",
+      "price": 210,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Narayaneeyam.jpg",
+      "pdf_url": "",
+      "id": "ba65"
+    },
+    {
+      "name": "Vallabhacharya Mahaprabhu Granth",
+      "author": "Vallabhacharya",
+      "price": 270,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Vallabhacharya_Mahaprabhu_Granth.jpg",
+      "pdf_url": "",
+      "id": "ddf7"
+    },
+    {
+      "name": "Swaminarayan Prakash",
+      "author": "Swaminarayan Aksharpith",
+      "price": 215,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Swaminarayan_Prakash.jpg",
+      "pdf_url": "",
+      "id": "871d"
+    },
+    {
+      "name": "Padma Purana (Hindi Translation)",
+      "author": "Geeta Press",
+      "price": 278,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Padma_Purana_Hindi_Translation.jpg",
+      "pdf_url": "",
+      "id": "7359"
+    },
+    {
+      "name": "Narada Bhakti Sutra",
+      "author": "Narada Muni",
+      "price": 120,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Narada_Bhakti_Sutra.jpg",
+      "pdf_url": "",
+      "id": "369f"
+    },
+    {
+      "name": "Maharashtra Bhakti Maala",
+      "author": "Various",
+      "price": 175,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Maharashtra_Bhakti_Maala.jpg",
+      "pdf_url": "",
+      "id": "7d1b"
+    },
+    {
+      "name": "Sufi Kalams (Hindi Edition)",
+      "author": "Baba Farid, Amir Khusrow",
+      "price": 185,
+      "categories": [
+        7
+      ],
+      "image_url": "religious_books_cover/Sufi_Kalams_Hindi_Edition.jpg",
+      "pdf_url": "",
+      "id": "4f50"
+    }
+  ],
+  "users": [
+    {
+      "name": "User",
+      "phone": "96834758687",
+      "id": "u-1758465782763"
+    },
+    {
+      "name": "User",
+      "phone": "8793895939",
+      "id": "u-1758466615494"
+    },
+    {
+      "name": "User",
+      "phone": "8793895937",
+      "id": "u-1758466668822"
+    },
+    {
+      "name": "User",
+      "phone": "8793895938",
+      "id": "u-1758472131038"
+    }
+  ],
+  "categories": [
+    {
+      "name": "All Books",
+      "id": "0"
+    },
+    {
+      "name": "Fiction",
+      "id": "1"
+    },
+    {
+      "name": "Science Fiction",
+      "id": "2"
+    },
+    {
+      "name": "Non-Fiction",
+      "id": "3"
+    },
+    {
+      "name": "Academic/Professional",
+      "id": "4"
+    },
+    {
+      "name": "Age-Based",
+      "id": "5"
+    },
+    {
+      "name": "Subject-Specific",
+      "id": "6"
+    },
+    {
+      "name": "Religious/Spiritual",
+      "id": "7"
+    },
+    {
+      "name": "Culinary",
+      "id": "8"
+    },
+    {
+      "name": "Arts & Photography",
+      "id": "9"
+    },
+    {
+      "name": "Health/Medical",
+      "id": "10"
+    },
+    {
+      "name": "Business/Economics",
+      "id": "11"
+    },
+    {
+      "name": "International & Cultural",
+      "id": "12"
+    },
+    {
+      "name": "Format-Based",
+      "id": "13"
+    },
+    {
+      "name": "Special Collections",
+      "id": "14"
+    },
+    {
+      "name": "General",
+      "id": "15"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "u-test",
+      "items": []
+    },
+    {
+      "userId": "u-1758466668822",
+      "items": [
+        {
+          "id": "ci-1758467838597",
+          "bookId": "9503",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:17:18.597Z"
+        }
+      ]
+    },
+    {
+      "userId": "u-1758466615494",
+      "items": [
+        {
+          "id": "ci-1758472563715",
+          "bookId": "3626",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:36:03.714Z"
+        },
+        {
+          "id": "ci-1758472566104",
+          "bookId": "5dfc",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:36:06.102Z"
+        },
+        {
+          "id": "ci-1758472570185",
+          "bookId": "ec98",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:36:10.184Z"
+        }
+      ]
+    },
+    {
+      "userId": "local-1758400484503",
+      "items": [
+        {
+          "id": "ci-1758470215306",
+          "bookId": "d226",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:56:55.303Z"
+        },
+        {
+          "id": "ci-1758470216456",
+          "bookId": "9503",
+          "quantity": 2,
+          "added_at": "2025-09-21T15:56:56.455Z"
+        },
+        {
+          "id": "ci-1758470220082",
+          "bookId": "8b7a",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:57:00.082Z"
+        },
+        {
+          "id": "ci-1758470223010",
+          "bookId": "d7c2",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:57:03.010Z"
+        },
+        {
+          "id": "ci-1758470227940",
+          "bookId": "ec98",
+          "quantity": 1,
+          "added_at": "2025-09-21T15:57:07.939Z"
+        }
+      ]
+    },
+    {
+      "userId": "u-1758472131038",
+      "items": [
+        {
+          "id": "ci-1758472170663",
+          "bookId": "c0d5",
+          "quantity": 1,
+          "added_at": "2025-09-21T16:29:30.663Z"
+        }
+      ]
+    }
+  ]
+}
