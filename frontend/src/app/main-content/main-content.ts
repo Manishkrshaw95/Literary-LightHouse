@@ -20,6 +20,9 @@ export class MainContentComponent implements OnInit, OnDestroy {
   books: any[] = [];
   loading: boolean = true;
   error: string = '';
+  // baseBooks holds the current category-filtered (server-side) set
+  baseBooks: any[] = [];
+  // filteredBooks applies search on top of baseBooks
   filteredBooks: any[] = [];
   selectedCategories: number[] = [0];
 
@@ -31,8 +34,9 @@ export class MainContentComponent implements OnInit, OnDestroy {
       (async () => {
         try {
           this.books = await this.bookSvc.loadBooks();
-          this.filteredBooks = [...this.books];
-          if (this.search.term) this.applyFilters();
+          this.baseBooks = [...this.books];
+          // apply search (if any) on top of base
+          this.applyFilters();
         } catch (e) {
           this.error = String(e);
         } finally {
@@ -68,15 +72,31 @@ export class MainContentComponent implements OnInit, OnDestroy {
   onCategorySelection(selectedIds: (number | string)[]) {
     // normalize incoming ids to numbers
     this.selectedCategories = (selectedIds || []).map(id => Number(id)).filter(id => !Number.isNaN(id));
-
-    this.applyFilters();
+    // server-side fetch when filters change
+    (async () => {
+      this.loading = true; this.error = '';
+      try {
+        if (this.selectedCategories.length === 0 || this.selectedCategories.includes(0)) {
+          // no filter -> use cached all-books
+          this.baseBooks = await this.bookSvc.loadBooks();
+        } else {
+          this.baseBooks = await this.bookSvc.fetchByCategories(this.selectedCategories);
+        }
+        // always re-apply search on top of new base set
+        this.applyFilters();
+      } catch (e: any) {
+        this.error = String(e?.message || e || 'Failed to load books');
+      } finally {
+        this.loading = false;
+      }
+    })();
   }
 
   private applyFilters() {
     const term = (this.search.term || '').toLowerCase();
 
-    // start from all books
-    let results = [...this.books];
+  // start from category-filtered base set; search only narrows/widens this
+  let results = [...(this.baseBooks && this.baseBooks.length ? this.baseBooks : this.books)];
 
     // category filter
     if (this.selectedCategories.length > 0 && !this.selectedCategories.includes(0)) {

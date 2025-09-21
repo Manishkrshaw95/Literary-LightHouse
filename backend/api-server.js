@@ -72,6 +72,32 @@ if (useSqlite) {
   } catch (e) {
     console.error('[api-server] failed to ensure orders table', e);
   }
+  try {
+    // Ensure book_categories join table exists (book_id, category_id)
+    sqliteDb.prepare('CREATE TABLE IF NOT EXISTS book_categories (book_id TEXT, category_id TEXT)').run();
+    // Backfill if empty from JSON fallback (if available)
+    const row = sqliteDb.prepare('SELECT COUNT(1) as c FROM book_categories').get();
+    const count = Number((row && row.c) || 0);
+    if (count === 0 && fs.existsSync(DB_PATH)) {
+      try {
+        const j = readDB();
+        const books = Array.isArray(j.booksData) ? j.booksData : [];
+        const insert = sqliteDb.prepare('INSERT INTO book_categories (book_id, category_id) VALUES (?, ?)');
+        sqliteDb.transaction(() => {
+          for (const b of books) {
+            const bid = String(b.id || '');
+            const cats = Array.isArray(b.categories) ? b.categories : [];
+            for (const c of cats) insert.run(bid, String(c));
+          }
+        })();
+        console.log('[api-server] backfilled book_categories from JSON fallback');
+      } catch (e) {
+        console.warn('[api-server] failed to backfill book_categories', e && e.message);
+      }
+    }
+  } catch (e) {
+    console.error('[api-server] failed to ensure book_categories table', e);
+  }
 }
 
 function readDB() {
@@ -131,23 +157,81 @@ function bumpBooksVersion() {
   return now;
 }
 
+// Helper to get books with categories in SQLite, optionally filtered by category ids
+function getBooksWithCategoriesSQLite(filterCategoryIds = []) {
+  // If join table is missing, fall back to returning books with empty categories (older DBs)
+  try { sqliteDb.prepare('SELECT 1 FROM book_categories LIMIT 1').get(); } catch { 
+    const rows = sqliteDb.prepare('SELECT * FROM books').all();
+    return rows.map(r => ({ ...r, out_of_stock: !!r.out_of_stock, categories: [] }));
+  }
+
+  const hasFilter = Array.isArray(filterCategoryIds) && filterCategoryIds.length > 0;
+  let rows;
+  if (hasFilter) {
+    const ids = filterCategoryIds.map(String);
+    const placeholders = ids.map(() => '?').join(',');
+    const sql = `
+      SELECT b.*, GROUP_CONCAT(bc.category_id) AS cats
+      FROM books b
+      JOIN book_categories bc ON bc.book_id = b.id
+      WHERE bc.category_id IN (${placeholders})
+      GROUP BY b.id
+    `;
+    rows = sqliteDb.prepare(sql).all(...ids);
+  } else {
+    const sql = `
+      SELECT b.*, GROUP_CONCAT(bc.category_id) AS cats
+      FROM books b
+      LEFT JOIN book_categories bc ON bc.book_id = b.id
+      GROUP BY b.id
+    `;
+    rows = sqliteDb.prepare(sql).all();
+  }
+
+  return rows.map(r => {
+    const catsStr = r.cats || '';
+    const cats = typeof catsStr === 'string' && catsStr.length
+      ? Array.from(new Set(catsStr.split(',').map(n => Number(n)).filter(n => Number.isFinite(n))))
+      : [];
+    const { cats: _omit, ...rest } = r;
+    return { ...rest, out_of_stock: !!rest.out_of_stock, categories: cats };
+  });
+}
+
 // Books endpoints
 app.get('/booksData', (req, res) => {
+  const q = String(req.query.category || '').trim();
+  const hasFilter = q.length > 0;
+  const ids = hasFilter ? q.split(',').map(s => s.trim()).filter(Boolean) : [];
   if (useSqlite) {
-    const rows = sqliteDb.prepare('SELECT * FROM books').all();
-    // map out_of_stock from int to boolean
-    const mapped = rows.map(r => ({ ...r, out_of_stock: !!r.out_of_stock }));
-    return res.json(mapped);
+    try {
+      const books = getBooksWithCategoriesSQLite(ids);
+      return res.json(books);
+    } catch (e) {
+      console.error('[api-server] failed to get books with categories', e);
+      return res.status(500).json({ error: 'failed to fetch books' });
+    }
   }
   const db = readDB();
-  res.json(db.booksData || []);
+  let arr = db.booksData || [];
+  if (hasFilter) {
+    const idSet = new Set(ids.map(String));
+    arr = arr.filter(b => Array.isArray(b.categories) && b.categories.some((c) => idSet.has(String(c))));
+  }
+  return res.json(arr);
 });
 
 app.get('/booksData/:id', (req, res) => {
   if (useSqlite) {
     const b = sqliteDb.prepare('SELECT * FROM books WHERE id = ?').get(String(req.params.id));
     if (!b) return res.status(404).json({ error: 'not found' });
-    return res.json({ ...b, out_of_stock: !!b.out_of_stock });
+    // attach categories for this book
+    let cats = [];
+    try {
+      const rows = sqliteDb.prepare('SELECT category_id FROM book_categories WHERE book_id = ?').all(String(req.params.id));
+      cats = rows.map(r => Number(r.category_id)).filter(n => Number.isFinite(n));
+    } catch {}
+    return res.json({ ...b, out_of_stock: !!b.out_of_stock, categories: cats });
   }
   const db = readDB();
   const b = (db.booksData || []).find(x => String(x.id) === String(req.params.id));
@@ -174,7 +258,10 @@ app.patch('/booksData/:id', (req, res) => {
     // bump version after a successful update
     bumpBooksVersion();
     const b = sqliteDb.prepare('SELECT * FROM books WHERE id = ?').get(String(req.params.id));
-    return res.json({ ...b, out_of_stock: !!b.out_of_stock });
+    // attach categories
+    let cats = [];
+    try { const rows = sqliteDb.prepare('SELECT category_id FROM book_categories WHERE book_id = ?').all(String(req.params.id)); cats = rows.map(r => Number(r.category_id)).filter(n => Number.isFinite(n)); } catch {}
+    return res.json({ ...b, out_of_stock: !!b.out_of_stock, categories: cats });
   }
   const db = readDB();
   const idx = (db.booksData || []).findIndex(x => String(x.id) === String(req.params.id));

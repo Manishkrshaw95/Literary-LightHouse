@@ -46,6 +46,7 @@ if (which.status === 0) {
   initSql.push('CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT);');
   initSql.push('CREATE TABLE IF NOT EXISTS books (id TEXT PRIMARY KEY, name TEXT, author TEXT, price REAL, image_url TEXT, pdf_url TEXT, out_of_stock INTEGER DEFAULT 0);');
   initSql.push('CREATE TABLE IF NOT EXISTS categories (id TEXT PRIMARY KEY, name TEXT);');
+  initSql.push('CREATE TABLE IF NOT EXISTS book_categories (book_id TEXT, category_id TEXT);');
   initSql.push('CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, name TEXT, email TEXT, phone TEXT, password TEXT, address TEXT);');
   initSql.push('CREATE TABLE IF NOT EXISTS cart_items (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id TEXT, book_id TEXT, quantity INTEGER DEFAULT 1, added_at TEXT);');
   initSql.push('CREATE TABLE IF NOT EXISTS orders (id TEXT PRIMARY KEY, ack TEXT, user_id TEXT, phone TEXT, address TEXT, total REAL, items TEXT, created_at TEXT);');
@@ -58,6 +59,12 @@ if (which.status === 0) {
     const pdf_url = (b.pdf_url || '').replace(/'/g, "''");
     const out = b.out_of_stock ? 1 : 0;
     initSql.push(`INSERT OR REPLACE INTO books (id,name,author,price,image_url,pdf_url,out_of_stock) VALUES ('${id}','${name}','${author}',${price},'${image_url}','${pdf_url}',${out});`);
+    // seed book-category mappings if source has categories array
+    const cats = Array.isArray(b.categories) ? b.categories : [];
+    for (const c of cats) {
+      const cid = String(c).replace(/'/g, "''");
+      initSql.push(`INSERT INTO book_categories (book_id, category_id) VALUES ('${id}', '${cid}');`);
+    }
   }
   for (const c of parsed.categories || []) {
     const id = String(c.id || c.name).replace(/'/g, "''");

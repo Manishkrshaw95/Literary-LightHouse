@@ -1,5 +1,5 @@
 <div class="body-main-layout">
-	<app-sidebar class="sidebar"></app-sidebar>
+	<app-sidebar class="sidebar" (selectionChange)="onCategorySelection($event)"></app-sidebar>
 	<div class="body-content-col">
 		<div class="category-cards">
 			<app-category-card
@@ -40,7 +40,7 @@
 			</div>
 		</div>
 			<div class="booklist-below">
-				<app-booklist [books]="books"></app-booklist>
+				<app-booklist [books]="filteredBooks"></app-booklist>
 			</div>
 	</div>
 </div>

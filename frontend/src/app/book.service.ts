@@ -96,4 +96,14 @@ export class BookService {
     } catch {}
     this.books = [];
   }
+
+  // Server-side filtered fetch: category can be a single id or comma-separated list (numbers or strings)
+  async fetchByCategories(categories: Array<number | string>): Promise<any[]> {
+    const arr = (categories || []).map(c => String(c).trim()).filter(Boolean);
+    const qs = arr.length ? `?category=${encodeURIComponent(arr.join(','))}` : '';
+    const res = await fetch(`${API_BASE}/booksData${qs}`);
+    if (!res.ok) throw new Error('Failed to fetch filtered books');
+    const data = await res.json();
+    return (data || []).map((b: any) => ({ ...b, categories: Array.isArray(b.categories) ? b.categories.map((c: any) => Number(c)) : [] }));
+  }
 }
