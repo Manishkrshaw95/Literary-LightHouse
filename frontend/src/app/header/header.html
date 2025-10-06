@@ -16,6 +16,7 @@
 				<input class="search-bar" type="text" placeholder="Search books, authors, etc." (input)="onSearchInput($event)" />
 			</div>
 		<div class="header-right">
+			<a *ngIf="auth.isAdmin" class="billing-link" routerLink="/billing" routerLinkActive="active">Billing</a>
 			<button class="theme-toggle" (click)="toggleTheme()" [attr.aria-pressed]="isDark()" aria-label="Toggle dark mode">
 				<!-- Sun icon -->
 				<svg *ngIf="!isDark()" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
